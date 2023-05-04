@@ -240,13 +240,14 @@ nav button:hover {
         letter-spacing: 2px;
         text-transform: uppercase;
         animation: slideIn 5s ease-in-out infinite;
+        text-align: center;
     } // p
 
 } // hero
 
 @keyframes slideIn {
   0% {
-    transform: translateX(150%);
+    transform: translateX(0%);
     opacity: 0;
   }
   25% {
@@ -258,7 +259,7 @@ nav button:hover {
     opacity: 1;
   }
   100% {
-    transform: translateX(-150%);
+    transform: translateX(-0%);
     opacity: 0;
   }
 }
