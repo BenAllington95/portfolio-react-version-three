@@ -29,7 +29,7 @@ export default function Skills() {
     return (
       <div key={item.heading} className="skills-item-box">
         <h3>{item.heading}</h3>
-        <ion-icon name={item.icon}></ion-icon>
+        <ion-icon className="skills-item-box-icons" name={item.icon}></ion-icon>
       </div>
     )
   })

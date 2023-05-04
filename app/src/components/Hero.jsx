@@ -20,7 +20,7 @@ useEffect(() => {
     return (
         <div className="hero" id="hero-section">
             <h1>Hi, I'm <span className="hero-heading-ben">Ben</span></h1>
-            <p>{currentItem}</p>
+            {/* <p>{currentItem}</p> */}
         </div>
     )
 }

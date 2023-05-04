@@ -107,7 +107,7 @@ nav button:hover {
     position: fixed;
     top: 0%;
     right: -100%;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
     background: #12171d;  
@@ -214,6 +214,7 @@ nav button:hover {
 
 .hero {
     height: 100vh;
+    width: 100%;
     background: #12171d;
     color: #79c0ff;
     display: flex;
@@ -348,6 +349,12 @@ nav button:hover {
 
 
 @media (min-width: 768px) {
+
+       
+    .large-nav.hidden {
+        transform: translateY(-100%);
+        transition: all 0.3s;
+    }
         
     .large-nav {
         display: flex;
@@ -360,42 +367,36 @@ nav button:hover {
         background: #12171d;
         z-index: 9999;   
         transition: all 0.2s;
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            gap: 15px;
+            padding: 1em 0;
+
+            li {
+                color:  #f8f8f8;
+                cursor: pointer;
+                font-size: 0.9em;
+                border: none;
+                transition: color 0.2s ease, border-bottom 0.2s ease;
+                padding-bottom: 0.3em;
+                padding-top: 5px;
+                border-bottom: 5px solid transparent; 
+                
+                &:hover {
+                    color: #79c0ff;
+                    border-bottom: 5px solid #79c0ff;
+                }
+            }
+        }
     }
     
     #light-theme .large-nav {
         transition: all 0.2s;
     }
-    
-    .large-nav ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        gap: 15px;
-        padding: 1em 0;
-    }
-    
-    .large-nav ul li {
-        color:  #f8f8f8;
-        cursor: pointer;
-        font-size: 0.9em;
-        border: none;
-        transition: color 0.2s ease, border-bottom 0.2s ease;
-        padding-bottom: 0.3em;
-        padding-top: 5px;
-        border-bottom: 5px solid transparent;    
-    }
-    
-
-    
-    .large-nav ul li:hover {
-        color: #79c0ff;
-        border-bottom: 5px solid #79c0ff;
-    }
-    
-    .large-nav.hidden {
-        transform: translateY(-100%);
-        transition: all 0.3s;
-    }
+ 
 }
 
 .visible {
@@ -408,81 +409,69 @@ nav button:hover {
 
 /* Skills */
 
+
 .skills {
-    padding: 3em;
-    background: #12171d;
+    padding: 2em;
+    background: #161b22;
     transition: all 0.2s;
-}
 
-.skills-container {
-    display: grid;
-    place-content: center;
-    gap: 15px;
-    min-height: 100vh;
-    max-width: 500px;
-    margin: 0 auto;
-    transition: opacity 2s ease, transform 2s ease;
-    transform: translateX(100px);
-    opacity: 0;
-}
+    h2 {
+        color: #79c0ff;
+    }
 
-.skills-container.visible {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-
-
-.skills h2 {
-    color: #79c0ff;
-}
-
-/* 666666  */
-
-
-.skills-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.skills-item-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.skills-item-box h3 {
-    font-size: 1.25rem;
-    color: #f8f8f8;
-}
-
-.skills-item-box ion-icon {
-    font-size: 7rem;
-    color:  #f8f8f8;
-}
-
-.skills-para {
-    color: #ccc;
-    letter-spacing: 0.7px;
-    text-align: center;
-}
-
-@media (min-width: 762px) {
-    .skills-items {
-        flex-direction: row;
-        margin: auto;
-        flex-wrap: wrap;
+    .skills-container {
+        display: flex;
         align-items: center;
         justify-content: center;
-    }
-    
-   
-    
+        flex-direction: column;
+        gap: 15px;
+        min-height: 100vh;
+        transform: translateX(-50%);
+        transition: opacity 2s ease, transform 2s ease;
+        opacity: 0;
+
+        .skills-para {
+            color: #ecf0f6;
+            letter-spacing: 0.7px;
+            text-align: center;
+        }
+
+        .skills-items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            .skills-item-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h3 {
+                    // light mode color: #677483;
+                    color: #fff;
+                }
+
+                ion-icon {
+                    font-size: 6rem;
+                    // light mode color:#677483;
+                    color: #fff;
+                } // ion-icon
+
+            } // skills-item-box 
+
+        } // skills-items
+
+    } // skills-container
+
+    .skills-container.visible {
+        transform: translateX(0%);
+        opacity: 1;
+    } // skills-container.visible
 }
+
 
 @media (min-width: 1300px) {
     
@@ -501,10 +490,6 @@ nav button:hover {
         width: 50%;
     }
     
-    .skills {
-        width: 50%;
-    }
-    
 }
 
 /* Certificates */
@@ -518,41 +503,46 @@ nav button:hover {
     background: #161b22;
     padding: 4em 3em;
     transition: background 0.2s;
-}
 
-.certificates-container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    transition: opacity 2s ease, transform 1.5s ease;
-    transform: translateY(100px);
-    opacity: 0;
-}
+    .certificates-container {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        transition: opacity 2s ease, transform 1.5s ease;
+        transform: translateY(100px);
+        opacity: 0;
 
-.certificates-container.visible {
-    transform: translateY(0);
-    opacity: 1;
-}
+        .certificates-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f8f8f8;
+            gap: 5px;
 
-.certificates-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #f8f8f8;
-    gap: 5px;
+            ion-icon {
+                font-size: 2rem;
+                cursor: pointer;
+            }
+        }
+        
+    }
+
+    .certificates-container.visible {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
 }
 
 #light-theme .certificates-icons {
     color: #677483;
 }
 
-.certificates ion-icon {
-    font-size: 2rem;
-    cursor: pointer;
-}
+
 
 .certificates ion-icon[name="square-sharp"] {
     font-size: 2.2rem;
@@ -845,9 +835,6 @@ nav button:hover {
         font-size: 2rem;
         transition: filter 0.2s;
     }
-    .contact-container ul li ion-icon:hover {
-        /* filter: brightness(300%) */
-    }   
    
 }
 

@@ -24,7 +24,7 @@ function App() {
   return (
     <div id={isDarkMode ? "dark-theme" : "light-theme"}>
 
-<Modal />
+      <Modal />
       <LargeNav 
         handleToggleTheme={handleToggleTheme}
         isDarkMode={isDarkMode}
@@ -36,19 +36,15 @@ function App() {
         isDarkMode={isDarkMode}
        />
       <Hero id="hero-section" /> 
-       
+  
       <div className="test">
         <About id="about-section" />
         <div className="test-img right-box"></div>
       </div>
-      <Certificates id="certificates-section" />      
-       <div className="test">
-        <div className="test-img left-box"></div>
-         <Skills id="skills-section" />
-      </div>
-      <Projects id="projects-section" />
-      <Contact id="contact-section" /> 
-      
+      <Certificates id="certificates-section" />
+      <Skills id="skills-section" />
+      {/* <Projects id="projects-section" /> */}
+      {/* <Contact id="contact-section" /> */}
 
     </div>
   )
