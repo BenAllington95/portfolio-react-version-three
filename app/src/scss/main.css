@@ -107,9 +107,8 @@ nav button:hover {
   /* box-shadow: -3px 0 3px rgba(0, 0, 0, 0.3); */
   z-index: 999;
 }
-
 .menu a {
-  width: 90%;
+  width: 100%;
   padding: 2em 0;
   text-align: center;
   cursor: pointer;
@@ -202,17 +201,15 @@ nav button:hover {
   padding: 1em;
   transition: all 0.2s ease;
 }
-
 .hero h1 {
   margin: 0;
   color: #f8f8f8;
   font-size: 3.5rem;
+  transition: all 0.2s;
 }
-
-.hero-heading-ben {
+.hero h1 .hero-heading-ben {
   border-bottom: 5px solid #79c0ff;
 }
-
 .hero p {
   color: #79c0ff;
   margin-top: 1em;
@@ -257,8 +254,7 @@ nav button:hover {
   place-content: center;
   transition: background 0.2s ease;
 }
-
-.about-items {
+.about .about-items {
   opacity: 0;
   transition: opacity 2s ease, transform 1.5s ease;
   transform: translateX(-100px);
@@ -266,13 +262,21 @@ nav button:hover {
   gap: 15px;
   place-content: center;
 }
-
-.about-paragraph {
+.about .about-items h2 {
+  color: #79c0ff;
+  font-size: 2rem;
+  text-align: center;
+}
+.about .about-items .about-paragraph {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 15px;
+}
+.about .about-items.visible {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
@@ -288,7 +292,6 @@ nav button:hover {
     margin: auto;
   }
 }
-.about h2,
 .skills h2 {
   color: #79c0ff;
   font-size: 2rem;
@@ -427,6 +430,11 @@ nav button:hover {
   padding: 4em 3em;
   transition: background 0.2s;
 }
+.certificates h2 {
+  color: #79c0ff;
+  text-align: center;
+  font-size: 2rem;
+}
 .certificates .certificates-container {
   width: 100%;
   max-width: 900px;
@@ -437,6 +445,30 @@ nav button:hover {
   transition: opacity 2s ease, transform 1.5s ease;
   transform: translateY(100px);
   opacity: 0;
+}
+.certificates .certificates-container .certificate-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.certificates .certificates-container .certificate-items .certificate-item-box {
+  background: #677483;
+  margin: 0 auto;
+  transition: all 0.5s;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  flex-basis: 60;
+  /* box-shadow: inset 0 0 0 2px rgba(128, 128, 128, 0.3); */
+  position: relative;
+}
+.certificates .certificates-container .certificate-items .certificate-item-box ion-icon {
+  position: absolute;
+  bottom: 7.5px;
+  right: 7.5px;
+  opacity: 0.5;
+  font-size: 3rem;
+  cursor: pointer;
 }
 .certificates .certificates-container .certificates-icons {
   display: flex;
@@ -458,63 +490,17 @@ nav button:hover {
   color: #677483;
 }
 
-.certificates ion-icon[name=square-sharp] {
-  font-size: 2.2rem;
-}
-
-.certificate-items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.certificates h2 {
-  color: #79c0ff;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.certificate-item-box {
-  background: #ccc;
-  margin: 0 auto;
-  transition: all 0.5s;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  flex-basis: 60;
-  /* box-shadow: inset 0 0 0 2px rgba(128, 128, 128, 0.3); */
-  position: relative;
-}
-
 #light-theme .certificate-item-box {
   background: #f8f8fc;
-}
-
-.certificate-item-box ion-icon {
-  position: absolute;
-  bottom: 7.5px;
-  right: 7.5px;
-  opacity: 0.5;
-  font-size: 3rem;
-}
-
-@media (min-width: 768px) {
-  .certificate-item-box ion-icon {
-    font-size: 2rem;
-  }
-}
-.certificate-item-box ion-icon:hover {
-  filter: brightness(150%);
 }
 
 /* Projects */
 .projects {
   background: #12171d;
   padding: 4em 3em;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
 }
-
-.projects-container {
+.projects .projects-container {
   min-height: 100vh;
   margin: auto;
   display: flex;
