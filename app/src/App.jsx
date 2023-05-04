@@ -43,8 +43,8 @@ function App() {
       </div>
       <Certificates id="certificates-section" />
       <Skills id="skills-section" />
-      {/* <Projects id="projects-section" /> */}
-      {/* <Contact id="contact-section" /> */}
+      <Projects id="projects-section" />
+      <Contact id="contact-section" />
 
     </div>
   )

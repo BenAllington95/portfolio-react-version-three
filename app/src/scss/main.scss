@@ -114,7 +114,7 @@ nav button:hover {
     list-style: none;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.5s ease;
     height: 100vh;
     /* box-shadow: -3px 0 3px rgba(0, 0, 0, 0.3); */
     z-index: 999;
@@ -127,10 +127,6 @@ nav button:hover {
         color: #fff;
     }
 }
-
-
-
-
 
 .active {
     opacity: 1;
@@ -284,13 +280,10 @@ nav button:hover {
 .about {
     min-height: 100vh;
     background: #161b22;
-    padding: 3em;
+    padding: 3em 2em;
     display: grid;
     place-content: center;
-    transition: background 0.2s ease; 
-
-    
-    
+    transition: background 0.2s ease;
 
     .about-items {
         opacity: 0;
@@ -511,13 +504,17 @@ nav button:hover {
     justify-content: center;
     flex-direction: column;
     background: #161b22;
-    padding: 4em 3em;
+    padding: 4em 2em;
     transition: background 0.2s;
 
     h2 {
         color:#79c0ff;
         text-align: center;
         font-size: 2rem;
+    }
+
+    p {
+        text-align: center;
     }
 
     .certificates-container {
@@ -605,8 +602,14 @@ nav button:hover {
 
 .projects {
     background: #12171d;
-    padding: 4em 3em;
+    padding: 4em 2em;
     transition: all 0.2s ease;
+
+    h2 {
+        font-size: 2rem;
+        color: #79c0ff;
+        text-align: center;
+    }
 
     .projects-container {
         min-height: 100vh;
@@ -619,7 +622,71 @@ nav button:hover {
         transition: opacity 2s ease, transform 1.5s ease;
         transform: translateY(100px);
         opacity: 0;
+
+        
+
+        .projects-items-box {
+            width: 100%;
+            height: 250px;
+            transition: all 1s;
+
+            .projects-items-box-details {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+                /* padding-left: 0.75em; */
+            }
+
+            .projects-items-box-img {
+                height: 100%;
+                background: #ccc;
+                background-image: linear-gradient(to bottom, transparent 0%, #f8f8fc 50%, #f8f8fc 100%);
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                gap: 3px;
+                padding: 0.75em;
+                position: relative;
+                transition: filter 0.2s ease-in-out;
+            }
+        }
+                
+
+        .projects-filter-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            flex-wrap: wrap;
+
+            .projects-filter-btn {
+                padding: 0.5em 0.75em;
+                /* padding: 0.5em 0.75em; */
+                border-radius: 3.5px;
+                background: #79c0ff;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.2s;
+
+                &:hover {
+                    filter: brightness(90%);
+                }
+            }
+
+        }
     }
+}
+
+.projects-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    transition: all .5s;
 }
 
 
@@ -629,38 +696,12 @@ nav button:hover {
     opacity: 1;
 }
 
-.projects h2 {
-    font-size: 2rem;
-    color: #79c0ff;
-    text-align: center;
-}
-
-.projects-filter-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    flex-wrap: wrap;
-}
-
-.projects-filter-btn {
-    padding: 0.5em 0.75em;
-    /* padding: 0.5em 0.75em; */
-    border-radius: 3.5px;
-    background: #79c0ff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
 #light-theme .projects-filter-btn {
     background: #677483;
     color: whitesmoke;
 }
 
-.projects-filter-btn:hover {
-    filter: brightness(90%);
-}
+
 
 .projects-active {
     background: #ccc;
@@ -673,14 +714,7 @@ nav button:hover {
     color: #444444;
 }
 
-.projects-items {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 900px;
-    transition: all 1s;
-}
+
 
 @media (min-width: 762px) {
     .projects-items {
@@ -689,54 +723,17 @@ nav button:hover {
         /* gap: 0; */
     }
     .projects-items-box {
-        flex-basis: calc(49% - 5px);
+        flex-basis: calc(49.4% - 5px);
     }
 }
 
-.projects-items-box {
-    width: 100%;
-    height: 250px;
-    transition: all 1s;
-}
 
-
-.projects-items-box-img {
-    height: 100%;
-    background: #ccc;
-    background-image: linear-gradient(to bottom, transparent 0%, #f8f8fc 50%, #f8f8fc 100%);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    gap: 3px;
-    padding: 0.75em;
-    position: relative;
-    transition: filter 0.2s ease-in-out;
-    /* box-shadow: inset 0 0 0 2px rgba(128, 128, 128, 0.3); */
-}
 
 #light-theme .projects-items-box-img {
     background: white;
     background-image: linear-gradient(to bottom, transparent 0%, #f8f8fc 50%, #f8f8fc 100%);
 }
 
-/* .projects-items-box-img:hover {
-    filter: brightness(110%)
-} */
-
-.projects-items-box-img p {
-    font-size: 0.9em;
-    color: #161b22;
-}
-
-.projects-items-box-details {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5px;
-    /* padding-left: 0.75em; */
-}
 
 .projects-items-box-details-main,
 .projects-items-box-details-links {
@@ -813,20 +810,24 @@ nav button:hover {
     height: 100%;
     display: grid;
     place-content: center;
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        li ion-icon {
+            font-size: 3rem;
+            color: #12171d;
+        }
+    }
 }
 
-.contact-container ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-}
 
-.contact-container ul li ion-icon {
-    font-size: 3rem;
-    color: #12171d;
-}
+
+
 
 #light-theme .contact-container ul li ion-icon {
     color: #697384;
@@ -863,50 +864,50 @@ nav button:hover {
     padding: 0 2em;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.2s, visibility 0.2s; 
-}
+    transition: opacity 0.2s, visibility 0.2s;
+    
+    .modal-box {
+        min-height: 225px;
+        max-width: 300px;
+        width: 100%;    
+        background: #161b22;
+        border-radius: 5px;
+        position: relative;
+        padding: 1em;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);  
 
-.modal-box {
-    min-height: 225px;
-    max-width: 300px;
-    width: 100%;    
-    background: #161b22;
-    border-radius: 5px;
-    position: relative;
-    padding: 1em;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);  
+        .modal-box ion-icon[name="close-sharp"] {
+            position: absolute;
+            bottom: 15px;
+            right: 0px;
+            left: 0px;
+            margin: 0 auto;
+            font-size: 2rem;
+            padding: 0.2em;
+            color: #161b22;
+            border-radius: 50%;
+            background: grey;
+            cursor: pointer;
+            transition: filter 0.2s ease;
+            
+        }
+
+       h2 {
+            color: #f8f8f8;
+            font-size: 1.25rem;
+        }
+
+       p {
+            color: #f8f8f8;
+            font-size: 0.9rem;
+        }
+    }
 }
 
 .modal.visible {
     opacity: 1;
     visibility: visible;
     transition: opacity 0.2s, visibility 0.2s;
-}
-
-.modal-box h2 {
-    color: #f8f8f8;
-    font-size: 1.25rem;
-}
-
-.modal-box p {
-    color: #f8f8f8;
-    font-size: 0.9rem;
-}
-
-.modal-box ion-icon[name="close-sharp"] {
-    position: absolute;
-    bottom: 15px;
-    right: 0px;
-    left: 0px;
-    margin: 0 auto;
-    font-size: 2rem;
-    padding: 0.2em;
-    color: #161b22;
-    border-radius: 50%;
-    background: grey;
-    cursor: pointer;
-    transition: filter 0.2s ease;
-    
 }
 
 @media (min-width: 762px) {
@@ -934,7 +935,6 @@ nav button:hover {
     gap: 3px;
 }
 
-
 /* Large Certificate Img */
 
 .large-certificate-img {
@@ -954,40 +954,42 @@ nav button:hover {
     gap: 10px;
     visibility: hidden;
     transition: opacity 0.2s ease, visibility 0.2s ease;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+
+    ion-icon {
+        cursor: pointer;
+    }
+
+    .large-certificate-img-box {
+        height: 500px;
+        width: 100%;
+        background: white;    
+        border-radius: 5px;
+    }
+
+    .arrows {
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        ion-icon {
+            color: #ccc;
+            opacity: 0.5;
+            font-size: 3rem;
+            transition: 0.2s;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
+        }   
+    } 
 }
 
 .large-certificate-img.visible {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.2s ease, visibility 0.2s ease;
-}
-
-
-
-
-.large-certificate-img-box {
-    height: 300px;
-    width: 100%;
-    background: white;    
-    border-radius: 5px;
-}
-
-.arrows {
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
-.arrows ion-icon {
-    color: #ccc;
-    opacity: 0.3;
-    font-size: 3rem;
-    transition: 0.2s;
-}
-
-.arrows ion-icon:hover {
-    opacity: 1;
 }
 
 ion-icon[name="arrow-forward-circle-outline"] {
