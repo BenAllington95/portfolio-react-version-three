@@ -11,14 +11,14 @@ export default function Certificates() {
     
     
     const certificateData = [
-        {id: 0, img: "img-1.png", title: "One"},
-        {id: 1, img: "img-2.png", title: "Two"},
-        {id: 2, img: "img-3.png", title: "Three"},
-        {id: 3, img: "img-4.png", title: "Four"},
-        {id: 4, img: "img-5.png", title: "Five"},
-        {id: 5, img: "img-6.png", title: "Six"},
-        {id: 6, img: "img-7.png", title: "Seven"},
-        {id: 7, img: "img-8.png", title: "Eight"},
+        {id: 0, img: "./images/sass-learn-sass-course.png", title: "Learn Sass Course - Codecademy"},
+        {id: 1, img: "https://images.unsplash.com/photo-1661956602926-db6b25f75947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80", title: "Two"},
+        {id: 2, img: "", title: "Three"},
+        {id: 3, img: "", title: "Four"},
+        {id: 4, img: "", title: "Five"},
+        {id: 5, img: "", title: "Six"},
+        {id: 6, img: "", title: "Seven"},
+        {id: 7, img: "", title: "Eight"},
     ]
     
     function handleCertificateClick(index) {
@@ -51,7 +51,12 @@ export default function Certificates() {
     
     const certificateBoxElements = certificateData.map((item, index) => {
         return (
-            <div key={`certificate-${index}`}className="certificate-item-box">
+            <div key={`certificate-${index}`} className="certificate-item-box" style={{
+                background: `url(${item.img})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}>
                 <ion-icon name="expand-outline" onClick={() => handleCertificateClick(index)} ></ion-icon>
             </div>
         )

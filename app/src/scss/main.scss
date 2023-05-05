@@ -543,13 +543,16 @@ nav button:hover {
             flex-wrap: wrap;
 
             .certificate-item-box {
-                background: #677483;
+                // background: url('../images/sass-learn-sass-course.png');
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                // background-position: center;
                 margin: 0 auto;
                 transition: all 0.5s;
                 border-radius: 5px;
                 margin-bottom: 10px;
                 flex-basis: 60;
-                /* box-shadow: inset 0 0 0 2px rgba(128, 128, 128, 0.3); */
+                box-shadow: inset 0 0 0 2px rgba(128, 128, 128, 0.3);
                 position: relative;
 
                 ion-icon {
