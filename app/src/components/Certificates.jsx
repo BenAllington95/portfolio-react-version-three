@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import images from '../images';
 
 import LargeCertificateImg from './LargeCertificateImg'
 
@@ -11,7 +12,7 @@ export default function Certificates() {
     
     
     const certificateData = [
-        {id: 0, img: "./images/sass-learn-sass-course.png", title: "Learn Sass Course - Codecademy"},
+        {id: 0, img: images.sassImg, title: "Learn Sass Course - Codecademy"},
         {id: 1, img: "https://images.unsplash.com/photo-1661956602926-db6b25f75947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80", title: "Two"},
         {id: 2, img: "", title: "Three"},
         {id: 3, img: "", title: "Four"},
