@@ -808,7 +808,7 @@ nav button:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 2em;
+  padding: 1em;
   opacity: 0;
   gap: 10px;
   visibility: hidden;
@@ -819,10 +819,15 @@ nav button:hover {
   cursor: pointer;
 }
 .large-certificate-img .large-certificate-img-box {
-  height: 500px;
-  width: 100%;
-  background: white;
-  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 60vh;
+}
+.large-certificate-img .large-certificate-img-box img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: 100%;
 }
 .large-certificate-img .arrows {
   position: relative;
