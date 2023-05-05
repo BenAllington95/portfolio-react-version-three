@@ -254,11 +254,12 @@ nav button:hover {
   display: grid;
   place-content: center;
   transition: background 0.2s ease;
+  overflow: hidden;
 }
 .about .about-items {
   opacity: 0;
   transition: opacity 2s ease, transform 1.5s ease;
-  transform: translateX(-100px);
+  transform: translateX(-50%);
   display: grid;
   gap: 15px;
   place-content: center;
@@ -311,7 +312,7 @@ nav button:hover {
 
 @media (min-width: 768px) {
   .large-nav.hidden {
-    transform: translateY(-100%);
+    transform: translateY(-50%);
     transition: all 0.3s;
   }
   .large-nav {
@@ -358,9 +359,9 @@ nav button:hover {
 
 /* Skills */
 .skills {
-  padding: 2em;
   background: #161b22;
   transition: all 0.2s;
+  overflow: hidden;
 }
 .skills h2 {
   color: #79c0ff;
@@ -372,7 +373,7 @@ nav button:hover {
   flex-direction: column;
   gap: 15px;
   min-height: 100vh;
-  transform: translateX(-50%);
+  transform: translateX(50%);
   transition: opacity 2s ease, transform 2s ease;
   opacity: 0;
 }
@@ -409,15 +410,17 @@ nav button:hover {
 @media (min-width: 1300px) {
   .test {
     display: flex;
+    justify-content: space-between;
   }
   .test-img {
-    width: 50%;
+    width: 30%;
     min-height: 100vh;
     /* background: linear-gradient(to right, #161b22 0%, #161b22 25%, rgba(121, 192, 255, 0.5) 100%); */
     /* background: #161b22; */
   }
-  .about {
-    width: 50%;
+  .about,
+  .skills {
+    width: 70%;
   }
 }
 /* Certificates */

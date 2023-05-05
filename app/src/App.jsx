@@ -42,7 +42,13 @@ function App() {
         <div className="test-img right-box"></div>
       </div>
       <Certificates id="certificates-section" />
-      <Skills id="skills-section" />
+
+      <div className="test">
+        <div className="test-img left-box"></div>
+        <Skills id="skills-section" />
+      </div>
+
+      
       <Projects id="projects-section" />
       <Contact id="contact-section" />
 
