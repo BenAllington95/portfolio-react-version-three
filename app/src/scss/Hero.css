@@ -2,8 +2,6 @@
 .hero {
   height: 100vh;
   width: 100%;
-  background: #12171d;
-  color: #79c0ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,19 +11,40 @@
 }
 .hero h1 {
   margin: 0;
-  color: #f8f8f8;
   font-size: 3.5rem;
   transition: all 0.2s;
 }
-.hero h1 .hero-heading-ben {
-  border-bottom: 5px solid #79c0ff;
-}
 .hero p {
-  color: #79c0ff;
   margin-top: 1em;
   font-size: 1.3em;
   letter-spacing: 2px;
   text-transform: uppercase;
   animation: slideIn 5s ease-in-out infinite;
   text-align: center;
+}
+
+#dark-theme .hero {
+  background: #12171d;
+}
+#dark-theme .hero h1 {
+  color: #f8f8f8;
+}
+#dark-theme .hero h1 .hero-heading-ben {
+  border-bottom: 5px solid #79c0ff;
+}
+#dark-theme .hero p {
+  color: #79c0ff;
+}
+
+#light-theme .hero {
+  background: #fff;
+}
+#light-theme .hero h1 {
+  color: #333333;
+}
+#light-theme .hero h1 .hero-heading-ben {
+  border-bottom: 5px solid #677483;
+}
+#light-theme .hero p {
+  color: #697384;
 }/*# sourceMappingURL=Hero.css.map */

@@ -117,7 +117,6 @@ nav button:hover {
     pointer-events: none;
     transition: all 0.5s ease;
     height: 100vh;
-    /* box-shadow: -3px 0 3px rgba(0, 0, 0, 0.3); */
     z-index: 999;
 
     a {
@@ -138,7 +137,7 @@ nav button:hover {
 /* Light-Theme */
 
 // #light-theme .large-nav,
-#light-theme .hero, 
+
 #light-theme .about,
 #light-theme .skills,
 #light-theme .certificates,
@@ -157,16 +156,6 @@ nav button:hover {
     border-bottom: none;
 }
 
-#light-theme h1 {
-    color: #333333;
-    transition: background 0.2s ease;
-}
-
-#light-theme .hero-heading-ben {
-    border-bottom: 5px solid #677483;
-    transition: all 0.2s;
-}
-
 #light-theme .about h2, 
 #light-theme .skills h2,
 #light-theme .certificates h2,
@@ -180,7 +169,6 @@ nav button:hover {
     transition: all 0.2s;
 }
 
-#light-theme .hero p,
 #light-theme .skills p,
 #light-theme .certificates p,
 #light-theme .projects p {
