@@ -139,7 +139,6 @@ nav button:hover {
 
 // #light-theme .large-nav,
 
-#light-theme .about,
 #light-theme .skills,
 #light-theme .certificates,
 #light-theme .projects {
@@ -157,16 +156,10 @@ nav button:hover {
     border-bottom: none;
 }
 
-#light-theme .about h2, 
 #light-theme .skills h2,
 #light-theme .certificates h2,
 #light-theme .projects h2 {
     color: #333333;
-    transition: all 0.2s;
-}
-
-#light-theme .about p {
-    color: #444444;
     transition: all 0.2s;
 }
 

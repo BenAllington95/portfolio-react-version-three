@@ -1,12 +1,13 @@
 /* About */
 .about {
   min-height: 100vh;
-  background: #161b22;
   padding: 3em 2em;
   display: grid;
   place-content: center;
   transition: background 0.2s ease;
   overflow: hidden;
+  /* .about-items */
+  /* .about-items.visible */
 }
 .about .about-items {
   opacity: 0;
@@ -32,14 +33,47 @@
   transform: translateY(0);
   opacity: 1;
 }
-
 @media (min-width: 768px) {
-  .about {
+  .about .about {
     width: 100%;
   }
-  .about-paragraph {
+  .about .about-paragraph {
     max-width: 600px;
     width: 90%;
     margin: auto;
   }
-}/*# sourceMappingURL=About.css.map */
+}
+
+/* .about */
+#light-theme {
+  transition: all 0.2s;
+}
+#light-theme .about {
+  background: #fff;
+}
+#light-theme .about h2 {
+  color: #79c0ff;
+  transition: all 0.2s;
+}
+#light-theme .about p {
+  color: #444444;
+  transition: all 0.2s;
+}
+
+/* #light-theme */
+#dark-theme {
+  transition: all 0.2s;
+}
+#dark-theme .about {
+  background: #161b22;
+}
+#dark-theme .about h2 {
+  color: #79c0ff;
+  transition: all 0.2s;
+}
+#dark-theme .about p {
+  color: #fff;
+  transition: all 0.2s;
+}
+
+/* #dark-theme *//*# sourceMappingURL=About.css.map */
