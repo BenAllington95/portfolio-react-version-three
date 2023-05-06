@@ -1,5 +1,13 @@
-/* Hero Section */
+$primary-color: #333333;
+$secondary-color: #79c0ff;
+$background-color-dark: #12171d;
+$background-color-light: #fff;
+$text-color-dark: #f8f8f8;
+$text-color-light: #697384;
+$text-color-secondary-light: #677483;
+$text-color-secondary-dark: #79c0ff;
 
+/* Hero Section */
 .hero {
     height: 100vh;
     width: 100%;
@@ -31,18 +39,18 @@
 
     .hero {
 
-        background: #12171d;
+        background: $background-color-dark;
 
         h1 {
-            color: #f8f8f8;
+            color: $text-color-dark;
 
             .hero-heading-ben {
-                border-bottom: 5px solid #79c0ff;
+                border-bottom: 5px solid $secondary-color;
             } // hero-heading-ben
         }
 
         p {
-            color: #79c0ff;
+            color: $secondary-color;
         }
 
     }
@@ -52,21 +60,18 @@
 #light-theme {
 
     .hero {
-        background: #fff;
-        // opacity: 1;
-        // background-image: radial-gradient(#677483 0.5px, #ffffff 0.5px);
-        // background-size: 10px 10px; 
+        background: $background-color-light;
 
         h1 {
-            color: #333333;
+            color: $text-color-light;
 
             .hero-heading-ben {
-                border-bottom: 5px solid #677483;
+                border-bottom: 5px solid $text-color-secondary-light;
             } // hero-heading-ben
         }
 
         p {
-            color: #697384;
+            color: $text-color-light;
         }
 
     }
