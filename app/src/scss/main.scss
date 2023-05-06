@@ -194,18 +194,6 @@ nav button:hover {
     transition: all 0.2s;
 }
 
-@media (min-width: 768px) {
-    
-    #light-theme .large-nav ul li {
-        color: #677483;
-        transition: background 0.2s ease;
-    }
-    
-        #light-theme ul li:hover {
-        color: #677483;
-        border-bottom: 5px solid #677483;
-    }   
-}
 
 
 /* Hero Section */
@@ -351,60 +339,66 @@ nav button:hover {
 
 /* Large Nav */
 
-.large-nav {
-    display: none;
-}
+// .large-nav {
+//     display: none;
+// }
 
 
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
 
        
-    .large-nav.hidden {
-        transform: translateY(-50%);
-        transition: all 0.3s;
-    }
+//     .large-nav.hidden {
+//         transform: translateY(-50%);
+//         transition: all 0.3s;
+//     }
         
-    .large-nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: #12171d;
-        z-index: 9999;   
-        transition: all 0.2s;
+//     .large-nav {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         background: #12171d;
+//         z-index: 9999;   
+//         transition: all 0.2s;
 
-        ul {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            gap: 15px;
-            padding: 1em 0;
+//         ul {
+//             display: flex;
+//             list-style: none;
+//             margin: 0;
+//             gap: 15px;
+//             padding: 1em 0;
 
-            li {
-                color:  #f8f8f8;
-                cursor: pointer;
-                font-size: 0.9em;
-                border: none;
-                transition: color 0.2s ease, border-bottom 0.2s ease;
-                padding-bottom: 0.3em;
-                padding-top: 5px;
-                border-bottom: 5px solid transparent; 
+//             li {
+//                 color:  #f8f8f8;
+//                 cursor: pointer;
+//                 font-size: 0.9em;
+//                 border: none;
+//                 transition: color 0.2s ease, border-bottom 0.2s ease;
+//                 padding-bottom: 0.3em;
+//                 padding-top: 5px;
+//                 border-bottom: 5px solid transparent; 
                 
-                &:hover {
-                    color: #79c0ff;
-                    border-bottom: 5px solid #79c0ff;
-                }
-            }
-        }
-    }
+//                 &:hover {
+//                     color: #79c0ff;
+//                     border-bottom: 5px solid #79c0ff;
+//                 }
+//             }
+//         }
+//     }
     
-    #light-theme .large-nav {
-        transition: all 0.2s;
-    }
-}
+//     #light-theme .large-nav {
+//         transition: all 0.2s;
+//     }
+// }
+
+// .visible {
+//     opacity: 1;
+//     transform: translateX(0)
+// } 
+
 
 .visible {
     opacity: 1;
@@ -510,12 +504,10 @@ nav button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #161b22;
     padding: 4em 2em;
     transition: background 0.2s;
 
     h2 {
-        color:#79c0ff;
         text-align: center;
         font-size: 2rem;
     }
@@ -534,7 +526,11 @@ nav button:hover {
         transition: opacity 2s ease, transform 1.5s ease;
         transform: translateY(100px);
         opacity: 0;
-        
+
+        &.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
 
         .certificate-items {
             display: flex;
@@ -543,14 +539,9 @@ nav button:hover {
             flex-wrap: wrap;
 
             .certificate-item-box {
-                // background: url('../images/sass-learn-sass-course.png');
-                // background-repeat: no-repeat;
-                // background-size: cover;
-                // background-position: center;
-                margin: 0 auto;
+                margin: 0 auto 10px auto;
                 transition: all 0.5s;
                 border-radius: 5px;
-                margin-bottom: 10px;
                 flex-basis: 60;
                 box-shadow: inset 0 0 0 2px rgba(128, 128, 128, 0.3);
                 position: relative;
@@ -570,29 +561,130 @@ nav button:hover {
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #f8f8f8;
             gap: 5px;
 
             ion-icon {
                 font-size: 2rem;
                 cursor: pointer;
             }
-        }   
-    }
-
-    .certificates-container.visible {
-        transform: translateY(0);
-        opacity: 1;
+        }
     }
 }
 
-#light-theme .certificates-icons {
-    color: #677483;
+#dark-theme .certificates {
+    background: #161b22;
+
+    h2 {
+        color: #79c0ff;
+    }
+
+    .certificates-icons {
+        color: #f8f8f8;
+    }
 }
 
-#light-theme .certificate-item-box {
-    background: #f8f8fc;
+#light-theme .certificates {
+    background: #ffffff;
+
+    h2 {
+        color: #3b82f6
+    }
+
+    .certificates-icons {
+        color: #677483;
+    }
+
+    .certificate-item-box {
+        background: #ffffff;
+    }
 }
+  
+
+// .certificates {
+//     min-height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//     background: #161b22;
+//     padding: 4em 2em;
+//     transition: background 0.2s;
+
+//     h2 {
+//         color: #79c0ff;
+//         text-align: center;
+//         font-size: 2rem;
+//     }
+
+//     p {
+//         text-align: center;
+//     }
+
+//     .certificates-container {
+//         width: 100%;
+//         max-width: 900px;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 15px;
+//         transition: opacity 2s ease, transform 1.5s ease;
+//         transform: translateY(100px);
+//         opacity: 0;
+
+//         &.visible {
+//             transform: translateY(0);
+//             opacity: 1;
+//         }
+
+//         .certificate-items {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             flex-wrap: wrap;
+
+//             .certificate-item-box {
+//                 margin: 0 auto 10px auto;
+//                 transition: all 0.5s;
+//                 border-radius: 5px;
+//                 flex-basis: 60;
+//                 box-shadow: inset 0 0 0 2px rgba(128, 128, 128, 0.3);
+//                 position: relative;
+
+//                 ion-icon {
+//                     position: absolute;
+//                     bottom: 7.5px;
+//                     right: 7.5px;    
+//                     opacity: 0.5;
+//                     font-size: 3rem;
+//                     cursor: pointer;
+//                 }
+//             }
+//         }
+
+//         .certificates-icons {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             color: #f8f8f8;
+//             gap: 5px;
+
+//             ion-icon {
+//                 font-size: 2rem;
+//                 cursor: pointer;
+//             }
+//         }
+//     }
+// }
+
+// #light-theme {
+//     .certificates-icons {
+//         color: #677483;
+//     }
+
+//     .certificate-item-box {
+//         background: #f8f8fc;
+//     }
+// }
 
 
 

@@ -1,3 +1,60 @@
+.large-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .large-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    transform: translateY(0);
+    transition: transform 0.3s;
+  }
+  .large-nav.hidden {
+    transform: translateY(-100%);
+  }
+  .large-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 15px;
+    padding: 1em 0;
+  }
+  .large-nav ul li {
+    cursor: pointer;
+    font-size: 0.9em;
+    border: none;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    padding-bottom: 0.3em;
+    padding-top: 5px;
+    border-bottom: 5px solid transparent;
+  }
+  .large-nav ul li:hover {
+    border-bottom: 5px solid currentColor;
+  }
+  #dark-theme .large-nav {
+    background: #12171d;
+  }
+  #dark-theme .large-nav ul li {
+    color: #f8f8f8;
+  }
+  #dark-theme .large-nav ul li:hover {
+    color: #79c0ff;
+  }
+  #light-theme .large-nav ul li {
+    color: #677483;
+    transition: background 0.2s ease;
+  }
+  #light-theme .large-nav ul li:hover {
+    color: #677483;
+    border-bottom: 5px solid #677483;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -178,16 +235,6 @@ nav button:hover {
   transition: all 0.2s;
 }
 
-@media (min-width: 768px) {
-  #light-theme .large-nav ul li {
-    color: #677483;
-    transition: background 0.2s ease;
-  }
-  #light-theme ul li:hover {
-    color: #677483;
-    border-bottom: 5px solid #677483;
-  }
-}
 /* Hero Section */
 .hero {
   height: 100vh;
@@ -306,52 +353,6 @@ nav button:hover {
 }
 
 /* Large Nav */
-.large-nav {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .large-nav.hidden {
-    transform: translateY(-50%);
-    transition: all 0.3s;
-  }
-  .large-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #12171d;
-    z-index: 9999;
-    transition: all 0.2s;
-  }
-  .large-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    gap: 15px;
-    padding: 1em 0;
-  }
-  .large-nav ul li {
-    color: #f8f8f8;
-    cursor: pointer;
-    font-size: 0.9em;
-    border: none;
-    transition: color 0.2s ease, border-bottom 0.2s ease;
-    padding-bottom: 0.3em;
-    padding-top: 5px;
-    border-bottom: 5px solid transparent;
-  }
-  .large-nav ul li:hover {
-    color: #79c0ff;
-    border-bottom: 5px solid #79c0ff;
-  }
-  #light-theme .large-nav {
-    transition: all 0.2s;
-  }
-}
 .visible {
   opacity: 1;
   transform: translateX(0);
@@ -430,12 +431,10 @@ nav button:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #161b22;
   padding: 4em 2em;
   transition: background 0.2s;
 }
 .certificates h2 {
-  color: #79c0ff;
   text-align: center;
   font-size: 2rem;
 }
@@ -453,6 +452,10 @@ nav button:hover {
   transform: translateY(100px);
   opacity: 0;
 }
+.certificates .certificates-container.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
 .certificates .certificates-container .certificate-items {
   display: flex;
   align-items: center;
@@ -460,10 +463,9 @@ nav button:hover {
   flex-wrap: wrap;
 }
 .certificates .certificates-container .certificate-items .certificate-item-box {
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   transition: all 0.5s;
   border-radius: 5px;
-  margin-bottom: 10px;
   flex-basis: 60;
   box-shadow: inset 0 0 0 2px rgba(128, 128, 128, 0.3);
   position: relative;
@@ -480,24 +482,34 @@ nav button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f8f8f8;
   gap: 5px;
 }
 .certificates .certificates-container .certificates-icons ion-icon {
   font-size: 2rem;
   cursor: pointer;
 }
-.certificates .certificates-container.visible {
-  transform: translateY(0);
-  opacity: 1;
+
+#dark-theme .certificates {
+  background: #161b22;
+}
+#dark-theme .certificates h2 {
+  color: #79c0ff;
+}
+#dark-theme .certificates .certificates-icons {
+  color: #f8f8f8;
 }
 
-#light-theme .certificates-icons {
+#light-theme .certificates {
+  background: #ffffff;
+}
+#light-theme .certificates h2 {
+  color: #3b82f6;
+}
+#light-theme .certificates .certificates-icons {
   color: #677483;
 }
-
-#light-theme .certificate-item-box {
-  background: #f8f8fc;
+#light-theme .certificates .certificate-item-box {
+  background: #ffffff;
 }
 
 /* Projects */
