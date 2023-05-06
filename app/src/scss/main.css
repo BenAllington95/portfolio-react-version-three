@@ -12,8 +12,7 @@
     left: 0;
     right: 0;
     z-index: 9999;
-    transform: translateY(0);
-    transition: transform 0.3s;
+    transition: all 0.2s ease;
   }
   .large-nav.hidden {
     transform: translateY(-100%);
@@ -46,6 +45,9 @@
   #dark-theme .large-nav ul li:hover {
     color: #79c0ff;
   }
+  #light-theme .large-nav {
+    background: #ffffff;
+  }
   #light-theme .large-nav ul li {
     color: #677483;
     transition: background 0.2s ease;
@@ -55,6 +57,38 @@
     border-bottom: 5px solid #677483;
   }
 }
+/* Hero Section */
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: #12171d;
+  color: #79c0ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  transition: all 0.2s ease;
+}
+.hero h1 {
+  margin: 0;
+  color: #f8f8f8;
+  font-size: 3.5rem;
+  transition: all 0.2s;
+}
+.hero h1 .hero-heading-ben {
+  border-bottom: 5px solid #79c0ff;
+}
+.hero p {
+  color: #79c0ff;
+  margin-top: 1em;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: slideIn 5s ease-in-out infinite;
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -178,7 +212,6 @@ nav button:hover {
   pointer-events: all;
 } /* Class gets added to hamburger nav when event clicked changes boolean */
 /* Light-Theme */
-#light-theme .large-nav,
 #light-theme .hero,
 #light-theme .about,
 #light-theme .skills,
@@ -236,37 +269,6 @@ nav button:hover {
 }
 
 /* Hero Section */
-.hero {
-  height: 100vh;
-  width: 100%;
-  background: #12171d;
-  color: #79c0ff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1em;
-  transition: all 0.2s ease;
-}
-.hero h1 {
-  margin: 0;
-  color: #f8f8f8;
-  font-size: 3.5rem;
-  transition: all 0.2s;
-}
-.hero h1 .hero-heading-ben {
-  border-bottom: 5px solid #79c0ff;
-}
-.hero p {
-  color: #79c0ff;
-  margin-top: 1em;
-  font-size: 1.3em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  animation: slideIn 5s ease-in-out infinite;
-  text-align: center;
-}
-
 @keyframes slideIn {
   0% {
     transform: translateX(0%);

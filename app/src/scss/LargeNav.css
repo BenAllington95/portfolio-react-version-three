@@ -12,8 +12,7 @@
     left: 0;
     right: 0;
     z-index: 9999;
-    transform: translateY(0);
-    transition: transform 0.2s;
+    transition: all 0.2s ease;
   }
   .large-nav.hidden {
     transform: translateY(-100%);
@@ -45,6 +44,9 @@
   }
   #dark-theme .large-nav ul li:hover {
     color: #79c0ff;
+  }
+  #light-theme .large-nav {
+    background: #ffffff;
   }
   #light-theme .large-nav ul li {
     color: #677483;
