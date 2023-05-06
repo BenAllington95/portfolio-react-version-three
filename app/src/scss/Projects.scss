@@ -121,6 +121,8 @@
     color: #161b22;
     transition: all 0.2s ease;
   }
+
+  
   
   #light-theme {
 
@@ -128,14 +130,25 @@
         background: #fff;
         transition: all 0.2s ease;
 
+        
+
         .projects-container {
 
-            .project-filter-buttons {
+            .projects-para {
+                color: #677483;
+            }           
+
+            .projects-filter-buttons {
 
                 .projects-filter-btn {
                     background: #677483;
-                    color: whitesmoke;
+                    color: #ecf0f6;
                   }
+
+                .projects-active {
+                    background: #ecf0f6;
+                    color: #677483;
+                }    
 
             }
 
@@ -170,49 +183,14 @@
 
             }
 
-
-
             
         }
 
         
         
-          .projects-active {
-            background: #ecf0f6;
-            color: #444444;
-            
-      
-            
           
-           
-
-            
-        }    
   }
   
-  
-    #dark-theme {
-
-        .projects {
-            background: red;
-
-            .projects-items-box {
-                h3 {
-                  color: #12171d;
-                }
-            
-                .projects-items-box-details-links-main {
-                  background: #f8f8f8;
-                  color: #161b22;
-                }
-            
-                .projects-items-box-details-links-reverse {
-                  background: #79c0ff;
-                  color: #161b22;
-                }
-            }
-        }
-    }
 }
 
 .projects-items {
@@ -226,7 +204,42 @@
   
 
 
-  @media (min-width: 762px) {
+ 
+
+
+  #dark-theme {
+
+    .projects {
+        background: #12171d;
+
+        h2 {
+            color: #79c0ff;
+        }
+
+        .projects-items-box {
+            
+            h3 {
+              color: #12171d;
+            }
+        
+            .projects-items-box-details-links-main {
+              background: #f8f8f8;
+              color: #161b22;
+            }
+        
+            .projects-items-box-details-links-reverse {
+              background: #79c0ff;
+              color: #161b22;
+            }
+
+        } // projects-items-box
+    } // projects
+} // #dark-theme
+
+
+ 
+
+@media (min-width: 762px) {
     .projects-items {
       flex-direction: row;
       flex-wrap: wrap;
@@ -237,6 +250,3 @@
       flex-basis: calc(49.4% - 5px);
     }
   }
-
-
- 

@@ -49,7 +49,7 @@ export default function Projects() {
                 <div className={visible ? "projects-container visible" : "projects-container"}>
                 <div>
                     <h2>Projects</h2>
-                    <p className="skills-para">Browse my projects</p>
+                    <p className="projects-para">Browse my projects</p>
                 </div>
                 <div className="projects-filter-buttons">
                     {filterElements}

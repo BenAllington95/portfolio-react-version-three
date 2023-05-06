@@ -297,9 +297,16 @@
   background: #fff;
   transition: all 0.2s ease;
 }
-#light-theme .projects .projects-container .project-filter-buttons .projects-filter-btn {
+#light-theme .projects .projects-container .projects-para {
+  color: #677483;
+}
+#light-theme .projects .projects-container .projects-filter-buttons .projects-filter-btn {
   background: #677483;
-  color: whitesmoke;
+  color: #ecf0f6;
+}
+#light-theme .projects .projects-container .projects-filter-buttons .projects-active {
+  background: #ecf0f6;
+  color: #677483;
 }
 #light-theme .projects .projects-container .projects-items-box .projects-items-box-img {
   background: white;
@@ -317,24 +324,6 @@
   background: #ecf0f6;
   color: #697384;
 }
-#light-theme .projects .projects-active {
-  background: #ecf0f6;
-  color: #444444;
-}
-#light-theme #dark-theme .projects {
-  background: red;
-}
-#light-theme #dark-theme .projects .projects-items-box h3 {
-  color: #12171d;
-}
-#light-theme #dark-theme .projects .projects-items-box .projects-items-box-details-links-main {
-  background: #f8f8f8;
-  color: #161b22;
-}
-#light-theme #dark-theme .projects .projects-items-box .projects-items-box-details-links-reverse {
-  background: #79c0ff;
-  color: #161b22;
-}
 
 .projects-items {
   display: flex;
@@ -343,6 +332,24 @@
   width: 100%;
   max-width: 900px;
   transition: all 0.5s;
+}
+
+#dark-theme .projects {
+  background: #12171d;
+}
+#dark-theme .projects h2 {
+  color: #79c0ff;
+}
+#dark-theme .projects .projects-items-box h3 {
+  color: #12171d;
+}
+#dark-theme .projects .projects-items-box .projects-items-box-details-links-main {
+  background: #f8f8f8;
+  color: #161b22;
+}
+#dark-theme .projects .projects-items-box .projects-items-box-details-links-reverse {
+  background: #79c0ff;
+  color: #161b22;
 }
 
 @media (min-width: 762px) {
@@ -713,16 +720,6 @@ nav button:hover {
 }
 
 /* Projects */
-.projects-items-box-details-links-main {
-  background: #f8f8f8;
-  color: #161b22;
-}
-
-.projects-items-box-details-links-reverse {
-  background: #79c0ff;
-  color: #161b22;
-}
-
 .contact {
   background: #79c0ff;
 }
