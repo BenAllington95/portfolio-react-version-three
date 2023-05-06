@@ -11,7 +11,6 @@ function Project(props) {
     
   return (
     <div className="projects-items-box">
-      <div className="projects-items-box-details"></div>
 
       <div className="projects-items-box-img">
 

@@ -47,7 +47,7 @@ export default function Projects() {
     return (
         <div className="projects" id="projects-section">
                 <div className={visible ? "projects-container visible" : "projects-container"}>
-                <div>
+                <div className="projects-header">
                     <h2>Projects</h2>
                     <p className="projects-para">Browse my projects</p>
                 </div>
