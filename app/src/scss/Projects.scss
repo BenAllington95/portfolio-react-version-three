@@ -116,11 +116,11 @@
     }
   }
   
-  .projects-active {
-    background: #ccc;
-    color: #161b22;
-    transition: all 0.2s ease;
-  }
+//   .projects-active {
+//     background: #ccc;
+//     color: #161b22;
+//     transition: all 0.2s ease;
+//   }
 
   
   
@@ -129,8 +129,6 @@
     .projects {
         background: #fff;
         transition: all 0.2s ease;
-
-        
 
         .projects-container {
 
@@ -201,38 +199,61 @@
     max-width: 900px;
     transition: all .5s;
 }
-  
-
-
- 
-
 
   #dark-theme {
 
     .projects {
         background: #12171d;
 
-        h2 {
-            color: #79c0ff;
-        }
+        .projects-container {
 
-        .projects-items-box {
+            h2 {
+                color: #79c0ff;
+            }
+
+            .projects-filter-buttons {
+                .projects-active {
+                    background: #fff;
+                    color: #161b22;
+                }
+            }
+
+            .projects-items-box {
+
+                .projects-items-box-img {
+                    background: white;
+                    background-image: linear-gradient(to bottom, transparent 0%, #f8f8fc 50%, #f8f8fc 100%);
+                  } // projects-items-box-img
+    
+                  .projects-items-box-details-main {
+      
+                    p {
+                      color: #161b22;
+                      background: #79c0ff;
+                    }
             
-            h3 {
-              color: #12171d;
-            }
-        
-            .projects-items-box-details-links-main {
-              background: #f8f8f8;
-              color: #161b22;
-            }
-        
-            .projects-items-box-details-links-reverse {
-              background: #79c0ff;
-              color: #161b22;
-            }
+                  }
+                
+                h3 {
+                  color: #12171d;
+                }
+            
+                .projects-items-box-details-links-main {
+                  background: #161b22;
+                  color: #79c0ff;
+                }
+            
+                .projects-items-box-details-links-reverse {
+                  background: #79c0ff;
+                  color: #161b22;
+                }
+    
+            } // projects-items-box
 
-        } // projects-items-box
+        } // projects-container
+        
+
+        
     } // projects
 } // #dark-theme
 
