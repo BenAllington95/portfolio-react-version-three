@@ -6,6 +6,7 @@
 
 .projects {
     padding: 4em 2em;
+    transition: background 0.2s ease;
 
     .projects-container {
         min-height: 100vh;
@@ -18,7 +19,6 @@
         transform: translateY(100px);
         opacity: 0;
         transition: opacity 1.5s ease, transform 1.5s ease;
-        background: red;
 
         &.visible {
             transform: translateY(0);
@@ -28,6 +28,10 @@
         h2 {
             text-align: center;
             font-size: 2rem;
+        }
+
+        p {
+            font-size: 0.85rem;
         }
 
         .projects-para {
@@ -41,6 +45,14 @@
             flex-wrap: wrap;
             width: 100%;
             gap: 5px;
+
+            .projects-filter-btn {
+                transition: all 0.2s;
+                padding: 0.5em;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+            }
         }
 
         .projects-items {
@@ -54,7 +66,7 @@
 
             .projects-items-box {
                 height: 250px;
-                transition: all .5s;
+                transition: all .2s;
                 width: 100%;
                 
 
@@ -71,16 +83,19 @@
 
                     .projects-items-box-details-main {
                         display: flex;
-                        align-items: center;
+                        align-items: flex-start;
+                        flex-direction: row;
                         gap: 5px;
 
-                        p {
-                            font-size: 0.7rem;
-                            font-weight: bold;
-                            padding: 2px 3px;
-                            border-radius: 3px;
-                            letter-spacing: 0.2px;
-                        }
+
+                            p {
+                                font-size: 0.7rem;
+                                font-weight: bold;
+                                padding: 2px 4px;
+                                border-radius: 3px;
+                                letter-spacing: 0.2px;
+                                transition: all 0.2s;
+                            }
                     }
 
                     .projects-items-box-details-links {
@@ -90,11 +105,13 @@
                         display: flex;
                         align-items: center;
                         gap: 5px;
+                        // transition: all 0.2s;
 
                         a {
                             padding: 0.5em;
                             border-radius: 3px;
                             font-size: 0.8rem;
+                            transition: all 0.2s;
                         }
                     }
                 }
@@ -199,8 +216,7 @@
 //           gap: 5px;
 //         }
   
-//         .projects-items-box-details-links {
-/
+//         .projects-items-box-details-links 
 //         }
   
 //         h3 {
@@ -304,6 +320,12 @@
             }
 
             .projects-filter-buttons {
+
+                .projects-filter-btn {
+                    background: #79c0ff;
+                    color: #161b22;
+                }
+
                 .projects-active {
                     background: #fff;
                     color: #161b22;
@@ -338,6 +360,70 @@
                 .projects-items-box-details-links-reverse {
                   background: #79c0ff;
                   color: #161b22;
+                }
+    
+            } // projects-items-box
+        } // projects-container
+    } // projects
+} // #dark-theme
+
+
+  #light-theme {
+
+    .projects {
+        background: #fff;
+
+        .projects-container {
+
+            h2 {
+                color: #161b22;
+            }
+
+            p {
+                color: #677483;
+            }
+
+            .projects-filter-buttons {
+                
+                .projects-filter-btn {
+                    background: #677483;
+                    color: #ecf0f6;
+                }
+
+                .projects-active {
+                    background: #ecf0f6;
+                    color: #677483;
+                }
+            }
+
+            .projects-items-box {
+
+                h3 {
+                    color: #12171d;
+                }
+
+                .projects-items-box-img {
+                    background: white;
+                    background-image: linear-gradient(to bottom, transparent 0%, #f8f8fc 50%, #f8f8fc 100%);
+                  } // projects-items-box-img
+    
+                  .projects-items-box-details-main {
+      
+                    p {
+                      color: #677483;
+                      background: #ecf0f6;
+                    }
+            
+                }
+            
+                .projects-items-box-details-links-main {
+                  background: #677483;
+                  color: #ecf0f6;
+                }
+            
+                .projects-items-box-details-links-reverse {
+                  background: #ecf0f6;
+                  color: #677483;
                 }
     
             } // projects-items-box
