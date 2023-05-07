@@ -420,8 +420,8 @@
                 }
 
                 .projects-items-box-img {
-                    background: white;
-                    background-image: linear-gradient(to bottom, transparent 0%, #f8f8fc 50%, #f8f8fc 100%);
+                    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.2) 100%), url('../images/travel-journal-img.png');
+                    background-size: cover;
                   } // projects-items-box-img
     
                   .projects-items-box-details-main {

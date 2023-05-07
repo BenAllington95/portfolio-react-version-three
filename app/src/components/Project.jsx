@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+
 function Project(props) {
     
     const categoryElements = props.category.map(cat => {
@@ -22,7 +23,7 @@ function Project(props) {
             {categoryElements}
             </div>
         <p>{props.description}</p>
-        
+
 
         </div>  
 

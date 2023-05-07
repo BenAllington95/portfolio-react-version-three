@@ -14,9 +14,9 @@ export default function Projects() {
             {id: 4, filter: "css", text: "CSS"},
         ]
         
-        const shuffledProjects = projectsData.sort(() => Math.random() - 0.5) // shuffle projects array every render
+        // const shuffledProjects = projectsData.sort(() => Math.random() - 0.5) // shuffle projects array every render
         
-        const filteredProjects = shuffledProjects.filter(project => filter === "" || project.category.includes(filter))
+        const filteredProjects = projectsData.filter(project => filter === "" || project.category.includes(filter))
         const projectElements = filteredProjects.map(project => <Project key={project.id} {...project} />) // filter that checks the filter button state and matches with category of each project if included in array
         
             
