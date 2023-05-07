@@ -587,7 +587,7 @@ nav button:hover {
   background: #161b22;
   transition: all 0.2s;
   overflow: hidden;
-  padding: 4em 2em;
+  padding: 2em;
 }
 .skills h2 {
   color: #79c0ff;

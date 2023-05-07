@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import { Link } from "react-scroll";
+
 export default function HamburgerNav(props) {
         
     function toggleMenu() {
@@ -51,14 +53,36 @@ export default function HamburgerNav(props) {
       {id: null, toggleTheme: true, text: (<ion-icon name={props.isDarkMode ? "moon" : "sunny"}></ion-icon>)},      
   ]
   
-  const hamburgerNavElements = navItems.map(item => {
-      return (
-            <a key={item.id} href={item.id} onClick={item.toggleTheme ? props.handleToggleTheme : removeScrollLock}>
-                <li>{item.text}</li>
-            </a>
-      )
-  })
+//   const hamburgerNavElements = navItems.map(item => {
+//       return (
+//             <a key={item.id} href={item.id} onClick={item.toggleTheme ? props.handleToggleTheme : removeScrollLock}>
+//                 <li>{item.text}</li>
+//             </a>
+//       )
+//   })
     
+const hamburgerNavElements = navItems.map(item => {
+    if (item.toggleTheme) {
+      return (
+        <a key={item.id} onClick={props.handleToggleTheme}>
+          <li>{item.text}</li>
+        </a>
+      );
+    }
+  
+    return (
+      <Link
+        key={item.id}
+        to={item.id.substring(1)}
+        smooth={true}
+        duration={1000}
+        offset={0} // Adjust this value to account for fixed headers or other offsets
+        onClick={removeScrollLock}
+      >
+        <li>{item.text}</li>
+      </Link>
+    );
+  });
     
     
     return (
