@@ -587,6 +587,7 @@ nav button:hover {
   background: #161b22;
   transition: all 0.2s;
   overflow: hidden;
+  padding: 4em 2em;
 }
 .skills h2 {
   color: #79c0ff;
@@ -613,6 +614,7 @@ nav button:hover {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  max-width: 300px;
 }
 .skills .skills-container .skills-items .skills-item-box {
   display: flex;
