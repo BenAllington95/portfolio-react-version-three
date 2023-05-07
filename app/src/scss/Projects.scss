@@ -84,18 +84,29 @@
                     .projects-items-box-details-main {
                         display: flex;
                         align-items: flex-start;
-                        flex-direction: row;
+                        flex-direction: column;
                         gap: 5px;
+                        transition: all 0.2s ease;
 
+                            .projects-items-box-details-main-categories {
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
 
-                            p {
-                                font-size: 0.7rem;
-                                font-weight: bold;
-                                padding: 2px 4px;
-                                border-radius: 3px;
-                                letter-spacing: 0.2px;
-                                transition: all 0.2s;
+                                p {
+                                    font-size: 0.7rem;
+                                    font-weight: bold;
+                                    padding: 2px 4px;
+                                    border-radius: 3px;
+                                    letter-spacing: 0.2px;
+                                    transition: all 0.2s;
+                                }
                             }
+
+
+                            
+
+
                     }
 
                     .projects-items-box-details-links {
@@ -105,7 +116,6 @@
                         display: flex;
                         align-items: center;
                         gap: 5px;
-                        // transition: all 0.2s;
 
                         a {
                             padding: 0.5em;

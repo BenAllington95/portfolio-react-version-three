@@ -261,10 +261,16 @@
 .projects .projects-container .projects-items .projects-items-box .projects-items-box-img .projects-items-box-details-main {
   display: flex;
   align-items: flex-start;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 5px;
+  transition: all 0.2s ease;
+}
+.projects .projects-container .projects-items .projects-items-box .projects-items-box-img .projects-items-box-details-main .projects-items-box-details-main-categories {
+  display: flex;
+  align-items: center;
   gap: 5px;
 }
-.projects .projects-container .projects-items .projects-items-box .projects-items-box-img .projects-items-box-details-main p {
+.projects .projects-container .projects-items .projects-items-box .projects-items-box-img .projects-items-box-details-main .projects-items-box-details-main-categories p {
   font-size: 0.7rem;
   font-weight: bold;
   padding: 2px 4px;

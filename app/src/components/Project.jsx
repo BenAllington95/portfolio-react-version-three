@@ -16,10 +16,16 @@ function Project(props) {
 
         <div className="projects-items-box-details-main">
           <h3>{props.title}</h3>
-          {categoryElements}
+          
+
+          <div className="projects-items-box-details-main-categories">
+            {categoryElements}
+            </div>
+        <p>{props.description}</p>
+        
+
         </div>  
 
-        <p>{props.description}</p>
 
         <div className="projects-items-box-details-links">
             <a href={props.siteLink} target="_blank" className="projects-items-box-details-links-main">Visit Site</a>
