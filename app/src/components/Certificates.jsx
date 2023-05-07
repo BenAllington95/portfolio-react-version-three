@@ -120,7 +120,7 @@ export default function Certificates() {
             <div className={visible ? "certificates-container visible" : "certificates-container"}>
                 <div>
                     <h2>Certificates</h2>
-                    <p className="skills-para">Explore my certifications</p>
+                    <p className="skills-para">View my certifications</p>
                 </div>
                 
                 {!isMobile && <div className="certificates-icons">

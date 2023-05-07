@@ -50,7 +50,7 @@ useEffect(() => {
         to={item.id.substring(1)}
         smooth={true}
         duration={1000}
-        offset={0} // Adjust this value to account for fixed headers or other offsets
+        offset={0.1} // Adjust this value to account for fixed headers or other offsets
       >
         <li>{item.text}</li>
       </Link>

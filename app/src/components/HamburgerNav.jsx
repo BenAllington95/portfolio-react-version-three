@@ -47,8 +47,8 @@ export default function HamburgerNav(props) {
     const navItems = [
       {id:"#hero-section", text: "Home"},
       {id:"#about-section", text: "About"},
-      {id:"#skills-section", text: "Skills"},
       {id:"#certificates-section", text: "Certificates" },
+      {id:"#skills-section", text: "Skills"},
       {id:"#projects-section", text: "Projects"},
       {id: null, toggleTheme: true, text: (<ion-icon name={props.isDarkMode ? "moon" : "sunny"}></ion-icon>)},      
   ]
@@ -76,7 +76,7 @@ const hamburgerNavElements = navItems.map(item => {
         to={item.id.substring(1)}
         smooth={true}
         duration={1000}
-        offset={0} // Adjust this value to account for fixed headers or other offsets
+        offset={0.1} // Adjust this value to account for fixed headers or other offsets
         onClick={removeScrollLock}
       >
         <li>{item.text}</li>
