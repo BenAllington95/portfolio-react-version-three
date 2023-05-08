@@ -99,13 +99,13 @@
   background: #fff;
 }
 #light-theme .hero h1 {
-  color: #697384;
+  color: #333333;
 }
 #light-theme .hero h1 .hero-heading-ben {
   border-bottom: 5px solid #677483;
 }
 #light-theme .hero p {
-  color: #697384;
+  color: #333333;
 }
 
 /* About */
@@ -624,7 +624,7 @@ nav button {
 }
 
 nav ion-icon {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
 }
 
 ul button {
@@ -895,7 +895,6 @@ nav button:hover {
   max-height: 60vh;
 }
 .large-certificate-img .large-certificate-img-box img {
-  border-radius: 10px;
   max-width: 100%;
   height: 100%;
 }
