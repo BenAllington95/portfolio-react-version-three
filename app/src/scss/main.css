@@ -128,7 +128,7 @@
   place-content: center;
 }
 .about .about-items h2 {
-  color: #79c0ff;
+  color: #333333;
   font-size: 2rem;
   text-align: center;
 }
@@ -162,7 +162,7 @@
   background: #fff;
 }
 #light-theme .about h2 {
-  color: #79c0ff;
+  color: #333333;
   transition: all 0.2s;
 }
 #light-theme .about p {
