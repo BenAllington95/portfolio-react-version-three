@@ -3,13 +3,13 @@
 
 .skills {
     // padding: 2em;
-    background: #161b22;
     transition: all 0.2s;
     overflow: hidden;
     padding: 2em;
 
     h2 {
-        color: #79c0ff;
+        font-size: 2rem;
+        text-align: center;
     }
 
     .skills-container {
@@ -22,11 +22,11 @@
         transform: translateX(50%);
         transition: opacity 2s ease, transform 2s ease;
         opacity: 0;
+        
 
         .skills-para {
-            color: #ecf0f6;
-            letter-spacing: 0.7px;
             text-align: center;
+            transition: all 0.2s;
         }
 
         .skills-items {
@@ -35,23 +35,23 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 30px;
-            max-width: 300px;
+            max-width: 400px;
+            transition: all 0.2s;
 
             .skills-item-box {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                transition: all 0.2s;
 
-                h3 {
-                    // light mode color: #677483;
-                    color: #fff;
-                }
+                // h3 {
+                //     // light mode color: #677483;
+
+                // }
 
                 ion-icon {
                     font-size: 6rem;
-                    // light mode color:#677483;
-                    color: #fff;
                 } // ion-icon
 
             } // skills-item-box 
@@ -65,3 +65,93 @@
         opacity: 1;
     } // skills-container.visible
 }
+
+@media (min-width: 768px) { 
+    
+    .skills {
+        width: 100%;
+    }
+     
+}
+
+
+
+#dark-theme {
+
+    .skills {
+        background: #161b22;
+    
+        h2 {
+            color: #79c0ff;
+        }
+    
+        .skills-container {
+            
+            .skills-para {
+                color: #ecf0f6;
+            }
+    
+            .skills-items {
+    
+                .skills-item-box {
+
+    
+                    h3 {
+                        // light mode color: #677483;
+                        color: #fff;
+                    }
+    
+                    ion-icon {
+                        // light mode color:#677483;
+                        color: #fff;
+                    } // ion-icon
+    
+                } // skills-item-box 
+    
+            } // skills-items
+    
+        } // skills-container
+    }
+
+}
+
+#light-theme {
+
+    .skills {
+        background: #fff;
+    
+        h2 {
+            color: #444444;
+        }
+    
+        .skills-container {
+            
+            .skills-para {
+                color: #697384;
+            }
+    
+            .skills-items {
+    
+                .skills-item-box {
+
+                    h3 {
+                        // light mode color: #677483;
+                        color: #444444;
+
+                    }
+    
+                    ion-icon {
+                        // light mode color:#677483;
+                        color: #444444;
+
+                    } // ion-icon
+    
+                } // skills-item-box 
+    
+            } // skills-items
+    
+        } // skills-container
+    }
+
+}
+

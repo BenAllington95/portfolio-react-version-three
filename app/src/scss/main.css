@@ -382,13 +382,13 @@
 
 /* Skills */
 .skills {
-  background: #161b22;
   transition: all 0.2s;
   overflow: hidden;
   padding: 2em;
 }
 .skills h2 {
-  color: #79c0ff;
+  font-size: 2rem;
+  text-align: center;
 }
 .skills .skills-container {
   display: flex;
@@ -402,9 +402,8 @@
   opacity: 0;
 }
 .skills .skills-container .skills-para {
-  color: #ecf0f6;
-  letter-spacing: 0.7px;
   text-align: center;
+  transition: all 0.2s;
 }
 .skills .skills-container .skills-items {
   display: flex;
@@ -412,24 +411,59 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  max-width: 300px;
+  max-width: 400px;
+  transition: all 0.2s;
 }
 .skills .skills-container .skills-items .skills-item-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.skills .skills-container .skills-items .skills-item-box h3 {
-  color: #fff;
+  transition: all 0.2s;
 }
 .skills .skills-container .skills-items .skills-item-box ion-icon {
   font-size: 6rem;
-  color: #fff;
 }
 .skills .skills-container.visible {
   transform: translateX(0%);
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .skills {
+    width: 100%;
+  }
+}
+#dark-theme .skills {
+  background: #161b22;
+}
+#dark-theme .skills h2 {
+  color: #79c0ff;
+}
+#dark-theme .skills .skills-container .skills-para {
+  color: #ecf0f6;
+}
+#dark-theme .skills .skills-container .skills-items .skills-item-box h3 {
+  color: #fff;
+}
+#dark-theme .skills .skills-container .skills-items .skills-item-box ion-icon {
+  color: #fff;
+}
+
+#light-theme .skills {
+  background: #fff;
+}
+#light-theme .skills h2 {
+  color: #444444;
+}
+#light-theme .skills .skills-container .skills-para {
+  color: #697384;
+}
+#light-theme .skills .skills-container .skills-items .skills-item-box h3 {
+  color: #444444;
+}
+#light-theme .skills .skills-container .skills-items .skills-item-box ion-icon {
+  color: #444444;
 }
 
 * {
@@ -553,7 +587,6 @@ nav button:hover {
   pointer-events: all;
 } /* Class gets added to hamburger nav when event clicked changes boolean */
 /* Light-Theme */
-#light-theme .skills,
 #light-theme .certificates {
   background: #fff;
   transition: background 0.2s ease;
@@ -569,21 +602,8 @@ nav button:hover {
   border-bottom: none;
 }
 
-#light-theme .skills h2,
 #light-theme .certificates h2 {
   color: #333333;
-  transition: all 0.2s;
-}
-
-#light-theme .skills p,
-#light-theme .certificates p {
-  color: #697384;
-  transition: all 0.2s;
-}
-
-#light-theme .skills-item-box h3,
-#light-theme .skills-item-box ion-icon {
-  color: #444444;
   transition: all 0.2s;
 }
 
@@ -613,17 +633,6 @@ nav button:hover {
     opacity: 1;
   }
 }
-@media (min-width: 768px) {
-  .skills {
-    width: 100%;
-  }
-}
-.skills h2 {
-  color: #79c0ff;
-  font-size: 2rem;
-  text-align: center;
-}
-
 .about-text {
   color: #f8f8f8;
   line-height: 1.6;

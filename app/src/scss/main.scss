@@ -142,7 +142,6 @@ nav button:hover {
 
 // #light-theme .large-nav,
 
-#light-theme .skills,
 #light-theme .certificates {
     background: #fff;
     transition: background 0.2s ease;
@@ -158,26 +157,10 @@ nav button:hover {
     border-bottom: none;
 }
 
-#light-theme .skills h2,
 #light-theme .certificates h2 {
     color: #333333;
     transition: all 0.2s;
 }
-
-#light-theme .skills p,
-#light-theme .certificates p {
-    color: #697384;
-    transition: all 0.2s;
-}
-
-
-#light-theme .skills-item-box h3,
-#light-theme .skills-item-box ion-icon {
-    color: #444444;
-    transition: all 0.2s;
-}
-
-
 
 
 @keyframes slideIn {
@@ -214,19 +197,6 @@ nav button:hover {
 
 
 
-@media (min-width: 768px) { 
-    
-    .skills {
-        width: 100%;
-    }
-     
-}
-
-.skills h2 {
-    color: #79c0ff;
-    font-size: 2rem;
-    text-align: center;
-}
 
 
 .about-text {
