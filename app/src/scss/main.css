@@ -466,6 +466,99 @@
   color: #444444;
 }
 
+.certificates {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4em 2em;
+  transition: background 0.2s;
+}
+.certificates h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.certificates p {
+  text-align: center;
+}
+.certificates .certificates-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: opacity 2s ease, transform 1.5s ease;
+  transform: translateY(100px);
+  opacity: 0;
+}
+.certificates .certificates-container.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+.certificates .certificates-container .certificate-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.certificates .certificates-container .certificate-items .certificate-item-box {
+  margin: 0 auto 10px auto;
+  transition: all 0.5s;
+  border-radius: 5px;
+  flex-basis: 60;
+  box-shadow: inset 0 0 0 2px rgba(128, 128, 128, 0.3);
+  position: relative;
+}
+.certificates .certificates-container .certificate-items .certificate-item-box ion-icon {
+  position: absolute;
+  bottom: 7.5px;
+  right: 7.5px;
+  opacity: 0.5;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.certificates .certificates-container .certificates-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.certificates .certificates-container .certificates-icons ion-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#dark-theme .certificates {
+  background: #161b22;
+}
+#dark-theme .certificates h2 {
+  color: #79c0ff;
+}
+#dark-theme .certificates p {
+  color: #ffffff;
+}
+#dark-theme .certificates .certificates-icons {
+  color: #ffffff;
+}
+
+#light-theme .certificates {
+  background: #ffffff;
+}
+#light-theme .certificates h2 {
+  color: #333333;
+}
+#light-theme .certificates p {
+  color: #677483;
+}
+#light-theme .certificates .certificates-icons {
+  color: #677483;
+}
+#light-theme .certificates .certificate-item-box {
+  background: #ffffff;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -660,93 +753,6 @@ nav button:hover {
   }
 }
 /* Certificates */
-.certificates {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 4em 2em;
-  transition: background 0.2s;
-}
-.certificates h2 {
-  text-align: center;
-  font-size: 2rem;
-}
-.certificates p {
-  text-align: center;
-}
-.certificates .certificates-container {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  transition: opacity 2s ease, transform 1.5s ease;
-  transform: translateY(100px);
-  opacity: 0;
-}
-.certificates .certificates-container.visible {
-  transform: translateY(0);
-  opacity: 1;
-}
-.certificates .certificates-container .certificate-items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.certificates .certificates-container .certificate-items .certificate-item-box {
-  margin: 0 auto 10px auto;
-  transition: all 0.5s;
-  border-radius: 5px;
-  flex-basis: 60;
-  box-shadow: inset 0 0 0 2px rgba(128, 128, 128, 0.3);
-  position: relative;
-}
-.certificates .certificates-container .certificate-items .certificate-item-box ion-icon {
-  position: absolute;
-  bottom: 7.5px;
-  right: 7.5px;
-  opacity: 0.5;
-  font-size: 3rem;
-  cursor: pointer;
-}
-.certificates .certificates-container .certificates-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-.certificates .certificates-container .certificates-icons ion-icon {
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-#dark-theme .certificates {
-  background: #161b22;
-}
-#dark-theme .certificates h2 {
-  color: #79c0ff;
-}
-#dark-theme .certificates .certificates-icons {
-  color: #f8f8f8;
-}
-
-#light-theme .certificates {
-  background: #ffffff;
-}
-#light-theme .certificates h2 {
-  color: #3b82f6;
-}
-#light-theme .certificates .certificates-icons {
-  color: #677483;
-}
-#light-theme .certificates .certificate-item-box {
-  background: #ffffff;
-}
-
 .contact {
   background: #79c0ff;
 }
