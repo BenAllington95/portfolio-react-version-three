@@ -2,6 +2,8 @@
 @import './Hero.scss';
 @import './About.scss';
 @import './Projects.scss';
+@import './Skills.scss';
+
 
 * {
     box-sizing: border-box;
@@ -240,73 +242,73 @@ nav button:hover {
 
 
 
-/* Skills */
+// /* Skills */
 
 
-.skills {
-    // padding: 2em;
-    background: #161b22;
-    transition: all 0.2s;
-    overflow: hidden;
-    padding: 2em;
+// .skills {
+//     // padding: 2em;
+//     background: #161b22;
+//     transition: all 0.2s;
+//     overflow: hidden;
+//     padding: 2em;
 
-    h2 {
-        color: #79c0ff;
-    }
+//     h2 {
+//         color: #79c0ff;
+//     }
 
-    .skills-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 15px;
-        min-height: 100vh;
-        transform: translateX(50%);
-        transition: opacity 2s ease, transform 2s ease;
-        opacity: 0;
+//     .skills-container {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         flex-direction: column;
+//         gap: 15px;
+//         min-height: 100vh;
+//         transform: translateX(50%);
+//         transition: opacity 2s ease, transform 2s ease;
+//         opacity: 0;
 
-        .skills-para {
-            color: #ecf0f6;
-            letter-spacing: 0.7px;
-            text-align: center;
-        }
+//         .skills-para {
+//             color: #ecf0f6;
+//             letter-spacing: 0.7px;
+//             text-align: center;
+//         }
 
-        .skills-items {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-            max-width: 300px;
+//         .skills-items {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             flex-wrap: wrap;
+//             gap: 30px;
+//             max-width: 300px;
 
-            .skills-item-box {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+//             .skills-item-box {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 justify-content: center;
 
-                h3 {
-                    // light mode color: #677483;
-                    color: #fff;
-                }
+//                 h3 {
+//                     // light mode color: #677483;
+//                     color: #fff;
+//                 }
 
-                ion-icon {
-                    font-size: 6rem;
-                    // light mode color:#677483;
-                    color: #fff;
-                } // ion-icon
+//                 ion-icon {
+//                     font-size: 6rem;
+//                     // light mode color:#677483;
+//                     color: #fff;
+//                 } // ion-icon
 
-            } // skills-item-box 
+//             } // skills-item-box 
 
-        } // skills-items
+//         } // skills-items
 
-    } // skills-container
+//     } // skills-container
 
-    .skills-container.visible {
-        transform: translateX(0%);
-        opacity: 1;
-    } // skills-container.visible
-}
+//     .skills-container.visible {
+//         transform: translateX(0%);
+//         opacity: 1;
+//     } // skills-container.visible
+// }
 
 
 @media (min-width: 1300px) {
