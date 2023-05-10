@@ -9,10 +9,10 @@ export default function Modal (props) {
         do {
         randomNumber = Math.floor(Math.random() * 120000)
         } while (randomNumber < 45000) // value/count for when the popup will appear
-        
+        console.log(randomNumber)
         const timer = setTimeout(() => {
             setModalActive(true) // change to true so the popup appears
-        }, randomNumber)
+        }, 1000)
         return () => {
             clearTimeout(timer)
         }
