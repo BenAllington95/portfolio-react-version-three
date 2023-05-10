@@ -74,10 +74,10 @@ export default function Certificates() {
         if (!isMobile) {
             elements.forEach(element => {
                 if (layout === "small") {
-                    element.style.width = 'calc(25% - 10px)'
+                    element.style.width = 'calc(25% - 25px)'
                     element.style.height = '130px'
                 } else if (layout === "large") {
-                    element.style.width  = 'calc(50% - 10px)'
+                    element.style.width  = 'calc(50% - 25px)'
                     element.style.height = '250px'
                 }}) 
                 } else {

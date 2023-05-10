@@ -49,10 +49,10 @@ $light-theme-icons-color: #999999;
       flex-wrap: wrap;
 
       .certificate-item-box {
-        margin: 0 auto 10px auto;
+        margin: 0 auto 25px auto;
         transition: all 0.5s;
         flex-basis: 60;
-        border: 1px solid #f8f8f8;
+
         position: relative;
 
         ion-icon {
@@ -75,7 +75,7 @@ $light-theme-icons-color: #999999;
       gap: 5px;
 
       ion-icon {
-        font-size: 2rem;
+        font-size: 1.5rem;
         cursor: pointer;
       }
     }

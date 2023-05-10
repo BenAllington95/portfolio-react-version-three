@@ -1,7 +1,7 @@
 /* About */
 .about {
   min-height: 100vh;
-  padding: 3em 2em;
+  padding: 4em 2em;
   display: grid;
   place-content: center;
   transition: background 0.2s ease;
