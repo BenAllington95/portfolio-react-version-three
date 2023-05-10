@@ -61,16 +61,15 @@
   
     #light-theme {
       .large-nav {
-        background-color: #ffffff;
+        background-color: #181818;
   
         ul {
           li {
-            color: #677483;
+            color: #f8f8f8;
             transition: background $nav-transition-time ease;
   
             &:hover {
-              color: #677483;
-              border-bottom: 5px solid #677483;
+              border-bottom: 5px solid #8A7350;
             }
           }
         }
