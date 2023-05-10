@@ -26,8 +26,8 @@ export default function LargeCertificateImg(props) {
                     <img src={props.data.img}/>
                     {/* <h2>{props.data.title}</h2> */}
                     <div className="arrows">
-                        <ion-icon id="back-btn" onClick={() => props.handleArrowClick("back")} name="arrow-back-circle-outline"></ion-icon>
-                        <ion-icon id="forward-btn" onClick={() => props.handleArrowClick("forward")}name="arrow-forward-circle-outline"></ion-icon>
+                        <ion-icon id="back-btn" onClick={() => props.handleArrowClick("back")} name="chevron-back-outline"></ion-icon>
+                        <ion-icon id="forward-btn" onClick={() => props.handleArrowClick("forward")}name="chevron-forward-outline"></ion-icon>
                     </div>
                 </div>}
                 <ion-icon name="close-circle-outline" onClick={props.closeFullscreen}></ion-icon>
@@ -35,3 +35,5 @@ export default function LargeCertificateImg(props) {
         </div>
     )
 }
+
+<ion-icon name="chevron-back-outline"></ion-icon>
