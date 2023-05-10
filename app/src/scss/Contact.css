@@ -1,5 +1,4 @@
 .contact {
-  background: #79c0ff;
   min-height: 15vh;
   display: flex;
   align-items: center;
@@ -24,7 +23,6 @@
 }
 .contact .contact-container ul li ion-icon {
   font-size: 2rem;
-  color: #12171d;
 }
 
 @media (min-width: 762px) {
@@ -36,6 +34,16 @@
     transition: filter 0.2s;
   }
 }
-#light-theme .contact-container ul li ion-icon {
+#light-theme .contact {
+  background: #f8f8f8;
+}
+#light-theme .contact .contact-container ul li ion-icon {
   color: #697384;
+}
+
+#dark-theme .contact {
+  background: #79c0ff;
+}
+#dark-theme .contact .contact-container ul li ion-icon {
+  color: #12171d;
 }/*# sourceMappingURL=Contact.css.map */

@@ -38,6 +38,9 @@ $width: 90%;
         justify-content: center;
         flex-direction: column;
         gap: 15px;
+        p {
+          line-height: 1.6;
+        }
       }
     } /* .about-items */
   
@@ -48,7 +51,7 @@ $width: 90%;
   
     @media (min-width: 768px) {
       .about {
-        width: 100%;
+         width: 100%;
       }
   
       .about-paragraph {

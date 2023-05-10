@@ -1,7 +1,6 @@
 // Contact //
 
 .contact {
-    background: #79c0ff;
     min-height: 15vh;
     display: flex;
     align-items: center;
@@ -22,14 +21,10 @@
             align-items: center;
             gap: 30px;
             padding: 0;
-            transition: all 0.2s;
-
-            // background: red;
-    
+            transition: all 0.2s;    
     
             li ion-icon {
                 font-size: 2rem;
-                color: #12171d;
             }
         }
     }
@@ -48,12 +43,29 @@
 
 
 
-
-
-
-
-#light-theme .contact-container ul li ion-icon {
-    color: #697384;
+#light-theme {
+    .contact {
+        background: #f8f8f8;
+        
+        .contact-container {
+            ul li ion-icon {
+                color: #697384;
+            }
+        }
+    }
 }
+
+#dark-theme {
+    .contact {
+        background: #79c0ff;
+        
+        .contact-container {
+            ul li ion-icon {
+                color: #12171d;
+            }
+        }
+    }
+}
+
 
 

@@ -5,6 +5,7 @@
 @import './Skills.scss';
 @import './Certificates.scss';
 @import './Contact.scss';
+@import './animations.scss';
 
 
 
@@ -144,7 +145,6 @@ nav button:hover {
 /* Light-Theme */
 
 
-#light-theme .contact,
 #light-theme .menu {
     background: #f8f8fc;
 }
@@ -155,44 +155,10 @@ nav button:hover {
 }
 
 
-
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(0%);
-    opacity: 0;
-  }
-  25% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-  75% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-0%);
-    opacity: 0;
-  }
-}
-
-
-
-@keyframes fadeOut {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-
-.about-text {
-    color: #f8f8f8;
-    line-height: 1.6;
-}
+// .about-text {
+//     color: #f8f8f8;
+//     line-height: 1.6;
+// }
 
 
 .visible {
