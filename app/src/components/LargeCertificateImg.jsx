@@ -17,8 +17,6 @@ export default function LargeCertificateImg(props) {
          
          
     }, [props.isFullscreen])
-
-    console.log(props.data)
     
     return (
         <div>
@@ -27,10 +25,10 @@ export default function LargeCertificateImg(props) {
                     <div className="large-certificate-img-box">
                     <img src={props.data.img}/>
                     {/* <h2>{props.data.title}</h2> */}
-                    {/* <div className="arrows">
+                    <div className="arrows">
                         <ion-icon id="back-btn" onClick={() => props.handleArrowClick("back")} name="arrow-back-circle-outline"></ion-icon>
                         <ion-icon id="forward-btn" onClick={() => props.handleArrowClick("forward")}name="arrow-forward-circle-outline"></ion-icon>
-                    </div> */}
+                    </div>
                 </div>}
                 <ion-icon name="close-circle-outline" onClick={props.closeFullscreen}></ion-icon>
             </div>

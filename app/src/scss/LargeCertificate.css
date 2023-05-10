@@ -41,10 +41,8 @@
   cursor: pointer;
 }
 .large-certificate-img .large-certificate-img-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   max-height: 80vh;
+  position: relative;
 }
 @media (min-width: 768px) {
   .large-certificate-img .large-certificate-img-box {
@@ -58,13 +56,16 @@
   height: 100%;
 }
 .large-certificate-img .arrows {
-  position: relative;
-  height: 100%;
+  position: absolute;
+  top: 45%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .large-certificate-img .arrows ion-icon {
   color: #ccc;
-  opacity: 0.5;
+  opacity: 0.8;
   font-size: 3rem;
   transition: 0.2s;
   cursor: pointer;
