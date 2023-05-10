@@ -13,13 +13,18 @@ export default function Certificates() {
     
     const certificateData = [
         {id: 0, img: images.sassImg, title: "Learn Sass Course - Codecademy"},
-        {id: 1, img: images.jsFundaImg, title: "Two"},
-        {id: 2, img: "", title: "Three"},
-        {id: 3, img: "", title: "Four"},
-        {id: 4, img: "", title: "Five"},
-        {id: 5, img: "", title: "Six"},
-        {id: 6, img: "", title: "Seven"},
-        {id: 7, img: "", title: "Eight"},
+        {id: 1, img: images.jsFundaImg, title: "Learn JavaScript - Fundamentals Course"},
+        {id: 2, img: images.cssBoxModel, title: "Learn CSS: Box Model and Layout Course"},
+        {id: 3, img: images.cssColorDesign, title: "Color Design"},
+        {id: 4, img: images.cssIntro, title: "CSS Intro"},
+        {id: 5, img: images.htmlForms, title: "HTML Forms"},
+        {id: 6, img: images.flexboxAndGrid, title: "Flexbox and Grid"},
+        {id: 7, img: images.cssTypographyAndFonts, title: "Typography and Fonts"},
+        {id: 8, img: images.navDesign, title: "Navigation Design"},
+        {id: 9, img: images.functionsAndScope, title: "Functions and Scope"},
+        {id: 10, img: images.learnIterators, title: "Iterators"},
+        {id: 11, img: images.objects, title: "Objects"},
+        {id: 12, img: images.transitionsAndAnimations, title: "Transitions and Animations"},
     ]
     
     function handleCertificateClick(index) {
