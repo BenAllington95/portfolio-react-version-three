@@ -69,17 +69,17 @@
 }
 
 #light-theme .skills {
-  background: #fff;
+  background: #EEEEEE;
 }
 #light-theme .skills h2 {
-  color: #444444;
+  color: #12171d;
 }
 #light-theme .skills .skills-container .skills-para {
-  color: #697384;
+  color: #999999;
 }
 #light-theme .skills .skills-container .skills-items .skills-item-box h3 {
-  color: #444444;
+  color: #12171d;
 }
 #light-theme .skills .skills-container .skills-items .skills-item-box ion-icon {
-  color: #444444;
+  color: #12171d;
 }/*# sourceMappingURL=Skills.css.map */

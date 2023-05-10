@@ -127,7 +127,7 @@
   place-content: center;
 }
 .about .about-items h2 {
-  color: #333333;
+  color: #12171d;
   font-size: 2rem;
   text-align: center;
 }
@@ -161,14 +161,14 @@
   transition: all 0.2s;
 }
 #light-theme .about {
-  background: #f8f8f8;
+  background: #EEEEEE;
 }
 #light-theme .about h2 {
-  color: #333333;
+  color: #12171d;
   transition: all 0.2s;
 }
 #light-theme .about p {
-  color: #444444;
+  color: #12171d;
   transition: all 0.2s;
 }
 
@@ -453,19 +453,19 @@
 }
 
 #light-theme .skills {
-  background: #fff;
+  background: #EEEEEE;
 }
 #light-theme .skills h2 {
-  color: #444444;
+  color: #12171d;
 }
 #light-theme .skills .skills-container .skills-para {
-  color: #697384;
+  color: #999999;
 }
 #light-theme .skills .skills-container .skills-items .skills-item-box h3 {
-  color: #444444;
+  color: #12171d;
 }
 #light-theme .skills .skills-container .skills-items .skills-item-box ion-icon {
-  color: #444444;
+  color: #12171d;
 }
 
 .certificates {
@@ -508,7 +508,6 @@
 .certificates .certificates-container .certificate-items .certificate-item-box {
   margin: 0 auto 10px auto;
   transition: all 0.5s;
-  border-radius: 5px;
   flex-basis: 60;
   border: 1px solid #f8f8f8;
   position: relative;
@@ -693,8 +692,8 @@
 }
 @media (min-width: 768px) {
   .large-certificate-img .large-certificate-img-box {
-    height: 100%;
-    max-width: 1000px;
+    height: 90%;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
@@ -989,7 +988,7 @@ nav button:hover {
 }
 /* Modal */
 #light-theme .right-box {
-  background: linear-gradient(to right, #f8f8f8 0%, rgba(121, 192, 255, 0.5) 100%), url("https://images.unsplash.com/photo-1661956602926-db6b25f75947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80");
+  background: linear-gradient(to right, #EEEEEE 0%, rgba(121, 192, 255, 0.5) 100%), url("https://images.unsplash.com/photo-1661956602926-db6b25f75947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80");
   background-size: cover;
   background-position: 1%;
   filter: grayscale(1);
@@ -997,7 +996,7 @@ nav button:hover {
 }
 
 #light-theme .left-box {
-  background: linear-gradient(to left, #f8f8f8 0%, rgba(121, 192, 255, 0.5) 100%), url("https://images.unsplash.com/photo-1497215641119-bbe6d71ebaae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background: linear-gradient(to left, #EEEEEE 0%, rgba(121, 192, 255, 0.5) 100%), url("https://images.unsplash.com/photo-1497215641119-bbe6d71ebaae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
   background-size: cover;
   background-position: 1%;
   filter: grayscale(1);
