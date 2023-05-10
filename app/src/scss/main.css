@@ -644,6 +644,97 @@
     opacity: 1;
   }
 }
+/* Large Certificate Img */
+.large-certificate-img {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 99999999;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+  opacity: 0;
+  gap: 10px;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transform: translateX(-50%);
+  margin: 0 auto;
+}
+.large-certificate-img ion-icon {
+  cursor: pointer;
+}
+.large-certificate-img .large-certificate-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 80vh;
+}
+.large-certificate-img .large-certificate-img-box img {
+  max-width: 100%;
+  height: 100%;
+}
+.large-certificate-img .arrows {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.large-certificate-img .arrows ion-icon {
+  color: #ccc;
+  opacity: 0.5;
+  font-size: 3rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.large-certificate-img .arrows ion-icon:hover {
+  opacity: 1;
+}
+
+.large-certificate-img.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transform: translateX(-50%);
+}
+
+ion-icon[name=arrow-forward-circle-outline] {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+ion-icon[name=arrow-back-circle-outline] {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+ion-icon[name=close-circle-outline] {
+  opacity: 0.3;
+  transition: 0.2s;
+  font-size: 3rem;
+}
+
+ion-icon[name=close-circle-outline]:hover {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .large-certificate-img-box {
+    height: 700px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  ion-icon[name=close-circle-outline] {
+    font-size: 2rem;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -875,94 +966,6 @@ nav button:hover {
   gap: 3px;
 }
 
-/* Large Certificate Img */
-.large-certificate-img {
-  height: 100vh;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  z-index: 99999999;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 1em;
-  opacity: 0;
-  gap: 10px;
-  visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
-  transform: translateX(-50%);
-}
-.large-certificate-img ion-icon {
-  cursor: pointer;
-}
-.large-certificate-img .large-certificate-img-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-height: 60vh;
-}
-.large-certificate-img .large-certificate-img-box img {
-  max-width: 100%;
-  height: 100%;
-}
-.large-certificate-img .arrows {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-.large-certificate-img .arrows ion-icon {
-  color: #ccc;
-  opacity: 0.5;
-  font-size: 3rem;
-  transition: 0.2s;
-  cursor: pointer;
-}
-.large-certificate-img .arrows ion-icon:hover {
-  opacity: 1;
-}
-
-.large-certificate-img.visible {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
-}
-
-ion-icon[name=arrow-forward-circle-outline] {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
-
-ion-icon[name=arrow-back-circle-outline] {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-}
-
-ion-icon[name=close-circle-outline] {
-  opacity: 0.3;
-  transition: 0.2s;
-  font-size: 3rem;
-}
-
-ion-icon[name=close-circle-outline]:hover {
-  opacity: 1;
-}
-
-@media (min-width: 768px) {
-  .large-certificate-img-box {
-    height: 700px;
-    max-width: 1000px;
-  }
-  ion-icon[name=close-circle-outline] {
-    font-size: 2rem;
-  }
-}
 #light-theme .right-box {
   background: linear-gradient(to right, #f8f8f8 0%, rgba(121, 192, 255, 0.5) 100%), url("https://images.unsplash.com/photo-1661956602926-db6b25f75947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80");
   background-size: cover;
