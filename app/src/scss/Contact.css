@@ -35,10 +35,10 @@
   }
 }
 #light-theme .contact {
-  background: #f8f8f8;
+  background: #181818;
 }
 #light-theme .contact .contact-container ul li ion-icon {
-  color: #697384;
+  color: #999999;
 }
 
 #dark-theme .contact {

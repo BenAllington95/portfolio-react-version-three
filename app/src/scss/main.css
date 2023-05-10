@@ -199,7 +199,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   gap: 15px;
   transform: translateY(100px);
@@ -370,12 +370,12 @@
   background: #ecf0f6;
 }
 #light-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-main {
-  background: #677483;
-  color: #ecf0f6;
+  background: #181818;
+  color: #fff;
 }
 #light-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-reverse {
-  background: #ecf0f6;
-  color: #677483;
+  background: #fff;
+  color: #181818;
 }
 
 /* Skills */
@@ -550,13 +550,13 @@
   background: #FFFFFF;
 }
 #light-theme .certificates h2 {
-  color: #333333;
+  color: #181818;
 }
 #light-theme .certificates p {
-  color: #677483;
+  color: #999999;
 }
 #light-theme .certificates .certificates-icons {
-  color: #2C3E50;
+  color: #999999;
 }
 #light-theme .certificates .certificate-item-box {
   background: #FFFFFF;
@@ -599,10 +599,10 @@
   }
 }
 #light-theme .contact {
-  background: #f8f8f8;
+  background: #181818;
 }
 #light-theme .contact .contact-container ul li ion-icon {
-  color: #697384;
+  color: #999999;
 }
 
 #dark-theme .contact {
