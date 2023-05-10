@@ -23,7 +23,7 @@
   transition: opacity 0.2s, visibility 0.2s;
 }
 .modal .modal-box {
-  min-height: 225px;
+  min-height: 220px;
   max-width: 300px;
   width: 100%;
   border-radius: 5px;
@@ -45,7 +45,7 @@
   flex-direction: column;
   gap: 3px;
 }
-.modal .modal-box .modal-box ion-icon[name=close-sharp] {
+.modal .modal-box ion-icon[name=close-sharp] {
   position: absolute;
   bottom: 15px;
   right: 0px;
@@ -55,16 +55,16 @@
   padding: 0.2em;
   color: #161b22;
   border-radius: 50%;
-  background: grey;
+  background: rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: filter 0.2s ease;
 }
 @media (min-width: 768px) {
-  .modal .modal-box .modal-box ion-icon[name=close-sharp] {
+  .modal .modal-box ion-icon[name=close-sharp] {
     font-size: 1rem;
   }
 }
-.modal .modal-box .modal-box ion-icon[name=close-sharp]:hover {
+.modal .modal-box ion-icon[name=close-sharp]:hover {
   filter: brightness(150%);
 }
 .modal .modal-box h2 {

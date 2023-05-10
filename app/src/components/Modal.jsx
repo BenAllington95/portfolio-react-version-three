@@ -9,10 +9,10 @@ export default function Modal (props) {
         do {
         randomNumber = Math.floor(Math.random() * 120000)
         } while (randomNumber < 45000) // value/count for when the popup will appear
-        console.log(randomNumber)
+        
         const timer = setTimeout(() => {
             setModalActive(true) // change to true so the popup appears
-        }, 1000)
+        }, randomNumber)
         return () => {
             clearTimeout(timer)
         }
@@ -32,13 +32,13 @@ export default function Modal (props) {
         <div>
             <div className={modalActive ? "modal visible" : "modal"}>
                 <div className="modal-box">
-                    <ion-icon name="close-sharp" onClick={() => setModalActive(false)}></ion-icon>
                     <div className="modal-box-text-details">
                         <h2>Like What You See?</h2>
                         <div>
                             <p>Please don't hesitate to get in touch via email at <a href="mailto:benallington1995@gmail.com"
                             onClick={() => setModalActive(false)}>benallington1995@gmail.com</a> or on <a href="https://www.linkedin.com/in/ben-allington/" target="_blank" onClick={() => setModalActive(false)}>LinkedIn</a> to discuss inquiries and collaborations.</p>
                         </div>
+                    <ion-icon name="close-sharp" onClick={() => setModalActive(false)}></ion-icon>
                     </div>
                 </div>
             </div>
