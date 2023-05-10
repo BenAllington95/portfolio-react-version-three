@@ -644,7 +644,6 @@
     opacity: 1;
   }
 }
-/* Large Certificate Img */
 .large-certificate-img {
   height: 100vh;
   width: 100%;
@@ -665,6 +664,25 @@
   transform: translateX(-50%);
   margin: 0 auto;
 }
+.large-certificate-img.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transform: translateX(-50%);
+}
+.large-certificate-img ion-icon[name=close-circle-outline] {
+  opacity: 0.3;
+  transition: 0.2s;
+  font-size: 3rem;
+}
+@media (min-width: 768px) {
+  .large-certificate-img ion-icon[name=close-circle-outline] {
+    font-size: 2rem;
+  }
+}
+.large-certificate-img ion-icon[name=close-circle-outline]:hover {
+  opacity: 1;
+}
 .large-certificate-img ion-icon {
   cursor: pointer;
 }
@@ -673,6 +691,13 @@
   align-items: center;
   justify-content: center;
   max-height: 80vh;
+}
+@media (min-width: 768px) {
+  .large-certificate-img .large-certificate-img-box {
+    height: 700px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
 .large-certificate-img .large-certificate-img-box img {
   max-width: 100%;
@@ -693,48 +718,19 @@
 .large-certificate-img .arrows ion-icon:hover {
   opacity: 1;
 }
-
-.large-certificate-img.visible {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
-  transform: translateX(-50%);
-}
-
-ion-icon[name=arrow-forward-circle-outline] {
+.large-certificate-img .arrows ion-icon ion-icon[name=arrow-forward-circle-outline] {
   position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
 }
-
-ion-icon[name=arrow-back-circle-outline] {
+.large-certificate-img .arrows ion-icon ion-icon[name=arrow-back-circle-outline] {
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
 }
 
-ion-icon[name=close-circle-outline] {
-  opacity: 0.3;
-  transition: 0.2s;
-  font-size: 3rem;
-}
-
-ion-icon[name=close-circle-outline]:hover {
-  opacity: 1;
-}
-
-@media (min-width: 768px) {
-  .large-certificate-img-box {
-    height: 700px;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  ion-icon[name=close-circle-outline] {
-    font-size: 2rem;
-  }
-}
 * {
   box-sizing: border-box;
 }
