@@ -1,0 +1,59 @@
+// Contact //
+
+.contact {
+    background: #79c0ff;
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .contact-container {
+        height: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        display: grid;
+        place-content: center;
+        transition: all 0.2s;
+    
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 0;
+            transition: all 0.2s;
+
+            // background: red;
+    
+    
+            li ion-icon {
+                font-size: 2rem;
+                color: #12171d;
+            }
+        }
+    }
+}
+
+@media (min-width: 762px) {
+    .contact {
+        min-height: 10vh;
+
+        .contact-container ul li ion-icon {
+            font-size: 2rem;
+            transition: filter 0.2s;
+        }
+    }   
+}
+
+
+
+
+
+
+
+#light-theme .contact-container ul li ion-icon {
+    color: #697384;
+}
+
+

@@ -565,6 +565,48 @@
   background: #FFFFFF;
 }
 
+.contact {
+  background: #79c0ff;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .contact-container {
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  transition: all 0.2s;
+}
+.contact .contact-container ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  transition: all 0.2s;
+}
+.contact .contact-container ul li ion-icon {
+  font-size: 2rem;
+  color: #12171d;
+}
+
+@media (min-width: 762px) {
+  .contact {
+    min-height: 10vh;
+  }
+  .contact .contact-container ul li ion-icon {
+    font-size: 2rem;
+    transition: filter 0.2s;
+  }
+}
+#light-theme .contact-container ul li ion-icon {
+  color: #697384;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -746,43 +788,6 @@ nav button:hover {
   .about,
   .skills {
     width: 70%;
-  }
-}
-.contact {
-  background: #79c0ff;
-}
-
-.contact-container {
-  min-height: 20vh;
-  max-width: 800px;
-  margin: 0 auto;
-  height: 100%;
-  display: grid;
-  place-content: center;
-}
-.contact-container ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-}
-.contact-container ul li ion-icon {
-  font-size: 3rem;
-  color: #12171d;
-}
-
-#light-theme .contact-container ul li ion-icon {
-  color: #697384;
-}
-
-@media (min-width: 762px) {
-  .contact-container {
-    min-height: 10vh;
-  }
-  .contact-container ul li ion-icon {
-    font-size: 2rem;
-    transition: filter 0.2s;
   }
 }
 /* Modal */

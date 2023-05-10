@@ -4,6 +4,8 @@
 @import './Projects.scss';
 @import './Skills.scss';
 @import './Certificates.scss';
+@import './Contact.scss';
+
 
 
 * {
@@ -221,54 +223,54 @@ nav button:hover {
 }
 
 
-// Contact //
+// // Contact //
 
-.contact {
-    background: #79c0ff;
-}
+// .contact {
+//     background: #79c0ff;
+// }
 
-.contact-container {
-    min-height: 20vh;
-    max-width: 800px;
-    margin: 0 auto;
-    height: 100%;
-    display: grid;
-    place-content: center;
+// .contact-container {
+//     min-height: 20vh;
+//     max-width: 800px;
+//     margin: 0 auto;
+//     height: 100%;
+//     display: grid;
+//     place-content: center;
 
-    ul {
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
+//     ul {
+//         display: flex;
+//         list-style: none;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 25px;
 
-        li ion-icon {
-            font-size: 3rem;
-            color: #12171d;
-        }
-    }
-}
-
-
+//         li ion-icon {
+//             font-size: 3rem;
+//             color: #12171d;
+//         }
+//     }
+// }
 
 
 
-#light-theme .contact-container ul li ion-icon {
-    color: #697384;
-}
 
 
-@media (min-width: 762px) {
-    .contact-container {
-        min-height: 10vh;
-    }
+// #light-theme .contact-container ul li ion-icon {
+//     color: #697384;
+// }
+
+
+// @media (min-width: 762px) {
+//     .contact-container {
+//         min-height: 10vh;
+//     }
     
-    .contact-container ul li ion-icon {
-        font-size: 2rem;
-        transition: filter 0.2s;
-    }
+//     .contact-container ul li ion-icon {
+//         font-size: 2rem;
+//         transition: filter 0.2s;
+//     }
    
-}
+// }
 
 /* Modal */
 
