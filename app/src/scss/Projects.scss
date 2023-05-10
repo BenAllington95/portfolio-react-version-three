@@ -48,8 +48,7 @@
 
             .projects-filter-btn {
                 transition: all 0.2s;
-                padding: 0.5em;
-                border-radius: 5px;
+                padding: 0.75em 1.25em;
                 cursor: pointer;
                 font-weight: bold;
             }
@@ -77,7 +76,7 @@
                     align-items: flex-start;
                     justify-content: flex-end;
                     padding: 0.75em;
-                    border-radius: 10px;
+                    // border-radius: 10px;
                     position: relative;
 
                     .projects-items-box-details-main {
@@ -100,7 +99,7 @@
                                 font-size: 0.7rem;
                                 font-weight: bold;
                                 padding: 2px 4px;
-                                border-radius: 3px;
+                                // border-radius: 3px;
                                 letter-spacing: 0.2px;
                                 transition: all 0.2s;
                             }
@@ -118,7 +117,7 @@
 
                         a {
                             padding: 0.5em;
-                            border-radius: 3px;
+                            // border-radius: 3px;
                             font-size: 0.8rem;
                             transition: all 0.2s;
                         }
@@ -393,30 +392,30 @@
         .projects-container {
 
             h2 {
-                color: #161b22;
+                color: #181818;
             }
 
             p {
-                color: #677483;
+                color: #999999;
             }
 
             .projects-filter-buttons {
                 
                 .projects-filter-btn {
-                    background: #677483;
+                    background: #181818;
                     color: #ecf0f6;
                 }
 
                 .projects-active {
-                    background: #ecf0f6;
-                    color: #677483;
+                    background: #8A7350;
+                    color: #fff;
                 }
             }
 
             .projects-items-box {
 
                 h3 {
-                    color: #12171d;
+                    color: #181818;
                 }
 
                 .projects-items-box-img {

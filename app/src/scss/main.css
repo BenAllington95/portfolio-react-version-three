@@ -230,8 +230,7 @@
 }
 .projects .projects-container .projects-filter-buttons .projects-filter-btn {
   transition: all 0.2s;
-  padding: 0.5em;
-  border-radius: 5px;
+  padding: 0.75em 1.25em;
   cursor: pointer;
   font-weight: bold;
 }
@@ -257,7 +256,6 @@
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0.75em;
-  border-radius: 10px;
   position: relative;
 }
 .projects .projects-container .projects-items .projects-items-box .projects-items-box-img .projects-items-box-details-main {
@@ -279,7 +277,6 @@
   font-size: 0.7rem;
   font-weight: bold;
   padding: 2px 4px;
-  border-radius: 3px;
   letter-spacing: 0.2px;
   transition: all 0.2s;
 }
@@ -293,7 +290,6 @@
 }
 .projects .projects-container .projects-items .projects-items-box .projects-items-box-img .projects-items-box-details-links a {
   padding: 0.5em;
-  border-radius: 3px;
   font-size: 0.8rem;
   transition: all 0.2s;
 }
@@ -349,21 +345,21 @@
   background: #fff;
 }
 #light-theme .projects .projects-container h2 {
-  color: #161b22;
+  color: #181818;
 }
 #light-theme .projects .projects-container p {
-  color: #677483;
+  color: #999999;
 }
 #light-theme .projects .projects-container .projects-filter-buttons .projects-filter-btn {
-  background: #677483;
+  background: #181818;
   color: #ecf0f6;
 }
 #light-theme .projects .projects-container .projects-filter-buttons .projects-active {
-  background: #ecf0f6;
-  color: #677483;
+  background: #8A7350;
+  color: #fff;
 }
 #light-theme .projects .projects-container .projects-items-box h3 {
-  color: #12171d;
+  color: #181818;
 }
 #light-theme .projects .projects-container .projects-items-box .projects-items-box-img {
   background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.2) 100%), url("../images/travel-journal-img.png");
