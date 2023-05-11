@@ -433,11 +433,24 @@
   align-items: center;
   justify-content: center;
   transition: all 0.2s;
-  height: 160px;
+  gap: 5px;
   width: 160px;
+  height: 150px;
+}
+@media (min-width: 768px) {
+  .skills .skills-container .skills-items .skills-item-box {
+    height: 160px;
+    width: 160px;
+  }
 }
 .skills .skills-container .skills-items .skills-item-box ion-icon {
-  font-size: 5rem;
+  font-size: 4rem;
+  transition: all 0.2s;
+}
+@media (min-width: 768px) {
+  .skills .skills-container .skills-items .skills-item-box ion-icon {
+    font-size: 5rem;
+  }
 }
 .skills .skills-container.visible {
   transform: translateX(0%);
