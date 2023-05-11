@@ -20,6 +20,8 @@ import toDoListImg from '../src/images/to-do-list-img.png';
 import unitConverterImg from '../src/images/unit-converter-img.png';
 import websiteCardImg from '../src/images/website-card-img.png';
 import passwordImg from '../src/images/password-img.png';
+import dinerImg from '../src/images/diner-img.png';
+
 
 export default {
     sassImg,
@@ -43,6 +45,7 @@ export default {
     toDoListImg,
     unitConverterImg,
     websiteCardImg,
-    passwordImg
+    passwordImg,
+    dinerImg,
 
 }

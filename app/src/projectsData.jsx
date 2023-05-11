@@ -50,6 +50,7 @@ export default [
        title: 'Diner App', 
        description: "Mobile-first food ordering app to enhance user experience and optimize delivery times.", 
        category: ['javascript', 'css'],
+       img: images.dinerImg,
        siteLink: "https://bensdinerapp.netlify.app/", 
        githubLink: "https://github.com/BenAllington95/diner-app-vanillajs" 
    },
@@ -58,13 +59,15 @@ export default [
        title: 'Password Generator',
        description: "A web application that generates secure and random passwords based on user preferences.", 
        category: ['javascript', 'css'],
+       img: images.passwordImg,
        siteLink: "https://benallington-passwordgenerator.netlify.app/", 
        githubLink: "https://github.com/BenAllington95/password-generator-vanillajs" 
    },
    { 
        id: 7, 
        title: 'Review Section', 
-       description: "User comment/review section for enhanced user engagement and feedback.", category: ['javascript', 'css'],
+       description: "User comment/review section for enhanced user engagement and feedback.", 
+       category: ['javascript', 'css'],
        img: images.commentsImg,
        siteLink: "https://benallington-commentsection.netlify.app/", 
        githubLink: "https://github.com/BenAllington95/comment-section-js" 
@@ -72,7 +75,9 @@ export default [
    { 
        id: 8, 
        title: 'Color Generator', 
-       description: "A web application that generates random color values in RGBA format.", category: ['javascript', 'scss'],
+       description: "A web application that generates random color values in RGBA format.", 
+       category: ['javascript', 'scss'],
+       img: images.rgbGeneratorImg,
        siteLink: "https://benallington-rgbacolorgenerator.netlify.app/", 
        githubLink: "https://github.com/BenAllington95/rgba-color-generator-js" 
    },
@@ -81,6 +86,7 @@ export default [
        title: 'Portfolio Showcase', 
        description: "Professional portfolio site to showcase skills, experience, and personal projects.", 
        category: ['react', 'scss'],
+       img: images.websiteCardImg,
        siteLink: "https://benallington.netlify.app/", 
        githubLink: "" 
    },
