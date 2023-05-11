@@ -60,7 +60,7 @@ function App() {
       </div>
       
       <Projects id="projects-section" />
-      {/* <h1 onClick={handleClick}className="arrow-down"><ion-icon name="chevron-down-outline"></ion-icon></h1> */}
+      <h1 onClick={handleClick}className="arrow-down"><ion-icon name="chevron-down-outline"></ion-icon></h1>
       <Contact id="contact-section" />
 
       
