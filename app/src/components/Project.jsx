@@ -13,6 +13,8 @@ function Project(props) {
     const imgStyle = {
       backgroundImage: `linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.2) 100%), url('${props.img}')`,
       backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat"
     }
     
   return (

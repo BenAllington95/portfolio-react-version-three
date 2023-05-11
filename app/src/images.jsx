@@ -12,6 +12,14 @@ import functionsAndScope from '../src/images/learn-javascript-functions-and-scop
 import objects from '../src/images/learn-javascript-objects-course.png';
 import navDesign from '../src/images/learn-nav-design-course.png';
 import commentsImg from '../src/images/comments-img.png';
+import counterImg from '../src/images/counter-img.jpg';
+import registerImg from '../src/images/register-img.png';
+import quizImg from '../src/images/quiz.png';
+import rgbGeneratorImg from '../src/images/rgb-generator-img.png';
+import toDoListImg from '../src/images/to-do-list-img.png';
+import unitConverterImg from '../src/images/unit-converter-img.png';
+import websiteCardImg from '../src/images/website-card-img.png';
+import passwordImg from '../src/images/password-img.png';
 
 export default {
     sassImg,
@@ -27,6 +35,14 @@ export default {
     functionsAndScope,
     objects,
     navDesign,
-    commentsImg
+    commentsImg,
+    counterImg,
+    registerImg,
+    quizImg,
+    rgbGeneratorImg,
+    toDoListImg,
+    unitConverterImg,
+    websiteCardImg,
+    passwordImg
 
 }

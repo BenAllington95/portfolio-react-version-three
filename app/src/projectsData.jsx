@@ -14,6 +14,7 @@ export default [
        title: 'Quiz App', 
        description: "Quiz platform for testing knowledge across various topics.", 
        category: ['react', 'scss'],
+       img: images.quizImg,
        githubLink: "https://github.com/BenAllington95/quizzical-react", 
        siteLink: "https://benallington-quiz.netlify.app/" 
    },
@@ -22,13 +23,16 @@ export default [
        title: 'To Do List', 
        description: "Task management system with dynamic task tracking and user-friendly controls.", 
        category: ['react', 'scss'],
+       img: images.toDoListImg,
        siteLink: "https://benallington-todolist.netlify.app/", 
        githubLink: "https://github.com/BenAllington95/to-do-list-vanillajs" 
    },
    { 
        id: 3, 
        title: 'Counter Tool',
-       description: "Tally counter application with an intuitive and accessible interface.", category: ['react', 'scss'],
+       description: "Tally counter application with an intuitive and accessible interface.", 
+       category: ['react', 'scss'],
+       img: images.counterImg,
        githubLink: "https://github.com/BenAllington95/register-account-react-js", 
        siteLink: "https://benallington-registeraccount.netlify.app/"             
    },
@@ -37,6 +41,7 @@ export default [
        title: 'Account Registration', 
        description: "Sign-up page showcase for various websites with a focus on UX and conversion.", 
        category: ['react', 'css'], 
+       img: images.registerImg,
        siteLink: "https://benallington-counter.netlify.app/", 
        githubLink: "https://github.com/BenAllington95/counter-react" 
    },
