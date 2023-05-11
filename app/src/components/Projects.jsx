@@ -12,13 +12,19 @@ export default function Projects() {
             {id: 2, filter: "javascript", text: "JavaScript"},
             {id: 3, filter: "scss", text: "SCSS"},
             {id: 4, filter: "css", text: "CSS"},
+            {id: 5, filter: "tailwind", text: "Tailwind"},
+            {id: 6, filter: "bootstrap", text: "Bootstrap"},
         ]
         
         // const shuffledProjects = projectsData.sort(() => Math.random() - 0.5) // shuffle projects array every render
         
         const filteredProjects = projectsData.filter(project => filter === "" || project.category.includes(filter))
-        const projectElements = filteredProjects.map(project => <Project key={project.id} {...project} />) // filter that checks the filter button state and matches with category of each project if included in array
+        // const projectElements = filteredProjects.map(project => <Project key={project.id} {...project} />) // filter that checks the filter button state and matches with category of each project if included in array
         
+        const projectElements = filteredProjects.length === 0
+        ? (<h1>No Projects just yet...</h1>)
+        : filteredProjects.map(project => <Project key={project.id} {...project} />);
+
             
         useEffect(() => {
         const handleScroll = () => {
