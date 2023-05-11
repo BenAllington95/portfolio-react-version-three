@@ -16,6 +16,17 @@ function App() {
 
   const [navbarActive, setNavbarActive] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(false)
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleClick = () => {
+    const newPosition = scrollPosition + window.innerHeight;
+    window.scrollTo({
+      top: newPosition,
+      behavior: 'smooth',
+    });
+    setScrollPosition(newPosition);
+  };
   
   function handleToggleTheme() {
     setIsDarkMode(!isDarkMode)
@@ -47,10 +58,12 @@ function App() {
         <div className="test-img left-box"></div>
         <Skills id="skills-section" />
       </div>
-
       
       <Projects id="projects-section" />
+      {/* <h1 onClick={handleClick}className="arrow-down"><ion-icon name="chevron-down-outline"></ion-icon></h1> */}
       <Contact id="contact-section" />
+
+      
 
     </div>
   )

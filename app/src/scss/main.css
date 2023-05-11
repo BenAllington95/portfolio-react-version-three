@@ -94,6 +94,9 @@
   color: #79c0ff;
 }
 
+#light-theme .hero {
+  background: #fff;
+}
 #light-theme .hero h1 {
   color: #333333;
 }
@@ -1028,4 +1031,18 @@ nav button:hover {
   background-position: 1%;
   filter: grayscale(1);
   transition: all 0.2s ease;
+}
+
+.arrow-down {
+  position: fixed;
+  z-index: 9999999;
+  background: #8A7350;
+  color: white;
+  bottom: 10px;
+  right: 10px;
+  margin: 0 auto;
+  padding: 0.5em;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
 }/*# sourceMappingURL=main.css.map */
