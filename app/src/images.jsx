@@ -11,6 +11,7 @@ import learnIterators from '../src/images/learn-iterators-course.png';
 import functionsAndScope from '../src/images/learn-javascript-functions-and-scope-course.png';
 import objects from '../src/images/learn-javascript-objects-course.png';
 import navDesign from '../src/images/learn-nav-design-course.png';
+import commentsImg from '../src/images/comments-img.png';
 
 export default {
     sassImg,
@@ -25,6 +26,7 @@ export default {
     learnIterators,
     functionsAndScope,
     objects,
-    navDesign
+    navDesign,
+    commentsImg
 
 }

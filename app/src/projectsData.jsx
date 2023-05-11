@@ -1,3 +1,5 @@
+import images from './images'
+
 export default [
     { 
         id: 0, 
@@ -58,6 +60,7 @@ export default [
        id: 7, 
        title: 'Review Section', 
        description: "User comment/review section for enhanced user engagement and feedback.", category: ['javascript', 'css'],
+       img: images.commentsImg,
        siteLink: "https://benallington-commentsection.netlify.app/", 
        githubLink: "https://github.com/BenAllington95/comment-section-js" 
    },
