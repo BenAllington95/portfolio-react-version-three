@@ -21,6 +21,7 @@ import unitConverterImg from '../src/images/unit-converter-img.png';
 import websiteCardImg from '../src/images/website-card-img.png';
 import passwordImg from '../src/images/password-img.png';
 import dinerImg from '../src/images/diner-img.png';
+import lightBackground from '../src/images/light-main-img.jpg';
 
 
 export default {
@@ -47,5 +48,6 @@ export default {
     websiteCardImg,
     passwordImg,
     dinerImg,
+    lightBackground
 
 }

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+
+
 export default function Hero(props) {
 
 const [subHeading, setSubHeading] = useState(["Front End Developer", "Problem Solver", "UI/UX Enthusiast","Collaborative Team Player", "Mobile Responsive Designer", "Continuous Learner"])
@@ -19,7 +21,7 @@ useEffect(() => {
     
     return (
         <div className="hero" id="hero-section">
-            <h1>Hi, I'm <span className="hero-heading-ben">Ben</span></h1>
+            <h1>Hi, I'm <span className="hero-heading-ben">Ben</span>.</h1>
             <p>{currentItem}</p>
         </div>
     )
