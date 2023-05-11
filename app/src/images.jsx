@@ -48,6 +48,5 @@ export default {
     websiteCardImg,
     passwordImg,
     dinerImg,
-    lightBackground
-
+    lightHeroBackground
 }
