@@ -21,21 +21,25 @@ function App() {
 
   const [currentSection, setCurrentSection] = useState(0);
   
-  const sectionIds = ['hero-section', 'about-section', 'certificates-section', 'skills-section', 'projects-section', 'contact-section'];
+  const sectionIds = ['hero-section', 'about-section', 'certificates-section', 'skills-section', 'projects-section'];
 
-  // const handleClick = () => {
-  //   const newPosition = scrollPosition + window.innerHeight;
-  //   window.scrollTo({
-  //     top: newPosition,
-  //     behavior: 'smooth',
-  //   });
-  //   setScrollPosition(newPosition);
+
+  // const getCurrentSection = () => {
+  //   for (let i = sectionIds.length - 1; i >= 0; i--) {
+  //     const element = document.getElementById(sectionIds[i]);
+  //     if (element.getBoundingClientRect().top <= 0) {
+  //       return i;
+  //     }
+  //   }
+  //   return 0;
   // };
 
   const getCurrentSection = () => {
     for (let i = sectionIds.length - 1; i >= 0; i--) {
       const element = document.getElementById(sectionIds[i]);
-      if (element.getBoundingClientRect().top <= 0) {
+      const rect = element.getBoundingClientRect();
+      // Check if any part of the section is within the viewport
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
         return i;
       }
     }
@@ -52,42 +56,6 @@ function App() {
     };
   }, []);
 
-  // const handleClick = () => {
-  //   if (currentSection < sectionIds.length - 1) {
-  //     const nextSectionId = sectionIds[currentSection + 1];
-  //     const element = document.getElementById(nextSectionId);
-  //     if (element) {
-  //       const newPosition = element.getBoundingClientRect().top + window.scrollY;
-  //       window.scrollTo({
-  //         top: newPosition,
-  //         behavior: 'smooth',
-  //       });
-  //       setCurrentSection(currentSection + 1);
-  //     }
-  //   }
-  // };
-
-  // const handleClick = () => {
-  //   if (currentSection < sectionIds.length - 1) {
-  //     const nextSectionId = sectionIds[currentSection + 1];
-  //     const element = document.getElementById(nextSectionId);
-  //     if (element) {
-  //       const newPosition = element.getBoundingClientRect().top + window.scrollY;
-  //       window.scrollTo({
-  //         top: newPosition,
-  //         behavior: 'smooth',
-  //       });
-  //       setCurrentSection(currentSection + 1);
-  //     }
-  //   } else {
-  //     // Scroll to the top when at the last section
-  //     window.scrollTo({
-  //       top: 0,
-  //       behavior: 'smooth',
-  //     });
-  //     setCurrentSection(0);  // Reset current section to the top
-  //   }
-  // };
 
   const handleClick = () => {
     if (currentSection < sectionIds.length - 1) {
