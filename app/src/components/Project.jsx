@@ -11,10 +11,18 @@ function Project(props) {
     }) // create new elements for filter buttons
 
     const imgStyle = {
-      backgroundImage: `linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.2) 100%), url('${props.img}')`,
+      backgroundImage: `linear-gradient(to top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.2) 60%, rgba(255, 255, 255, 0.1) 100%), url('${props.img}')`,
       backgroundPosition: "center",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat"
+    }
+
+    const darkImgStyle = {
+      backgroundImage: `linear-gradient(to top, #12171d 0%, rgba(18, 23, 29, 0.7) 45%, rgba(18, 23, 29, 0.5) 60%, rgba(18, 23, 29, 0.3) 100%), url('${props.img}')`,
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      
     }
     
   return (

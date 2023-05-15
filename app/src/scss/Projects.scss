@@ -111,7 +111,10 @@
                     transition: all 0.2s ease;
                     width: 100%;
                     height: 50%;
-                    padding: 0 0.5em;
+
+                    h3 {
+                        margin-top: 0.5em;
+                    }
 
                     p {
                         font-size: 0.85rem;
@@ -364,12 +367,16 @@
             .projects-items-box {
 
                 h3 {
-                    color: #12171d;
+                    color: #fff;
+                }
+
+                p {
+                    color: #fff;
                 }
 
                 .projects-items-box-img {
-                    background: white;
-                    background-image: linear-gradient(to bottom, transparent 0%, #f8f8fc 50%, #f8f8fc 100%);
+                    // background: white;
+                    // background-image: linear-gradient(to top, transparent 0%, #12171d 50%, #12171d 100%);
                   } // projects-items-box-img
     
                   .projects-items-box-details-main {

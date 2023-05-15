@@ -87,9 +87,6 @@
 #light-theme .modal-box a {
   color: #8A7350;
 }
-#light-theme .modal-box a:hover {
-  filter: brightness(110%);
-}
 
 #dark-theme .modal-box {
   background: #161b22;
