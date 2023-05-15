@@ -22,6 +22,10 @@ $text-color-secondary-dark: #79c0ff;
         margin: 0;
         font-size: 3.5rem;
         transition: all 0.2s;
+
+        @media (min-width: 768px) {
+            font-size: 5rem;
+        }
     } // h1
 
     p {
