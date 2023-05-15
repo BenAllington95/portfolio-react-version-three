@@ -305,8 +305,6 @@ nav button:hover {
 .arrow-down {
     position: fixed;
     z-index: 9999999;
-    background: #8A7350;
-    color: white;
     bottom: 10px;
     right: 10px;
     width: 50px;
@@ -323,6 +321,19 @@ nav button:hover {
     &:hover {
         opacity: 1;
         animation: bounce 5s ease;
+    }
+}
+
+#light-theme {
+    .arrow-down {
+        background: #8A7350;
+        color: white;
+    }
+}
+#dark-theme {
+    .arrow-down {
+        background: #79c0ff;
+        color: white;
     }
 }
 
