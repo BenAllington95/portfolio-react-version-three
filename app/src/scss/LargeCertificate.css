@@ -23,22 +23,23 @@
   transition: opacity 0.2s ease, visibility 0.2s ease;
   transform: translateX(-50%);
 }
-.large-certificate-img ion-icon[name=close-circle-outline] {
-  opacity: 0.3;
+.large-certificate-img ion-icon[name=close-sharp] {
   transition: 0.2s;
   font-size: 3rem;
   position: absolute;
-  top: 0;
-  right: 0;
+  color: #000;
+  padding: 0.25em;
+  top: 10px;
+  right: 10px;
   z-index: 999999999;
 }
 @media (min-width: 768px) {
-  .large-certificate-img ion-icon[name=close-circle-outline] {
+  .large-certificate-img ion-icon[name=close-sharp] {
     font-size: 2rem;
   }
 }
-.large-certificate-img ion-icon[name=close-circle-outline]:hover {
-  opacity: 1;
+.large-certificate-img ion-icon[name=close-sharp]:hover {
+  background: #ccc;
 }
 .large-certificate-img ion-icon {
   cursor: pointer;

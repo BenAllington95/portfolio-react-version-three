@@ -30,10 +30,8 @@ export default function LargeCertificateImg(props) {
                         <ion-icon id="forward-btn" onClick={() => props.handleArrowClick("forward")}name="chevron-forward-outline"></ion-icon>
                     </div>
                 </div>}
-                <ion-icon name="close-circle-outline" onClick={props.closeFullscreen}></ion-icon>
+                <span><ion-icon name="close-sharp" onClick={props.closeFullscreen}></ion-icon></span>
             </div>
         </div>
     )
 }
-
-<ion-icon name="chevron-back-outline"></ion-icon>

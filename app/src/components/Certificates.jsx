@@ -74,7 +74,7 @@ export default function Certificates() {
         if (!isMobile) {
             elements.forEach(element => {
                 if (layout === "small") {
-                    element.style.width = 'calc(25% - 25px)'
+                    element.style.width = 'calc(33% - 25px)'
                     element.style.height = '130px'
                 } else if (layout === "large") {
                     element.style.width  = 'calc(50% - 25px)'
@@ -129,8 +129,8 @@ export default function Certificates() {
                 </div>
                 
                 {!isMobile && <div className="certificates-icons">
-                    <ion-icon name="grid-sharp" onClick={() => setLayout("small")}></ion-icon>
-                    <ion-icon name="list-outline" onClick={() => setLayout("large")}></ion-icon>
+                    <ion-icon name="apps-sharp" onClick={() => setLayout("small")}></ion-icon>
+                    <ion-icon name="grid-sharp" onClick={() => setLayout("large")}></ion-icon>
                 </div>}
                 
                 <div className="certificate-items">
