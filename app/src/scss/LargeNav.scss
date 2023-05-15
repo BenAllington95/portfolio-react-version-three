@@ -2,7 +2,7 @@
     display: none;
   }
   
-  $nav-transition-time: 0.2s;
+  $nav-transition-time: .2s;
   
   @media (min-width: 768px) {
     .large-nav {
@@ -66,7 +66,7 @@
         ul {
           li {
             color: #f8f8f8;
-            transition: background $nav-transition-time ease;
+            transition: border-bottom $nav-transition-time ease, color 0.2s;
   
             &:hover {
               border-bottom: 5px solid #8A7350;

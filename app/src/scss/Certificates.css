@@ -63,7 +63,7 @@
 
 @media (min-width: 768px) {
   .certificates .certificates-container .certificate-items .certificate-item-box ion-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 #dark-theme .certificates {

@@ -63,7 +63,7 @@ export default function Certificates() {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}>
-                <ion-icon name="expand-outline" onClick={() => handleCertificateClick(index)} ></ion-icon>
+                <ion-icon name="expand-sharp" onClick={() => handleCertificateClick(index)} ></ion-icon>
             </div>
         )
     })

@@ -50,7 +50,7 @@
   }
   #light-theme .large-nav ul li {
     color: #f8f8f8;
-    transition: background 0.2s ease;
+    transition: border-bottom 0.2s ease, color 0.2s;
   }
   #light-theme .large-nav ul li:hover {
     border-bottom: 5px solid #8A7350;
