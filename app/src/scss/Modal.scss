@@ -29,7 +29,6 @@
         min-height: 220px;
         max-width: 300px;
         width: 100%;    
-        border-radius: 5px;
         position: relative;
         padding: 1em;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);  
@@ -81,6 +80,12 @@
             color: #f8f8f8;
             font-size: 0.9rem;
         }
+
+        a {
+            &:hover {
+                filter: brightness(110%)
+            }
+        }
     }
 }
 
@@ -88,14 +93,18 @@
 #light-theme {
 
     .modal-box {
-        background: #677483;
+        background: #12171d;
 
        ion-icon[name="close-sharp"] {
             color: #ccc;
         }
 
         a {
-            color: pink;
+            color: #8A7350; 
+
+            &:hover {
+                filter: brightness(110%)
+            }
         }
     }
 }

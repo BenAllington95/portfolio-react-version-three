@@ -12,7 +12,7 @@ export default function Modal (props) {
         
         const timer = setTimeout(() => {
             setModalActive(true) // change to true so the popup appears
-        }, randomNumber)
+        }, 3000)
         return () => {
             clearTimeout(timer)
         }
