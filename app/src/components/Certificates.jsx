@@ -75,7 +75,7 @@ export default function Certificates() {
             elements.forEach(element => {
                 if (layout === "small") {
                     element.style.width = 'calc(33% - 25px)'
-                    element.style.height = '130px'
+                    element.style.height = '160px'
                 } else if (layout === "large") {
                     element.style.width  = 'calc(50% - 25px)'
                     element.style.height = '250px'
