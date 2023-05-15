@@ -55,14 +55,23 @@ export default function Certificates() {
         setIsFullscreen(false)
     }
     
+    // const certificateBoxElements = certificateData.map((item, index) => {
+    //     return (
+    //         <div key={`certificate-${index}`} className="certificate-item-box" style={{
+    //             background: `url(${item.img})`,
+    //             backgroundRepeat: 'no-repeat',
+    //             backgroundSize: 'cover',
+    //             backgroundPosition: 'center',
+    //           }}>
+    //             <ion-icon name="expand-sharp" onClick={() => handleCertificateClick(index)} ></ion-icon>
+    //         </div>
+    //     )
+    // })
+
     const certificateBoxElements = certificateData.map((item, index) => {
         return (
-            <div key={`certificate-${index}`} className="certificate-item-box" style={{
-                background: `url(${item.img})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-              }}>
+            <div key={`certificate-${index}`} className="certificate-item-box">
+                <style>{`.certificate-item-box:nth-child(${index+1})::before { background-image: url('${item.img}'); }`}</style>
                 <ion-icon name="expand-sharp" onClick={() => handleCertificateClick(index)} ></ion-icon>
             </div>
         )
