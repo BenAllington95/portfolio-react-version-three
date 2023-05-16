@@ -27,6 +27,15 @@
   animation: slideIn 5s ease-in-out infinite;
   text-align: center;
 }
+.hero .hero-profile-img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  filter: grayscale(0.5);
+}
 
 #dark-theme .hero {
   background: #16202A;

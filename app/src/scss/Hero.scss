@@ -8,6 +8,7 @@ $text-color-secondary-light: #8A7350;
 $text-color-secondary-dark: #79c0ff;
 
 
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -37,6 +38,14 @@ $text-color-secondary-dark: #79c0ff;
         animation: slideIn 5s ease-in-out infinite;
         text-align: center;
     } // p
+
+    .hero-profile-img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        filter: grayscale(0.5);
+    }
 
 } // hero
 

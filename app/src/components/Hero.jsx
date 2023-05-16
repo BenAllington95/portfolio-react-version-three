@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import profileImg from '../images/profile-img.png'
 
 
 
@@ -23,6 +24,7 @@ useEffect(() => {
         <div className="hero" id="hero-section">
             <h1>Hi, I'm <span className="hero-heading-ben">Ben</span>.</h1>
             <p>{currentItem}</p>
+            {/* <img className="hero-profile-img" src={profileImg} alt="profile image" /> */}
         </div>
     )
 }
