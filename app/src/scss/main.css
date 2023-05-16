@@ -46,10 +46,10 @@
     color: #79c0ff;
   }
   #light-theme .large-nav {
-    background-color: #181818;
+    background-color: #f8f8f8;
   }
   #light-theme .large-nav ul li {
-    color: #f8f8f8;
+    color: #181818;
     transition: border-bottom 0.2s ease, color 0.2s;
   }
   #light-theme .large-nav ul li:hover {
@@ -873,7 +873,7 @@
 }
 
 #light-theme .modal-box {
-  background: #12171d;
+  background: #181818;
 }
 #light-theme .modal-box ion-icon[name=close-sharp] {
   color: #ccc;
