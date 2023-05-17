@@ -77,7 +77,7 @@
     font-size: 5rem;
   }
 }
-.hero p {
+.hero .hero-subheading {
   margin-top: 1em;
   font-size: 1.3em;
   letter-spacing: 2px;
@@ -94,6 +94,20 @@
      object-position: center;
   filter: grayscale(0.5);
 }
+.hero .scroll-down-box {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero .scroll-down-box ion-icon {
+  font-size: 2rem;
+  animation: moveUpDown 1s infinite;
+  color: #181818;
+}
 
 #dark-theme .hero {
   background: #161b22;
@@ -105,6 +119,9 @@
   border-bottom: 5px solid #79c0ff;
 }
 #dark-theme .hero p {
+  color: #79c0ff;
+}
+#dark-theme .hero ion-icon {
   color: #79c0ff;
 }
 
@@ -121,6 +138,17 @@
   color: #333333;
 }
 
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /* About */
 .about {
   min-height: 100vh;
@@ -245,6 +273,7 @@
 .projects .projects-container .projects-filter-buttons .projects-filter-btn {
   transition: all 0.2s;
   padding: 0.75em 1.25em;
+  border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
 }
@@ -315,6 +344,7 @@
   font-size: 0.7rem;
   font-weight: bold;
   padding: 2px 4px;
+  border-radius: 3px;
   letter-spacing: 0.2px;
   transition: all 0.2s;
 }
@@ -555,7 +585,7 @@
   margin: 0 auto 25px auto;
   transition: all 0.5s;
   flex-basis: 60;
-  border: 2px solid #999999;
+  border: 2px solid rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
 }

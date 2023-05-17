@@ -30,7 +30,7 @@ $text-color-secondary-dark: #79c0ff;
         }
     } // h1
 
-    p {
+    .hero-subheading {
         margin-top: 1em;
         font-size: 1.3em;
         letter-spacing: 2px;
@@ -45,6 +45,25 @@ $text-color-secondary-dark: #79c0ff;
         object-fit: cover;
         object-position: center;
         filter: grayscale(0.5);
+    }
+
+    .scroll-down-box {
+        position: absolute;
+        bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+     
+
+        ion-icon {
+            font-size: 2rem;
+            animation: moveUpDown 1s infinite;
+            color: #181818;
+        }
+
     }
 
 } // hero
@@ -64,6 +83,10 @@ $text-color-secondary-dark: #79c0ff;
         }
 
         p {
+            color: $secondary-color;
+        }
+
+        ion-icon {
             color: $secondary-color;
         }
 
@@ -91,3 +114,15 @@ $text-color-secondary-dark: #79c0ff;
     }
 
 }
+
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

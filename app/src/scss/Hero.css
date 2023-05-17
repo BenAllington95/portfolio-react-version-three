@@ -19,7 +19,7 @@
     font-size: 5rem;
   }
 }
-.hero p {
+.hero .hero-subheading {
   margin-top: 1em;
   font-size: 1.3em;
   letter-spacing: 2px;
@@ -36,6 +36,20 @@
      object-position: center;
   filter: grayscale(0.5);
 }
+.hero .scroll-down-box {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero .scroll-down-box ion-icon {
+  font-size: 2rem;
+  animation: moveUpDown 1s infinite;
+  color: #181818;
+}
 
 #dark-theme .hero {
   background: #161b22;
@@ -47,6 +61,9 @@
   border-bottom: 5px solid #79c0ff;
 }
 #dark-theme .hero p {
+  color: #79c0ff;
+}
+#dark-theme .hero ion-icon {
   color: #79c0ff;
 }
 
@@ -61,4 +78,16 @@
 }
 #light-theme .hero p {
   color: #333333;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=Hero.css.map */

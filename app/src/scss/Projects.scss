@@ -49,6 +49,7 @@
             .projects-filter-btn {
                 transition: all 0.2s;
                 padding: 0.75em 1.25em;
+                border-radius: 5px;
                 cursor: pointer;
                 font-weight: bold;
             }
@@ -129,7 +130,7 @@
                             font-size: 0.7rem;
                             font-weight: bold;
                             padding: 2px 4px;
-                            // border-radius: 3px;
+                            border-radius: 3px;
                             letter-spacing: 0.2px;
                             transition: all 0.2s;
                         }
