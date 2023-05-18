@@ -119,5 +119,32 @@
     } 
 }
 
+#dark-theme {
+
+    .large-certificate-img {
+        background: #181818;
+
+        ion-icon[name="close-sharp"] {
+            color: #fff;
+        
+            &:hover {
+                background: #ccc;
+            }    
+        }
+    }
+}
+#light-theme {
+    .large-certificate-img {
+        background: #f8f8f8;
+    }
+    ion-icon[name="close-sharp"] {
+        color: #000;
+    
+        &:hover {
+            background: #ccc;
+        }    
+    }
+}
+
 
 

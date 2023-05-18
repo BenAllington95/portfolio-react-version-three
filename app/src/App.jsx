@@ -95,13 +95,8 @@ function App() {
         isDarkMode={isDarkMode}
        />
       <Hero id="hero-section" /> 
-
-      
-
       <About id="about-section"/>
-  
       <Certificates id="certificates-section" />
-
       <Skills id="skills-section" />
       <Projects id="projects-section" />
       <h1 onClick={handleClick}className="arrow-down"> <ion-icon name={currentSection < sectionIds.length - 1 ? "chevron-down-outline" : "chevron-up-outline"}></ion-icon></h1>

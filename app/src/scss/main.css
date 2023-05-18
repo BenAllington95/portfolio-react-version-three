@@ -836,6 +836,26 @@
   transform: translateY(-50%);
 }
 
+#dark-theme .large-certificate-img {
+  background: #181818;
+}
+#dark-theme .large-certificate-img ion-icon[name=close-sharp] {
+  color: #fff;
+}
+#dark-theme .large-certificate-img ion-icon[name=close-sharp]:hover {
+  background: #ccc;
+}
+
+#light-theme .large-certificate-img {
+  background: #f8f8f8;
+}
+#light-theme ion-icon[name=close-sharp] {
+  color: #000;
+}
+#light-theme ion-icon[name=close-sharp]:hover {
+  background: #ccc;
+}
+
 /* Modal */
 .modal {
   position: fixed;
