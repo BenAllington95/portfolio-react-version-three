@@ -31,6 +31,16 @@ $width: 90%;
         font-size: 2rem;
         text-align: center;
       }
+
+      .about-profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        filter: grayscale(1);
+        margin: auto;
+    }
   
       .about-paragraph {
         display: flex;

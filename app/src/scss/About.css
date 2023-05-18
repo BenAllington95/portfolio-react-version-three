@@ -22,6 +22,17 @@
   font-size: 2rem;
   text-align: center;
 }
+.about .about-items .about-profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  filter: grayscale(1);
+  margin: auto;
+}
 .about .about-items .about-paragraph {
   display: flex;
   align-items: center;

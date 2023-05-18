@@ -81,6 +81,9 @@ nav ion-icon {
 
 ul button {
     background: #ff534d;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 #light-theme ul button {
@@ -125,11 +128,12 @@ nav button:hover {
     padding: 0;
     background: #12171d;  
     list-style: none;
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
-    transition: all 0.5s ease;
+    transition: right 0.5s ease, background 0.2s;
     height: 100vh;
     z-index: 99999999999;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
 
     a {
         width: 100%;
@@ -141,7 +145,7 @@ nav button:hover {
 }
 
 .active {
-    opacity: 1;
+    // opacity: 1;
     right: 0;
     pointer-events: all;
 } /* Class gets added to hamburger nav when event clicked changes boolean */
@@ -188,8 +192,15 @@ nav button:hover {
 #light-theme .right-box {
     background: linear-gradient(to right, #EEEEEE 0%, rgba(121, 192, 255, 0.5) 100%), url("https://images.unsplash.com/photo-1661956602926-db6b25f75947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80");
     background-size: cover;
-    background-position: 1%;
+    background-position: center;
     filter: grayscale(1);
+    transition: all 0.2s ease;
+}
+
+#dark-theme .right-box {
+    background: linear-gradient(to right, #161b22 0%, rgba(22, 27, 34, 0.8) 100%), url('../images/about-dark-img.png');
+    background-size: cover;
+    background-position: center;
     transition: all 0.2s ease;
 }
 
@@ -199,6 +210,14 @@ nav button:hover {
     background-size: cover;
     background-position: 1%;
     filter: grayscale(1);
+    transition: all 0.2s ease;
+}
+
+#dark-theme .left-box {
+    background: linear-gradient(to left, #161b22 0%, rgba(22, 27, 34, 0.8) 100%), url('../images/about-dark-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     transition: all 0.2s ease;
 }
 
