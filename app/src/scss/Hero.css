@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   padding: 1em;
-  transition: all 0.2s ease;
 }
 .hero h1 {
   margin: 0;
@@ -52,7 +51,10 @@
 }
 
 #dark-theme .hero {
-  background: #161b22;
+  background-image: url("../images/main-img-dark.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #dark-theme .hero h1 {
   color: #f8f8f8;
@@ -63,8 +65,11 @@
 #dark-theme .hero p {
   color: #79c0ff;
 }
-#dark-theme .hero ion-icon {
-  color: #79c0ff;
+#dark-theme .hero .scroll-down-box p {
+  color: #f8f8f8;
+}
+#dark-theme .hero .scroll-down-box ion-icon {
+  color: #f8f8f8;
 }
 
 #light-theme .hero {
