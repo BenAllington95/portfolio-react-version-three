@@ -35,8 +35,9 @@ export default function Skills() {
   })
       
     return (
+      <div className="test">
+        <div className="test-img left-box"></div>
         <div className="skills" id="skills-section">
-        
           <div className={visible ? "skills-container visible" : "skills-container"}>
             <div>
                 <h2>Skills</h2>
@@ -46,6 +47,7 @@ export default function Skills() {
               {skillElements}
             </div>
           </div>
+      </div> 
       </div>
     )
 }

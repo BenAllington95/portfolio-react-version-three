@@ -10,6 +10,7 @@ import Certificates from './components/Certificates'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Modal from './components/Modal'
+import Carousel from './components/Carousel';
 
 
 function App() {
@@ -22,17 +23,6 @@ function App() {
   const [currentSection, setCurrentSection] = useState(0);
   
   const sectionIds = ['hero-section', 'about-section', 'certificates-section', 'skills-section', 'projects-section', 'contact-section'];
-
-
-  // const getCurrentSection = () => {
-  //   for (let i = sectionIds.length - 1; i >= 0; i--) {
-  //     const element = document.getElementById(sectionIds[i]);
-  //     if (element.getBoundingClientRect().top <= 0) {
-  //       return i;
-  //     }
-  //   }
-  //   return 0;
-  // };
 
   const getCurrentSection = () => {
     for (let i = sectionIds.length - 1; i >= 0; i--) {
@@ -105,21 +95,19 @@ function App() {
         isDarkMode={isDarkMode}
        />
       <Hero id="hero-section" /> 
+
+      
+
+      <About id="about-section"/>
   
-      <div className="test">
-        <About id="about-section" />
-        <div className="test-img right-box"></div>
-      </div>
       <Certificates id="certificates-section" />
 
-      <div className="test">
-        <div className="test-img left-box"></div>
-        <Skills id="skills-section" />
-      </div>
-      
+      <Skills id="skills-section" />
       <Projects id="projects-section" />
       <h1 onClick={handleClick}className="arrow-down"> <ion-icon name={currentSection < sectionIds.length - 1 ? "chevron-down-outline" : "chevron-up-outline"}></ion-icon></h1>
       <Contact id="contact-section" />
+      {/* <Carousel items={[<About />, <Skills />]} /> */}
+      
 
       
 
