@@ -786,13 +786,18 @@
 }
 @media (min-width: 768px) {
   .large-certificate-img .large-certificate-img-box {
-    height: 100%;
+    max-height: 100%;
     max-width: 100%;
     margin: 0 auto;
   }
 }
+@media (min-width: 1100px) {
+  .large-certificate-img .large-certificate-img-box {
+    min-height: 100vh;
+  }
+}
 .large-certificate-img .large-certificate-img-box img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 .large-certificate-img .arrows {
@@ -1140,54 +1145,4 @@ nav button:hover {
 #dark-theme .arrow-down {
   background: #79c0ff;
   color: white;
-}
-
-.carousel-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
-.carousel-container .carousel-left-btn {
-  position: absolute;
-  top: 50px;
-  left: 5px;
-  background: red;
-}
-.carousel-container .carousel-slides {
-  display: flex;
-  width: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-.carousel-container .slide {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-.carousel-container button {
-  background-color: #f0f0f0;
-  border: none;
-  padding: 10px 20px;
-  margin: 0 10px;
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
-}
-.carousel-container button:hover {
-  background-color: #e0e0f0;
-}
-@media screen and (max-width: 600px) {
-  .carousel-container {
-    width: 100vw;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  .carousel-container .carousel-slides {
-    flex-wrap: nowrap;
-  }
-  .carousel-container .slide {
-    flex: 0 0 100vw;
-  }
 }/*# sourceMappingURL=main.css.map */
