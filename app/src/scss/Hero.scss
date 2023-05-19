@@ -65,11 +65,18 @@ $text-color-secondary-dark: #79c0ff;
 
     .hero {
 
-        // background: $background-color-dark;
-        background-image: url('../images/main-img-dark.png');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        // // background: $background-color-dark;
+        // background-image: url('../images/main-img-dark.png');
+        // background-position: center;
+        // background-size: cover;
+        // background-repeat: no-repeat;
+
+        background-color: #161b22;
+        opacity: 1;
+        background: radial-gradient(circle, transparent 20%, #161b22 20%, #161b22 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #161b22 20%, #161b22 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#1a1f24 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #1a1f24 1.8px, #161b22 1.8px) -0.9px 0;
+        background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
+
+        
 
 
         h1 {
@@ -94,6 +101,7 @@ $text-color-secondary-dark: #79c0ff;
                 color: $text-color-dark;
             }
         }
+
 
        
 

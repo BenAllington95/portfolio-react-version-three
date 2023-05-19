@@ -33,7 +33,7 @@ export default function About(props) {
         <div className="about" id={props.id}>
             <div className={visible ? "about-items visible" : "about-items"}>
                 <h2>About</h2>
-                <img className="about-profile-img" src={profileImg} alt="profile image" />
+                {/* <img className="about-profile-img" src={profileImg} alt="profile image" /> */}
                 <div className="about-paragraph">
                 {heroParaphHtml}
                 </div>
