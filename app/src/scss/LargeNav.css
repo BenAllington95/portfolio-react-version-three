@@ -46,10 +46,10 @@
     color: #79c0ff;
   }
   #light-theme .large-nav {
-    background-color: #fff;
+    background-color: #181818;
   }
   #light-theme .large-nav ul li {
-    color: #181818;
+    color: #fff;
     transition: border-bottom 0.2s ease, color 0.2s;
   }
   #light-theme .large-nav ul li:hover {
