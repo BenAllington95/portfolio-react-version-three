@@ -42,10 +42,10 @@
                 border-radius: 5px;
                 padding: 0.5em 1em;
                 
-                // h3 {
-                //     // light mode color: #677483;
+                h3 {
+                    letter-spacing: 0.2px;
 
-                // }
+                }
 
                 ion-icon {
                     font-size: 1.5rem;
@@ -136,17 +136,17 @@
     
                 .skills-item-box {
 
-                    background: #ecf0f6;
+                    background: #f1f1f1;
 
                     h3 {
                         // light mode color: #677483;
-                        color: #677483;
+                        color: #999999;
 
                     }
     
                     ion-icon {
                         // light mode color:#677483;
-                        color: #677483;
+                        color: #999999;
 
                     } // ion-icon
     

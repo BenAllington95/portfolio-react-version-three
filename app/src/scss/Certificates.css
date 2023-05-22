@@ -42,7 +42,7 @@
   border: 2px solid rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .certificates .certificates-container .certificate-items .certificate-item-box::before {
   content: "";
@@ -72,7 +72,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   gap: 5px;
+  padding: 0.5em 0.75em;
+  background: #f1f1f1;
+  border-radius: 5px;
 }
 .certificates .certificates-container .certificates-icons ion-icon {
   font-size: 1.5rem;

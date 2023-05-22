@@ -37,6 +37,9 @@
   border-radius: 5px;
   padding: 0.5em 1em;
 }
+.skills .skills-container .skills-items .skills-item-box h3 {
+  letter-spacing: 0.2px;
+}
 .skills .skills-container .skills-items .skills-item-box ion-icon {
   font-size: 1.5rem;
   transition: all 0.2s;
@@ -69,11 +72,11 @@
   color: #999999;
 }
 #light-theme .skills .skills-container .skills-items .skills-item-box {
-  background: #ecf0f6;
+  background: #f1f1f1;
 }
 #light-theme .skills .skills-container .skills-items .skills-item-box h3 {
-  color: #677483;
+  color: #999999;
 }
 #light-theme .skills .skills-container .skills-items .skills-item-box ion-icon {
-  color: #677483;
+  color: #999999;
 }/*# sourceMappingURL=Skills.css.map */
