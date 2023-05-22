@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react'
 
 export default function Skills() {
-    const [visible, setVisible] = useState(false)
+  //   const [visible, setVisible] = useState(false)
      
-    useEffect(() => {
-    const handleScroll = () => {
-    const element = document.getElementById("skills-section").offsetTop // replace "your-id" with the actual ID of the element you want to check
-    if (element && window.pageYOffset > element - 500) {
-      setVisible(true);
-    } else {
-      setVisible(false);
-    }
-  };
-    window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-  }, [visible]);
+  //   useEffect(() => {
+  //   const handleScroll = () => {
+  //   const element = document.getElementById("skills-section").offsetTop // replace "your-id" with the actual ID of the element you want to check
+  //   if (element && window.pageYOffset > element - 500) {
+  //     setVisible(true);
+  //   } else {
+  //     setVisible(false);
+  //   }
+  // };
+  //   window.addEventListener("scroll", handleScroll);
+  //     return () => window.removeEventListener("scroll", handleScroll);
+  // }, [visible]);
 
   const skillItems = [
     {id: 0, heading: "HTML", icon: "logo-html5"},
@@ -36,7 +36,7 @@ export default function Skills() {
       
     return (
         <div className="skills" id="skills-section">
-          <div className={visible ? "skills-container visible" : "skills-container"}>
+          <div className="skills-container">
             <div>
                 <h2>Skills</h2>
                 <p className="skills-para">My current skillset includes</p>

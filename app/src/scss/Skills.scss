@@ -17,10 +17,6 @@
         justify-content: center;
         flex-direction: column;
         gap: 15px;
-        min-height: 100vh;
-        transform: translateX(50%);
-        transition: opacity 2s ease, transform 2s ease;
-        opacity: 0;
         
 
         .skills-para {
@@ -34,7 +30,7 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 25px;
-            max-width: 600px;
+            max-width: 700px;
             transition: all 0.2s;
 
             .skills-item-box {
@@ -49,8 +45,8 @@
                 border-radius: 5px;
 
                 @media (min-width: 768px) {
-                    height: 160px;
-                    width: 160px;
+                    height: 120px;
+                    width: 120px;
                 }
 
                 // h3 {
@@ -63,7 +59,7 @@
                     transition: all 0.2s;
 
                     @media (min-width: 768px) {
-                        font-size: 5rem;
+                        font-size: 3rem;
                     }
 
                 } // ion-icon
@@ -80,20 +76,20 @@
     } // skills-container.visible
 }
 
-@media (min-width: 768px) { 
+// @media (min-width: 768px) { 
     
-    .skills {
-        width: 100%;
-    }
+//     .skills {
+//         width: 100%;
+//     }
      
-}
+// }
 
 
 
 #dark-theme {
 
     .skills {
-        background: #161b22;
+        // background: #161b22;
     
         h2 {
             color: #79c0ff;
@@ -134,7 +130,7 @@
 #light-theme {
 
     .skills {
-        background: #EEEEEE;
+        // background: #EEEEEE;
     
         h2 {
             color: #12171d;

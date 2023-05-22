@@ -14,10 +14,6 @@
   justify-content: center;
   flex-direction: column;
   gap: 15px;
-  min-height: 100vh;
-  transform: translateX(50%);
-  transition: opacity 2s ease, transform 2s ease;
-  opacity: 0;
 }
 .skills .skills-container .skills-para {
   text-align: center;
@@ -29,7 +25,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
-  max-width: 600px;
+  max-width: 700px;
   transition: all 0.2s;
 }
 .skills .skills-container .skills-items .skills-item-box {
@@ -45,8 +41,8 @@
 }
 @media (min-width: 768px) {
   .skills .skills-container .skills-items .skills-item-box {
-    height: 160px;
-    width: 160px;
+    height: 120px;
+    width: 120px;
   }
 }
 .skills .skills-container .skills-items .skills-item-box ion-icon {
@@ -55,7 +51,7 @@
 }
 @media (min-width: 768px) {
   .skills .skills-container .skills-items .skills-item-box ion-icon {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 .skills .skills-container.visible {
@@ -63,14 +59,6 @@
   opacity: 1;
 }
 
-@media (min-width: 768px) {
-  .skills {
-    width: 100%;
-  }
-}
-#dark-theme .skills {
-  background: #161b22;
-}
 #dark-theme .skills h2 {
   color: #79c0ff;
 }
@@ -87,9 +75,6 @@
   color: #fff;
 }
 
-#light-theme .skills {
-  background: #EEEEEE;
-}
 #light-theme .skills h2 {
   color: #12171d;
 }

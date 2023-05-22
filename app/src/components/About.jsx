@@ -37,12 +37,12 @@ export default function About(props) {
                     {/* <img className="about-profile-img" src={profileImg} alt="profile image" /> */}
                     <div className="about-paragraph">
                     {heroParaphHtml}
+                    <Skills/>
                     </div>
                 </div>
             </div>   
             <div className="test-img right-box"></div>
         </div>
-        <Skills/>
         </div>
              
     )
