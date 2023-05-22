@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import profileImg from '../images/profile-img.png'
+import Skills from './Skills'
 
 export default function About(props) {
     const [visible, setVisible] = useState(false);
@@ -29,17 +29,20 @@ export default function About(props) {
 }, []);
         
     return (
+        <div>
         <div className="test">
-        <div className="about" id={props.id}>
-            <div className={visible ? "about-items visible" : "about-items"}>
-                <h2>About</h2>
-                {/* <img className="about-profile-img" src={profileImg} alt="profile image" /> */}
-                <div className="about-paragraph">
-                {heroParaphHtml}
+            <div className="about" id={props.id}>
+                <div className={visible ? "about-items visible" : "about-items"}>
+                    <h2>About</h2>
+                    {/* <img className="about-profile-img" src={profileImg} alt="profile image" /> */}
+                    <div className="about-paragraph">
+                    {heroParaphHtml}
+                    </div>
                 </div>
-            </div>
-        </div>   
-        <div className="test-img right-box"></div>
+            </div>   
+            <div className="test-img right-box"></div>
+        </div>
+        <Skills/>
         </div>
              
     )

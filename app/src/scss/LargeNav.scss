@@ -66,15 +66,16 @@
   
     #light-theme {
       .large-nav {
-        background-color: #181818;
+        background-color: #fff;
   
         ul {
           li {
-            color: #fff;
+            color: #181818;
             transition: border-bottom $nav-transition-time ease, color 0.2s;
   
             &:hover {
               border-bottom: 5px solid #8A7350;
+              color: #8A7350;
             }
           }
         }

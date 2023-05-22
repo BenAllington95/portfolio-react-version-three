@@ -46,13 +46,14 @@
     color: #79c0ff;
   }
   #light-theme .large-nav {
-    background-color: #181818;
+    background-color: #fff;
   }
   #light-theme .large-nav ul li {
-    color: #fff;
+    color: #181818;
     transition: border-bottom 0.2s ease, color 0.2s;
   }
   #light-theme .large-nav ul li:hover {
     border-bottom: 5px solid #8A7350;
+    color: #8A7350;
   }
 }/*# sourceMappingURL=LargeNav.css.map */

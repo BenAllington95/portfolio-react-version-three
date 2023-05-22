@@ -3,7 +3,7 @@ $dark-theme-h2-color: #79c0ff;
 $dark-theme-p-color: #D6E4FF;
 $dark-theme-icons-color: #B3D1FF;
 
-$light-theme-background-color: #FFFFFF;
+$light-theme-background-color: #f8f8f8;
 $light-theme-h2-color: #181818;
 $light-theme-p-color: #999999;
 $light-theme-icons-color: #999999;
@@ -55,6 +55,8 @@ $light-theme-icons-color: #999999;
         border: 2px solid rgba(0,0,0,0.2);
         position: relative;
         overflow: hidden;
+        border-radius: 5px;
+        
 
         &::before {
           content: "";
@@ -132,12 +134,7 @@ $light-theme-icons-color: #999999;
 }
 
 #light-theme .certificates {
-  // background: $light-theme-background-color;
-
-  background-color: #fff;
-  opacity: 1;
-  background: radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#f8f8f8 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #f8f8f8 1.8px, #fff 1.8px) -0.9px 0;
-  background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
+  background: $light-theme-background-color;
 
   h2 {
     color: $light-theme-h2-color;
