@@ -153,7 +153,7 @@
 /* About */
 .about {
   min-height: 100vh;
-  padding: 4em 2em;
+  padding: 5em 2em;
   display: grid;
   place-content: center;
   transition: background 0.2s ease;
@@ -170,7 +170,7 @@
   place-content: center;
 }
 .about .about-items h2 {
-  color: #12171d;
+  color: #181818;
   font-size: 2rem;
   text-align: center;
 }
@@ -218,11 +218,11 @@
   background: #fafafa;
 }
 #light-theme .about h2 {
-  color: #12171d;
+  color: #181818;
   transition: all 0.2s;
 }
 #light-theme .about p {
-  color: #12171d;
+  color: #181818;
   transition: all 0.2s;
 }
 
@@ -480,35 +480,22 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 15px;
   max-width: 700px;
   transition: all 0.2s;
 }
 .skills .skills-container .skills-items .skills-item-box {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.2s;
   gap: 5px;
-  width: 40%;
-  height: 130px;
   border-radius: 5px;
-}
-@media (min-width: 768px) {
-  .skills .skills-container .skills-items .skills-item-box {
-    height: 120px;
-    width: 120px;
-  }
+  padding: 0.5em 1em;
 }
 .skills .skills-container .skills-items .skills-item-box ion-icon {
-  font-size: 4rem;
+  font-size: 1.5rem;
   transition: all 0.2s;
-}
-@media (min-width: 768px) {
-  .skills .skills-container .skills-items .skills-item-box ion-icon {
-    font-size: 3rem;
-  }
 }
 .skills .skills-container.visible {
   transform: translateX(0%);
@@ -538,13 +525,13 @@
   color: #999999;
 }
 #light-theme .skills .skills-container .skills-items .skills-item-box {
-  background: #fff;
+  background: #ecf0f6;
 }
 #light-theme .skills .skills-container .skills-items .skills-item-box h3 {
-  color: #12171d;
+  color: #677483;
 }
 #light-theme .skills .skills-container .skills-items .skills-item-box ion-icon {
-  color: #12171d;
+  color: #677483;
 }
 
 .certificates {
@@ -1173,6 +1160,7 @@ nav button:hover {
   place-content: center;
   opacity: 0.2;
   transition: all 0.2s;
+  border-radius: 5px;
 }
 .arrow-down:hover {
   opacity: 1;

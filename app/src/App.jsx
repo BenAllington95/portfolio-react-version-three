@@ -22,7 +22,7 @@ function App() {
 
   const [currentSection, setCurrentSection] = useState(0);
   
-  const sectionIds = ['hero-section', 'about-section', 'certificates-section', 'skills-section', 'projects-section', 'contact-section'];
+  const sectionIds = ['hero-section', 'about-section', 'certificates-section', 'projects-section', 'contact-section'];
 
   const getCurrentSection = () => {
     for (let i = sectionIds.length - 1; i >= 0; i--) {

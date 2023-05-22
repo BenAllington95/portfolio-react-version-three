@@ -10,7 +10,6 @@ const navItems = [
       {id:"#hero-section", text: "Home"},
       {id:"#about-section", text: "About"},
       {id:"#certificates-section", text: "Certificates"},
-      {id:"#skills-section", text: "Skills"},
       {id:"#projects-section", text: "Projects"},
       {id: null, toggleTheme: true, text: (<ion-icon name={props.isDarkMode ? "moon" : "sunny"}></ion-icon>)},
   ]

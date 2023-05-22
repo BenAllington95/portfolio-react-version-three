@@ -35,7 +35,7 @@ export default function Skills() {
   })
       
     return (
-        <div className="skills" id="skills-section">
+        <div className="skills">
           <div className="skills-container">
             <div>
                 <h2>Skills</h2>

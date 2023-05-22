@@ -1,8 +1,8 @@
 /* About */
 
 $transition-speed: 0.2s;
-$light-heading-color: #12171d;
-$light-text-color: #12171d;
+$light-heading-color: #181818;
+$light-text-color: #181818;
 $light-background-color: #fafafa;
 $dark-heading-color: #79c0ff;
 $dark-text-color: #fff;
@@ -12,7 +12,7 @@ $width: 90%;
 
 .about {
     min-height: 100vh;
-    padding: 4em 2em;
+    padding: 5em 2em;
     display: grid;
     place-content: center;
     transition: background $transition-speed ease;
