@@ -4,7 +4,7 @@ $background-color-dark: #161b22;
 $background-color-light: #fff;
 $text-color-dark: #f8f8f8;
 $text-color-light: #333333;
-$text-color-secondary-light: #8A7350;
+$text-color-secondary-light: #FF9800;
 $text-color-secondary-dark: #79c0ff;
 
 
@@ -130,6 +130,7 @@ $text-color-secondary-dark: #79c0ff;
                 border-bottom: 5px solid $text-color-secondary-light;
             } // hero-heading-ben
         }
+        
 
         p {
             color: $text-color-light;

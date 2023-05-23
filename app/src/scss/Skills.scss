@@ -6,10 +6,8 @@
     overflow: hidden;
     padding: 2em;
 
-    h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
+   
+
 
     .skills-container {
         display: flex;
@@ -17,7 +15,11 @@
         justify-content: center;
         flex-direction: column;
         gap: 15px;
-        
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
 
         .skills-para {
             text-align: center;

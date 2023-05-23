@@ -48,7 +48,7 @@
 
             .projects-filter-btn {
                 transition: all 0.2s;
-                padding: 0.75em 1.25em;
+                padding: 0.5em 0.75em;
                 border-radius: 5px;
                 cursor: pointer;
                 font-weight: bold;
@@ -269,13 +269,13 @@
             .projects-filter-buttons {
                 
                 .projects-filter-btn {
-                    background: #181818;
-                    color: #fff;
+                    background: #f1f1f1;
+                    color: #999999;
                 }
 
                 .projects-active {
-                    background: #8A7350;
-                    color: #fff;
+                    background: #999999;
+                    color: #f1f1f1;
                 }
             }
 

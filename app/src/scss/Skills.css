@@ -4,16 +4,15 @@
   overflow: hidden;
   padding: 2em;
 }
-.skills h2 {
-  font-size: 2rem;
-  text-align: center;
-}
 .skills .skills-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 15px;
+}
+.skills .skills-container h2 {
+  font-size: 1.5rem;
 }
 .skills .skills-container .skills-para {
   text-align: center;

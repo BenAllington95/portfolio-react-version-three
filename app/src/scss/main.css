@@ -53,8 +53,7 @@
     transition: border-bottom 0.2s ease, color 0.2s;
   }
   #light-theme .large-nav ul li:hover {
-    border-bottom: 5px solid #8A7350;
-    color: #8A7350;
+    border-bottom: 5px solid #FF9800;
   }
 }
 /* Hero Section */
@@ -133,7 +132,7 @@
   color: #333333;
 }
 #light-theme .hero h1 .hero-heading-ben {
-  border-bottom: 5px solid #8A7350;
+  border-bottom: 5px solid #FF9800;
 }
 #light-theme .hero p {
   color: #333333;
@@ -284,7 +283,7 @@
 }
 .projects .projects-container .projects-filter-buttons .projects-filter-btn {
   transition: all 0.2s;
-  padding: 0.75em 1.25em;
+  padding: 0.5em 0.75em;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
@@ -428,12 +427,12 @@
   color: #999999;
 }
 #light-theme .projects .projects-container .projects-filter-buttons .projects-filter-btn {
-  background: #181818;
-  color: #fff;
+  background: #f1f1f1;
+  color: #999999;
 }
 #light-theme .projects .projects-container .projects-filter-buttons .projects-active {
-  background: #8A7350;
-  color: #fff;
+  background: #999999;
+  color: #f1f1f1;
 }
 #light-theme .projects .projects-container .projects-items-box h3 {
   color: #181818;
@@ -460,16 +459,15 @@
   overflow: hidden;
   padding: 2em;
 }
-.skills h2 {
-  font-size: 2rem;
-  text-align: center;
-}
 .skills .skills-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 15px;
+}
+.skills .skills-container h2 {
+  font-size: 1.5rem;
 }
 .skills .skills-container .skills-para {
   text-align: center;
@@ -1176,8 +1174,8 @@ nav button:hover {
 }
 
 #light-theme .arrow-down {
-  background: #8A7350;
-  color: white;
+  background: #FF9800;
+  color: #181818;
 }
 
 #dark-theme .arrow-down {
