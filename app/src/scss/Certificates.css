@@ -42,7 +42,7 @@
   border: 2px solid rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 .certificates .certificates-container .certificate-items .certificate-item-box::before {
   content: "";

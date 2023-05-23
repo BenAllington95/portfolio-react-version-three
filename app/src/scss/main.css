@@ -314,7 +314,7 @@
   padding: 0.75em;
   position: relative;
   height: 50%;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .projects .projects-container .projects-items .projects-items-box .projects-items-box-img .projects-items-box-details-links {
   position: absolute;
@@ -573,7 +573,7 @@
   border: 2px solid rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 .certificates .certificates-container .certificate-items .certificate-item-box::before {
   content: "";
@@ -1113,24 +1113,9 @@ nav button:hover {
 }
 
 #dark-theme .right-box {
+  background-color: #161b22;
   background: linear-gradient(to right, #161b22 0%, rgba(22, 27, 34, 0.8) 100%), url("../images/about-dark-img.png");
   background-size: cover;
-  background-position: center;
-  transition: all 0.2s ease;
-}
-
-#light-theme .left-box {
-  background: linear-gradient(to left, #f8f8f8 0%, rgba(121, 192, 255, 0.5) 100%), url("https://images.unsplash.com/photo-1497215641119-bbe6d71ebaae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-  background-size: cover;
-  background-position: 1%;
-  filter: grayscale(1);
-  transition: all 0.2s ease;
-}
-
-#dark-theme .left-box {
-  background: linear-gradient(to left, #161b22 0%, rgba(22, 27, 34, 0.8) 100%), url("../images/about-dark-img.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   transition: all 0.2s ease;
 }
