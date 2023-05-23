@@ -53,7 +53,7 @@
     transition: border-bottom 0.2s ease, color 0.2s;
   }
   #light-theme .large-nav ul li:hover {
-    border-bottom: 5px solid #FF9800;
+    border-bottom: 5px solid #999999;
   }
 }
 /* Hero Section */
@@ -65,7 +65,7 @@
   align-items: center;
   justify-content: center;
   padding: 1em;
-  transition: all 0.2s ease;
+  transition: background 0.2s;
 }
 .hero h1 {
   margin: 0;
@@ -102,9 +102,6 @@
 
 #dark-theme .hero {
   background-color: #161b22;
-  opacity: 1;
-  background: radial-gradient(circle, transparent 20%, #161b22 20%, #161b22 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #161b22 20%, #161b22 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#1a1f24 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #1a1f24 1.8px, #161b22 1.8px) -0.9px 0;
-  background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
 }
 #dark-theme .hero h1 {
   color: #f8f8f8;
@@ -124,18 +121,18 @@
 
 #light-theme .hero {
   background-color: #fff;
-  opacity: 1;
-  background: radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#f8f8f8 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #f8f8f8 1.8px, #fff 1.8px) -0.9px 0;
-  background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
 }
 #light-theme .hero h1 {
-  color: #333333;
+  color: #181818;
 }
 #light-theme .hero h1 .hero-heading-ben {
-  border-bottom: 5px solid #FF9800;
+  border-bottom: 5px solid #999999;
+}
+#light-theme .hero .hero-subheading {
+  color: #999999;
 }
 #light-theme .hero p {
-  color: #333333;
+  color: #181818;
 }
 
 @keyframes moveUpDown {
@@ -416,9 +413,6 @@
 
 #light-theme .projects {
   background-color: #fff;
-  opacity: 1;
-  background: radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#f8f8f8 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #f8f8f8 1.8px, #fff 1.8px) -0.9px 0;
-  background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
 }
 #light-theme .projects .projects-container h2 {
   color: #181818;
@@ -446,10 +440,10 @@
 }
 #light-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-main {
   background: #181818;
-  color: #fff;
+  color: #f1f1f1;
 }
 #light-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-reverse {
-  background: #fff;
+  background: #f1f1f1;
   color: #181818;
 }
 
@@ -709,11 +703,10 @@
     transform: translateX(0%);
     opacity: 0;
   }
-  25% {
-    transform: translateX(0%);
+  35% {
     opacity: 1;
   }
-  75% {
+  65% {
     transform: translateX(0%);
     opacity: 1;
   }
@@ -724,6 +717,9 @@
 }
 @keyframes fadeOut {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -996,6 +992,7 @@ button {
 nav button {
   background: #79c0ff;
   padding: 0.5em;
+  border-radius: 5px;
   border: none;
   font-weight: bold;
   transition: all 0.2s;
@@ -1008,8 +1005,8 @@ nav button {
 }
 
 #light-theme nav button {
-  background: #8A7350;
-  color: white;
+  background: #999999;
+  color: #f1f1f1;
 }
 
 nav ion-icon {
@@ -1170,12 +1167,12 @@ nav button:hover {
 }
 .arrow-down:hover {
   opacity: 1;
-  animation: bounce 5s ease;
+  animation: bounce 6s ease;
 }
 
 #light-theme .arrow-down {
-  background: #FF9800;
-  color: #181818;
+  background: #999999;
+  color: #f1f1f1;
 }
 
 #dark-theme .arrow-down {

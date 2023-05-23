@@ -4,11 +4,10 @@
       transform: translateX(0%);
       opacity: 0;
     }
-    25% {
-      transform: translateX(0%);
+    35% {
       opacity: 1;
     }
-    75% {
+    65% {
       transform: translateX(0%);
       opacity: 1;
     }
@@ -22,6 +21,10 @@
   
   @keyframes fadeOut {
     0% {
+      opacity: 0;
+    }
+
+    50% {
       opacity: 0;
     }
   

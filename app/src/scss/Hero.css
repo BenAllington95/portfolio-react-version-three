@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   padding: 1em;
-  transition: all 0.2s ease;
+  transition: background 0.2s;
 }
 .hero h1 {
   margin: 0;
@@ -44,9 +44,6 @@
 
 #dark-theme .hero {
   background-color: #161b22;
-  opacity: 1;
-  background: radial-gradient(circle, transparent 20%, #161b22 20%, #161b22 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #161b22 20%, #161b22 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#1a1f24 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #1a1f24 1.8px, #161b22 1.8px) -0.9px 0;
-  background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
 }
 #dark-theme .hero h1 {
   color: #f8f8f8;
@@ -66,18 +63,18 @@
 
 #light-theme .hero {
   background-color: #fff;
-  opacity: 1;
-  background: radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#f8f8f8 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #f8f8f8 1.8px, #fff 1.8px) -0.9px 0;
-  background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
 }
 #light-theme .hero h1 {
-  color: #333333;
+  color: #181818;
 }
 #light-theme .hero h1 .hero-heading-ben {
-  border-bottom: 5px solid #FF9800;
+  border-bottom: 5px solid #999999;
+}
+#light-theme .hero .hero-subheading {
+  color: #999999;
 }
 #light-theme .hero p {
-  color: #333333;
+  color: #181818;
 }
 
 @keyframes moveUpDown {

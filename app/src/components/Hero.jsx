@@ -24,7 +24,6 @@ useEffect(() => {
         <div className="hero" id="hero-section">
             <h1>Hi, I'm <span className="hero-heading-ben">Ben</span>.</h1>
             <p className="hero-subheading">{currentItem}</p>
-            {/* <img className="hero-profile-img" src={profileImg} alt="profile image" /> */}
             <div className="scroll-down-box">
               <p>Scroll Down</p>
               <ion-icon className="arrow-down" name="chevron-down-outline"></ion-icon>

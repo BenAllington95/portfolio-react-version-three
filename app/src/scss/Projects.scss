@@ -252,9 +252,9 @@
         // background: #fff;
 
         background-color: #fff;
-        opacity: 1;
-        background: radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#f8f8f8 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #f8f8f8 1.8px, #fff 1.8px) -0.9px 0;
-        background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
+        // opacity: 1;
+        // background: radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #fff 20%, #fff 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#f8f8f8 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #f8f8f8 1.8px, #fff 1.8px) -0.9px 0;
+        // background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
 
         .projects-container {
 
@@ -307,11 +307,11 @@
             
                 .projects-items-box-details-links-main {
                   background: #181818;
-                  color: #fff;
+                  color: #f1f1f1;
                 }
             
                 .projects-items-box-details-links-reverse {
-                  background: #fff;
+                  background: #f1f1f1;
                   color: #181818;
                 }
     

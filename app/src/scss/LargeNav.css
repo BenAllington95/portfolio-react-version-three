@@ -53,6 +53,6 @@
     transition: border-bottom 0.2s ease, color 0.2s;
   }
   #light-theme .large-nav ul li:hover {
-    border-bottom: 5px solid #FF9800;
+    border-bottom: 5px solid #999999;
   }
 }/*# sourceMappingURL=LargeNav.css.map */
