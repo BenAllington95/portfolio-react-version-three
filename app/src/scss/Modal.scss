@@ -1,5 +1,13 @@
 /* Modal */
 
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
 .modal {
     position: fixed;
     top: 0;
@@ -27,16 +35,18 @@
     }
     
     .modal-box {
-        min-height: 220px;
+        min-height: 250px;
         max-width: 300px;
         width: 100%;    
         position: relative;
-        padding: 1em;
+        padding: 2em 1em;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);  
         border-radius: 5px;
+        transform: translateY(100px);
+        transition: all 1s;
 
         @media (min-width: 768px) {
-            min-height: 190px;
+            min-height: 230px;
         }
 
                 
@@ -47,7 +57,7 @@
             align-items: flex-start;
             justify-content: flex-start;
             flex-direction: column;
-            gap: 3px;
+            gap: 15px;
         }
 
        ion-icon[name="close-sharp"] {
@@ -62,14 +72,10 @@
             border-radius: 50%;
             background: rgba(0,0,0,0.1);
             cursor: pointer;
-            transition: filter 0.2s ease;
+            transition: all 0.2s ease;
 
             @media (min-width: 768px) {
                     font-size: 1rem;
-            }
-
-            &:hover {
-                filter: brightness(150%)
             }
         }
 
@@ -92,6 +98,12 @@
 }
 
 
+.modal-box.slide-up {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s;
+}
+
 #light-theme {
 
     .modal-box {
@@ -99,10 +111,14 @@
 
        ion-icon[name="close-sharp"] {
             color: #ccc;
+
+            &:hover {
+                color: #181818;
+            }
         }
 
         a {
-            color: #8A7350;
+            color: #999999;
         }
     }
 }

@@ -60,7 +60,7 @@ $light-theme-icons-color: #999999;
         margin: 0 auto 25px auto;
         transition: all 0.5s;
         flex-basis: 60;
-        border: 2px solid rgba(0,0,0,0.2);
+        border: 5px solid rgba(100,100,100,0.1);
         position: relative;
         overflow: hidden;
         border-radius: 12px;
@@ -76,11 +76,12 @@ $light-theme-icons-color: #999999;
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
+          transform: scale(1.1);
           transition: transform 0.5s;
         }
         
         &:hover::before {
-          transform: scale(1.2);
+          transform: scale(1.3);
         }
 
         ion-icon {
@@ -91,6 +92,10 @@ $light-theme-icons-color: #999999;
           font-size: 3rem;
           cursor: pointer;
           transition: all 0.2s;
+
+          @media (min-width: 768px) {    
+            font-size: 2rem;
+          }
 
         }
       }
@@ -115,20 +120,7 @@ $light-theme-icons-color: #999999;
   }
 }
 
-@media (min-width: 768px) {
-    .certificates {
-        .certificates-container {
-            .certificate-items {
-                .certificate-item-box {
-                    ion-icon {
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-        }
 
-    }
-}
 
 #dark-theme .certificates {
   background: $dark-theme-background-color;

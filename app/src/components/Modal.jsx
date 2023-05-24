@@ -31,7 +31,7 @@ export default function Modal (props) {
     return (
         <div>
             <div className={modalActive ? "modal visible" : "modal"}>
-                <div className="modal-box">
+                <div className={modalActive ? "modal-box slide-up" : "modal-box"}>
                     <div className="modal-box-text-details">
                         <h2>Like What You See?</h2>
                         <div>
