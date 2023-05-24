@@ -132,8 +132,9 @@ export default function Certificates() {
     return (
         <div className="certificates" id="certificates-section">
             <div className={visible ? "certificates-container visible" : "certificates-container"}>
-                <div>
+                <div className="certificates-heading">
                     <h2>Certificates</h2>
+                    <div className="line"></div>
                     <p className="skills-para">View my certifications</p>
                 </div>
                 
