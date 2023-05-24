@@ -296,7 +296,7 @@
   font-weight: bold;
 }
 .projects .projects-container .projects-items {
-  max-width: 900px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -570,7 +570,7 @@
 }
 .certificates .certificates-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
