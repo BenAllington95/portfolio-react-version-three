@@ -22,9 +22,12 @@ $width: 90%;
       opacity: 0;
       transition: opacity 2s ease, transform 1.5s ease;
       transform: translateX(-50%);
-      display: grid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       gap: 15px;
-      place-content: center;
+
   
       h2 {
         color: $light-heading-color;
