@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   padding: 1em;
-  transition: background 0.2s;
 }
 .hero h1 {
   margin: 0;
@@ -43,7 +42,9 @@
 }
 
 #dark-theme .hero {
-  background-color: #161b22;
+  background: linear-gradient(135deg, rgba(24, 28, 36, 0.96) 16.66%, transparent 0 83.33%, rgba(24, 28, 36, 0.96) 0), conic-gradient(from 45deg at 66.66% 33.33%, #161b22 135deg, rgba(22, 27, 34, 0.75) 0% 225deg, rgba(22, 27, 34, 0.5) 0%);
+  background-size: 130px 130px;
+  background-color: rgba(24, 28, 36, 0.96);
 }
 #dark-theme .hero h1 {
   color: #f8f8f8;
@@ -62,7 +63,9 @@
 }
 
 #light-theme .hero {
-  background-color: #fff;
+  background: linear-gradient(135deg, #f2f2f2 16.66%, transparent 0 83.33%, #f2f2f2 0), conic-gradient(from 45deg at 66.66% 33.33%, #ffffff 135deg, rgba(255, 255, 255, 0.75) 0% 225deg, rgba(255, 255, 255, 0.5) 0%);
+  background-size: 130px 130px;
+  background-color: #f2f2f2;
 }
 #light-theme .hero h1 {
   color: #181818;
