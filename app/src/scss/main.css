@@ -12,7 +12,7 @@
     left: 0;
     right: 0;
     z-index: 9999;
-    transition: all 0.2s ease;
+    transition: transform 0.2s ease;
   }
   .large-nav.hidden {
     transform: translateY(-100%);
@@ -28,7 +28,6 @@
     cursor: pointer;
     font-size: 0.9em;
     border: none;
-    transition: color 0.2s ease, border-bottom 0.2s ease;
     padding-bottom: 0.3em;
     padding-top: 5px;
     border-bottom: 5px solid transparent;
@@ -44,11 +43,9 @@
   }
   #light-theme .large-nav ul li {
     color: #181818;
-    transition: border-bottom 0.2s ease, color 0.2s;
   }
   #light-theme .large-nav ul li:hover {
     border-bottom: 5px solid #999999;
-    color: #999999;
   }
 }
 /* Hero Section */
@@ -64,7 +61,6 @@
 .hero h1 {
   margin: 0;
   font-size: 3.5rem;
-  transition: all 0.2s;
 }
 @media (min-width: 768px) {
   .hero h1 {
@@ -116,9 +112,9 @@
 }
 
 #light-theme .hero {
-  background: linear-gradient(135deg, #f2f2f2 16.66%, transparent 0 83.33%, #f2f2f2 0), conic-gradient(from 45deg at 66.66% 33.33%, #ffffff 135deg, rgba(255, 255, 255, 0.75) 0% 225deg, rgba(255, 255, 255, 0.5) 0%);
-  background-size: 130px 130px;
-  background-color: #f2f2f2;
+  background: linear-gradient(135deg, #f1f1f1 16.66%, transparent 0 83.33%, #f1f1f1 0), conic-gradient(from 45deg at 66.66% 33.33%, #ffffff 135deg, rgba(255, 255, 255, 0.75) 0% 225deg, rgba(255, 255, 255, 0.5) 0%);
+  background-size: 120px 120px;
+  background-color: #f1f1f1;
 }
 #light-theme .hero h1 {
   color: #181818;

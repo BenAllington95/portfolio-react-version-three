@@ -2,8 +2,6 @@
     display: none;
   }
   
-  $nav-transition-time: .2s;
-  
   @media (min-width: 768px) {
     .large-nav {
       display: flex;
@@ -14,7 +12,7 @@
       left: 0;
       right: 0;
       z-index: 9999;
-      transition: all 0.2s ease;
+      transition: transform 0.2s ease; 
   
       &.hidden {
         transform: translateY(-100%);
@@ -31,7 +29,6 @@
           cursor: pointer;
           font-size: 0.9em;
           border: none;
-          transition: color $nav-transition-time ease, border-bottom $nav-transition-time ease;
           padding-bottom: 0.3em;
           padding-top: 5px;
           border-bottom: 5px solid transparent;
@@ -71,11 +68,9 @@
         ul {
           li {
             color: #181818;
-            transition: border-bottom $nav-transition-time ease, color 0.2s;
   
             &:hover {
               border-bottom: 5px solid #999999;
-              color: #999999
   
             }
           }
