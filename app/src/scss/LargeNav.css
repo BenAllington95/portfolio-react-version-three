@@ -11,6 +11,7 @@
     top: 0;
     left: 0;
     right: 0;
+    background: none;
     z-index: 9999;
     transition: transform 0.2s ease;
   }
@@ -35,11 +36,17 @@
   .large-nav ul li:hover {
     border-bottom: 5px solid currentColor;
   }
+  #dark-theme .large-nav.scrolled {
+    background-color: #181818;
+  }
   #dark-theme .large-nav ul li {
     color: #f8f8f8;
   }
   #dark-theme .large-nav ul li:hover {
     color: #79c0ff;
+  }
+  #light-theme .large-nav.scrolled {
+    background-color: #fff;
   }
   #light-theme .large-nav ul li {
     color: #181818;

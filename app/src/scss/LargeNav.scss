@@ -11,8 +11,9 @@
       top: 0;
       left: 0;
       right: 0;
+      background: none;
       z-index: 9999;
-      transition: transform 0.2s ease; 
+      transition: transform 0.2s ease;
   
       &.hidden {
         transform: translateY(-100%);
@@ -48,6 +49,10 @@
         // background: radial-gradient(circle, transparent 20%, #161b22 20%, #161b22 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #161b22 20%, #161b22 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#1a1f24 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #1a1f24 1.8px, #161b22 1.8px) -0.9px 0;
         // background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
 
+        &.scrolled {
+          background-color: #181818;
+      }
+
   
         ul {
           li {
@@ -64,6 +69,10 @@
     #light-theme {
       .large-nav {
         // background-color: #fff;
+
+        &.scrolled {
+          background-color: #fff;
+      }
   
         ul {
           li {
@@ -78,4 +87,8 @@
       }
     }
   }
-  
+
+//   .large-nav.scrolled {
+//     background-color: #fff;
+//     transition: transform 0.2s, background 1s;
+// }
