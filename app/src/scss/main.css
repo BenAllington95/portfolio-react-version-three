@@ -382,7 +382,7 @@
     padding: 2em;
   }
   .projects .projects-container .projects-items .projects-items-box {
-    max-width: 45%;
+    max-width: 48%;
   }
   .projects .projects-container .projects-items .projects-items-box .projects-items-box-details-main {
     height: 40%;
@@ -593,7 +593,6 @@
   margin: 0 auto 25px auto;
   transition: all 0.5s;
   flex-basis: 60;
-  border: 5px solid rgba(100, 100, 100, 0.1);
   position: relative;
   overflow: hidden;
   border-radius: 12px;
