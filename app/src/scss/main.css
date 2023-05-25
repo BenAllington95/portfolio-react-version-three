@@ -745,7 +745,6 @@
   }
 }
 .large-certificate-img {
-  background: rgba(0, 0, 0, 0.5);
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -847,6 +846,9 @@
   transform: translateY(-50%);
 }
 
+#dark-theme .large-certificate-img {
+  background: #000;
+}
 #dark-theme .large-certificate-img ion-icon[name=close-sharp] {
   color: #fff;
 }
@@ -854,6 +856,9 @@
   background: #ccc;
 }
 
+#light-theme .large-certificate-img {
+  background: #ccc;
+}
 #light-theme ion-icon[name=close-sharp] {
   color: #000;
 }
