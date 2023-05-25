@@ -1,7 +1,7 @@
 .large-certificate-img {
+  background: rgba(0, 0, 0, 0.5);
   height: 100vh;
   width: 100%;
-  background: #f8f8f8;
   position: fixed;
   top: 0;
   z-index: 99999999;
@@ -101,9 +101,6 @@
   transform: translateY(-50%);
 }
 
-#dark-theme .large-certificate-img {
-  background: #161b22;
-}
 #dark-theme .large-certificate-img ion-icon[name=close-sharp] {
   color: #fff;
 }
@@ -111,9 +108,6 @@
   background: #ccc;
 }
 
-#light-theme .large-certificate-img {
-  background: #f8f8f8;
-}
 #light-theme ion-icon[name=close-sharp] {
   color: #000;
 }
