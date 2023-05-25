@@ -88,7 +88,6 @@
   margin: 0 auto;
   gap: 5px;
   padding: 0.5em 0.75em;
-  background: #f1f1f1;
   border-radius: 5px;
 }
 .certificates .certificates-container .certificates-icons ion-icon {
@@ -107,6 +106,7 @@
 }
 #dark-theme .certificates .certificates-icons {
   color: #B3D1FF;
+  background: #202630;
 }
 
 #light-theme .certificates {
@@ -120,6 +120,7 @@
 }
 #light-theme .certificates .certificates-icons {
   color: #999999;
+  background: #f1f1f1;
 }
 #light-theme .certificates .certificate-item-box {
   background: #f8f8f8;
