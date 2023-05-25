@@ -62,9 +62,9 @@
 }
 
 #light-theme .hero {
-  background: linear-gradient(135deg, #f1f1f1 16.66%, transparent 0 83.33%, #f1f1f1 0), conic-gradient(from 45deg at 66.66% 33.33%, #ffffff 135deg, rgba(255, 255, 255, 0.75) 0% 225deg, rgba(255, 255, 255, 0.5) 0%);
-  background-size: 120px 120px;
-  background-color: #f1f1f1;
+  background: linear-gradient(135deg, #ffffff 16.66%, transparent 0 83.33%, #ffffff 0), conic-gradient(from 45deg at 66.66% 33.33%, #f0f0f0 135deg, rgba(240, 240, 240, 0.75) 0% 225deg, rgba(240, 240, 240, 0.5) 0%);
+  background-size: 130px 130px;
+  background-color: #ffffff;
 }
 #light-theme .hero h1 {
   color: #181818;
