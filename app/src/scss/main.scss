@@ -59,7 +59,6 @@ nav button {
     border-radius: 5px;
     border: none;
     font-weight: bold;
-    transition: all 0.2s;
     position: fixed;
     top: 10px;
     right: 10px;
@@ -123,14 +122,14 @@ nav button:hover {
     position: fixed;
     top: 0%;
     right: -100%;
-    width: 70vw;
+    width: 100vw;
     margin: 0;
     padding: 0;
     background: #12171d;  
     list-style: none;
     opacity: 1;
     pointer-events: none;
-    transition: right 0.5s ease, background 0.2s;
+    transition: right 0.5s ease;
     height: 100vh;
     z-index: 99999999999;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
@@ -145,7 +144,6 @@ nav button:hover {
 }
 
 .active {
-    // opacity: 1;
     right: 0;
     pointer-events: all;
 } /* Class gets added to hamburger nav when event clicked changes boolean */
@@ -154,7 +152,7 @@ nav button:hover {
 
 
 #light-theme .menu {
-    background: #f8f8fc;
+    background: #f4f4f4;
 }
 
 #light-theme .menu a {

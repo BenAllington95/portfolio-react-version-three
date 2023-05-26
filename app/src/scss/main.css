@@ -245,7 +245,6 @@
 /* Projects */
 .projects {
   padding: 4em 2em;
-  transition: background 0.2s ease;
 }
 .projects .projects-container {
   min-height: 50vh;
@@ -289,7 +288,6 @@
   gap: 5px;
 }
 .projects .projects-container .projects-filter-buttons .projects-filter-btn {
-  transition: all 0.2s;
   padding: 0.5em 0.75em;
   border-radius: 5px;
   cursor: pointer;
@@ -343,7 +341,6 @@
 .projects .projects-container .projects-items .projects-items-box .projects-items-box-img .projects-items-box-details-links a {
   padding: 0.5em;
   font-size: 0.8rem;
-  transition: all 0.2s;
   border-radius: 5px;
 }
 .projects .projects-container .projects-items .projects-items-box .projects-items-box-details-main {
@@ -351,7 +348,6 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 5px;
-  transition: all 0.2s ease;
   width: 100%;
   height: 50%;
 }
@@ -372,7 +368,6 @@
   padding: 2px 3px;
   border-radius: 3px;
   letter-spacing: 0.2px;
-  transition: all 0.2s;
 }
 
 @media (min-width: 768px) {
@@ -1034,7 +1029,6 @@ nav button {
   border-radius: 5px;
   border: none;
   font-weight: bold;
-  transition: all 0.2s;
   position: fixed;
   top: 10px;
   right: 10px;
@@ -1089,14 +1083,14 @@ nav button:hover {
   position: fixed;
   top: 0%;
   right: -100%;
-  width: 70vw;
+  width: 100vw;
   margin: 0;
   padding: 0;
   background: #12171d;
   list-style: none;
   opacity: 1;
   pointer-events: none;
-  transition: right 0.5s ease, background 0.2s;
+  transition: right 0.5s ease;
   height: 100vh;
   z-index: 99999999999;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
@@ -1115,7 +1109,7 @@ nav button:hover {
 } /* Class gets added to hamburger nav when event clicked changes boolean */
 /* Light-Theme */
 #light-theme .menu {
-  background: #f8f8fc;
+  background: #f4f4f4;
 }
 
 #light-theme .menu a {

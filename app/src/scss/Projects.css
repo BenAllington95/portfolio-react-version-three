@@ -1,7 +1,6 @@
 /* Projects */
 .projects {
   padding: 4em 2em;
-  transition: background 0.2s ease;
 }
 .projects .projects-container {
   min-height: 50vh;
@@ -45,7 +44,6 @@
   gap: 5px;
 }
 .projects .projects-container .projects-filter-buttons .projects-filter-btn {
-  transition: all 0.2s;
   padding: 0.5em 0.75em;
   border-radius: 5px;
   cursor: pointer;
@@ -99,7 +97,6 @@
 .projects .projects-container .projects-items .projects-items-box .projects-items-box-img .projects-items-box-details-links a {
   padding: 0.5em;
   font-size: 0.8rem;
-  transition: all 0.2s;
   border-radius: 5px;
 }
 .projects .projects-container .projects-items .projects-items-box .projects-items-box-details-main {
@@ -107,7 +104,6 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 5px;
-  transition: all 0.2s ease;
   width: 100%;
   height: 50%;
 }
@@ -128,7 +124,6 @@
   padding: 2px 3px;
   border-radius: 3px;
   letter-spacing: 0.2px;
-  transition: all 0.2s;
 }
 
 @media (min-width: 768px) {
