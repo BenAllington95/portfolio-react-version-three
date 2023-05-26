@@ -5,7 +5,6 @@
   justify-content: center;
   flex-direction: column;
   padding: 4em 2em;
-  transition: background 0.2s;
 }
 .certificates .certificates-heading {
   display: flex;
@@ -44,7 +43,6 @@
 }
 .certificates .certificates-container .certificate-items .certificate-item-box {
   margin: 0 auto 25px auto;
-  transition: all 0.5s;
   flex-basis: 60;
   position: relative;
   overflow: hidden;
@@ -73,7 +71,6 @@
   opacity: 0.4;
   font-size: 3rem;
   cursor: pointer;
-  transition: all 0.2s;
 }
 @media (min-width: 768px) {
   .certificates .certificates-container .certificate-items .certificate-item-box ion-icon {
