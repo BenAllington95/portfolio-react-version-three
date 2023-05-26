@@ -23,7 +23,6 @@
 
         .skills-para {
             text-align: center;
-            transition: all 0.2s;
         }
 
         .skills-items {
@@ -33,13 +32,11 @@
             flex-wrap: wrap;
             gap: 15px;
             max-width: 700px;
-            transition: all 0.2s;
 
             .skills-item-box {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transition: all 0.2s;
                 gap: 5px;
                 border-radius: 5px;
                 padding: 0.5em 1em;

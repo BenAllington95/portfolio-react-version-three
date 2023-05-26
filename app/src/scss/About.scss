@@ -15,7 +15,6 @@ $width: 90%;
     padding: 5em 2em;
     display: grid;
     place-content: center;
-    transition: background $transition-speed ease;
     overflow: hidden;
   
     .about-items {
@@ -81,16 +80,12 @@ $width: 90%;
   
       h2 {
         color: $light-heading-color;
-        transition: all $transition-speed;
       }
   
       p {
         color: $light-text-color;
-        transition: all $transition-speed;
       }
     }
-  
-    transition: all $transition-speed;
   } /* #light-theme */
   
   #dark-theme {
@@ -99,14 +94,10 @@ $width: 90%;
   
       h2 {
         color: $dark-heading-color;
-        transition: all $transition-speed;
       }
   
       p {
         color: $dark-text-color;
-        transition: all $transition-speed;
       }
     }
-  
-    transition: all $transition-speed;
   } /* #dark-theme */
