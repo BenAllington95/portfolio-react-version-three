@@ -106,7 +106,7 @@
 }
 
 #light-theme .certificates {
-  background: #f4f4f4;
+  background: #fff;
 }
 #light-theme .certificates h2 {
   color: #181818;
@@ -119,5 +119,5 @@
   background: #f1f1f1;
 }
 #light-theme .certificates .certificate-item-box {
-  background: #f4f4f4;
+  background: #fff;
 }/*# sourceMappingURL=Certificates.css.map */

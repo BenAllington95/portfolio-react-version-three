@@ -46,7 +46,7 @@
     color: #79c0ff;
   }
   #light-theme .large-nav.scrolled {
-    background-color: #f0f0f0;
+    background-color: #fff;
   }
   #light-theme .large-nav ul li {
     color: #181818;
@@ -210,7 +210,7 @@
 
 /* .about */
 #light-theme .about {
-  background: #f0f0f0;
+  background: #fff;
 }
 #light-theme .about h2 {
   color: #181818;
@@ -412,7 +412,7 @@
 }
 
 #light-theme .projects {
-  background-color: #f7f7f7;
+  background-color: #fff;
 }
 #light-theme .projects .projects-container h2 {
   color: #181818;
@@ -634,7 +634,7 @@
 }
 
 #light-theme .certificates {
-  background: #f4f4f4;
+  background: #fff;
 }
 #light-theme .certificates h2 {
   color: #181818;
@@ -647,7 +647,7 @@
   background: #f1f1f1;
 }
 #light-theme .certificates .certificate-item-box {
-  background: #f4f4f4;
+  background: #fff;
 }
 
 .contact {
@@ -1121,7 +1121,7 @@ nav button:hover {
   }
 }
 #light-theme .right-box {
-  background: linear-gradient(to right, rgb(240, 240, 240) 0%, rgba(121, 192, 255, 0.5) 100%), url("https://images.unsplash.com/photo-1661956602926-db6b25f75947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80");
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.8) 25%, rgba(121, 192, 255, 0.5) 100%), url("https://images.unsplash.com/photo-1661956602926-db6b25f75947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=698&q=80");
   background-size: cover;
   background-position: center;
   filter: grayscale(1);
@@ -1187,4 +1187,8 @@ nav button:hover {
   width: 35px;
   border-radius: 5px;
   margin: 0 auto;
+}
+
+#dark-theme .line {
+  background: #B3D1FF;
 }/*# sourceMappingURL=main.css.map */
