@@ -14,16 +14,21 @@
 }
 @media (min-width: 768px) {
   .hero h1 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }
 .hero .hero-subheading {
   margin-top: 1em;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   animation: slideIn 5s ease-in-out infinite;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .hero .hero-subheading {
+    font-size: 1.7rem;
+  }
 }
 .hero .scroll-down-box {
   position: absolute;

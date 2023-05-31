@@ -26,11 +26,15 @@ $light-theme-icons-color: #999999;
   
   h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   p {
     text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 1.1rem;      
+    }
   }
 
   .certificates-container {
@@ -121,6 +125,7 @@ $light-theme-icons-color: #999999;
 
 #dark-theme .certificates {
   background: $dark-theme-background-color;
+  border-bottom: 1px solid #181818;
 
   h2 {
     color: $dark-theme-h2-color;
@@ -138,6 +143,9 @@ $light-theme-icons-color: #999999;
 
 #light-theme .certificates {
   background: $light-theme-background-color;
+  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #f1f1f1;
+
 
   h2 {
     color: $light-theme-h2-color;

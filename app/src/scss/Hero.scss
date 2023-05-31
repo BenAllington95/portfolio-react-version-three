@@ -24,17 +24,22 @@ $text-color-secondary-dark: #79c0ff;
         font-size: 3.5rem;
 
         @media (min-width: 768px) {
-            font-size: 5rem;
+            font-size: 7rem;
         }
     } // h1
 
     .hero-subheading {
         margin-top: 1em;
-        font-size: 1.3em;
+        font-size: 1.3rem;
         letter-spacing: 2px;
         text-transform: uppercase;
         animation: slideIn 5s ease-in-out infinite;
         text-align: center;
+
+        @media (min-width: 768px) {
+            font-size: 1.7rem;
+        }
+
     } // p
 
 

@@ -15,10 +15,15 @@
 }
 .certificates h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .certificates p {
   text-align: center;
+}
+@media (min-width: 768px) {
+  .certificates p {
+    font-size: 1.1rem;
+  }
 }
 .certificates .certificates-container {
   width: 100%;
@@ -94,6 +99,7 @@
 
 #dark-theme .certificates {
   background: #161b22;
+  border-bottom: 1px solid #181818;
 }
 #dark-theme .certificates h2 {
   color: #79c0ff;
@@ -108,6 +114,8 @@
 
 #light-theme .certificates {
   background: #fff;
+  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #f1f1f1;
 }
 #light-theme .certificates h2 {
   color: #181818;

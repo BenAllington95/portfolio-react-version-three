@@ -12,8 +12,8 @@ export default function Projects() {
             {id: 2, filter: "javascript", text: "JavaScript"},
             {id: 3, filter: "scss", text: "SCSS"},
             {id: 4, filter: "css", text: "CSS"},
-            {id: 5, filter: "tailwind", text: "Tailwind"},
-            {id: 6, filter: "bootstrap", text: "Bootstrap"},
+            // {id: 5, filter: "tailwind", text: "Tailwind"},
+            // {id: 6, filter: "bootstrap", text: "Bootstrap"},
         ]
         
         // const shuffledProjects = projectsData.sort(() => Math.random() - 0.5) // shuffle projects array every render

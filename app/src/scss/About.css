@@ -20,7 +20,7 @@
 }
 .about .about-items h2 {
   color: #181818;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 .about .about-items .about-profile-img {
@@ -43,6 +43,11 @@
 }
 .about .about-items .about-paragraph p {
   line-height: 1.6;
+}
+@media (min-width: 768px) {
+  .about .about-items .about-paragraph p {
+    font-size: 1.1rem;
+  }
 }
 .about .about-items.visible {
   transform: translateY(0);
