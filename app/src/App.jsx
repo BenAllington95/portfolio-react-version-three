@@ -17,6 +17,9 @@ function App() {
 
   const [navbarActive, setNavbarActive] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isAtBottom, setIsAtBottom] = useState(false);
+
+
 
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -38,8 +41,12 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setCurrentSection(getCurrentSection());
+      const bottomThreshold = 50; // adjust this value as needed
+      const isNearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - bottomThreshold;
+  
+      setIsAtBottom(isNearBottom);
     };
+  
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -52,7 +59,8 @@ function App() {
       top: 0,
       behavior: 'smooth',
     });
-  }
+    setIsAtBottom(false);
+  };
   
   
   function handleToggleTheme() {
@@ -78,7 +86,11 @@ function App() {
       <Certificates id="certificates-section" />
       {/* <Skills id="skills-section" /> */}
       <Projects id="projects-section" />
-      <h1 onClick={handleClick}className="arrow-down"> <ion-icon name="chevron-up-outline"></ion-icon></h1>
+      {isAtBottom && (
+  <h1 onClick={handleClick} className="arrow-down">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </h1>
+)}
       <Contact id="contact-section" />
       
 
