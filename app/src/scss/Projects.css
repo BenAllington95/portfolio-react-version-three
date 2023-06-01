@@ -149,14 +149,14 @@
   color: #79c0ff;
 }
 #dark-theme .projects .projects-container .projects-para {
-  color: #fff;
+  color: #B3D1FF;
 }
 #dark-theme .projects .projects-container .projects-filter-buttons .projects-filter-btn {
-  background: #79c0ff;
-  color: #161b22;
+  background: #202630;
+  color: #B3D1FF;
 }
 #dark-theme .projects .projects-container .projects-filter-buttons .projects-active {
-  background: #fff;
+  background: #B3D1FF;
   color: #161b22;
 }
 #dark-theme .projects .projects-container .projects-items-box h3 {
