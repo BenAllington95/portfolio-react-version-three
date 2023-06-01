@@ -469,12 +469,16 @@
   color: #f1f1f1;
 }
 #light-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-main:hover {
-  background: #f1f1f1;
-  color: #181818;
+  background: #999999;
+  color: #f1f1f1;
 }
 #light-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-reverse {
   background: #f1f1f1;
   color: #181818;
+}
+#light-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-reverse:hover {
+  color: #f1f1f1;
+  background: #999999;
 }
 
 /* Skills */
@@ -730,6 +734,9 @@
 }
 #light-theme .contact .contact-container ul li ion-icon {
   color: #999999;
+}
+#light-theme .contact .contact-container ul li ion-icon:hover {
+  filter: brightness(115%);
 }
 
 #dark-theme .contact {

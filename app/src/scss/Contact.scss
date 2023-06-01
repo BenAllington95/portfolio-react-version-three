@@ -50,6 +50,10 @@
         .contact-container {
             ul li ion-icon {
                 color: #999999;
+
+                &:hover {
+                    filter: brightness(115%)
+                }
             }
         }
     }

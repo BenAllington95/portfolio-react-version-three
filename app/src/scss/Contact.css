@@ -40,6 +40,9 @@
 #light-theme .contact .contact-container ul li ion-icon {
   color: #999999;
 }
+#light-theme .contact .contact-container ul li ion-icon:hover {
+  filter: brightness(115%);
+}
 
 #dark-theme .contact {
   background: #79c0ff;
