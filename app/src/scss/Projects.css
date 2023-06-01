@@ -121,7 +121,7 @@
 .projects .projects-container .projects-items .projects-items-box .projects-items-box-details-main .projects-items-box-details-main-categories p {
   font-size: 0.7rem;
   font-weight: bold;
-  padding: 2px 3px;
+  padding: 2px 4px;
   border-radius: 3px;
   letter-spacing: 0.2px;
 }
@@ -155,9 +155,13 @@
   background: #202630;
   color: #B3D1FF;
 }
+#dark-theme .projects .projects-container .projects-filter-buttons .projects-filter-btn:hover {
+  background: #B3D1FF;
+  color: #202630;
+}
 #dark-theme .projects .projects-container .projects-filter-buttons .projects-active {
   background: #B3D1FF;
-  color: #161b22;
+  color: #202630;
 }
 #dark-theme .projects .projects-container .projects-items-box h3 {
   color: #fff;
@@ -170,12 +174,20 @@
   background: #79c0ff;
 }
 #dark-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-main {
-  background: #161b22;
-  color: #79c0ff;
+  background: #B3D1FF;
+  color: #202630;
+}
+#dark-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-main:hover {
+  color: #B3D1FF;
+  background: #202630;
 }
 #dark-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-reverse {
-  background: #79c0ff;
-  color: #161b22;
+  background: #202630;
+  color: #B3D1FF;
+}
+#dark-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-reverse:hover {
+  background: #B3D1FF;
+  color: #202630;
 }
 
 #light-theme .projects {
@@ -190,6 +202,10 @@
 #light-theme .projects .projects-container .projects-filter-buttons .projects-filter-btn {
   background: #f1f1f1;
   color: #999999;
+}
+#light-theme .projects .projects-container .projects-filter-buttons .projects-filter-btn:hover {
+  color: #f1f1f1;
+  background: #999999;
 }
 #light-theme .projects .projects-container .projects-filter-buttons .projects-active {
   background: #999999;
@@ -208,6 +224,10 @@
 #light-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-main {
   background: #181818;
   color: #f1f1f1;
+}
+#light-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-main:hover {
+  background: #f1f1f1;
+  color: #181818;
 }
 #light-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-reverse {
   background: #f1f1f1;
