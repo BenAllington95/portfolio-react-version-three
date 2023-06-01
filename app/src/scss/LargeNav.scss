@@ -13,7 +13,7 @@
       right: 0;
       background: none;
       z-index: 9999;
-      transition: transform 0.2s ease, background ease-in 1s;
+      transition: transform 0.2s ease;
   
       &.hidden {
         transform: translateY(-100%);
