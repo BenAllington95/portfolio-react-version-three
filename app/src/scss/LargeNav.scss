@@ -13,7 +13,7 @@
       right: 0;
       background: none;
       z-index: 9999;
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, background 1s;
   
       &.hidden {
         transform: translateY(-100%);
@@ -50,7 +50,7 @@
         // background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
 
         &.scrolled {
-          background-color: #181818;
+          background-color: #161b22;
       }
 
   

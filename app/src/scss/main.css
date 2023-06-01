@@ -13,7 +13,7 @@
     right: 0;
     background: none;
     z-index: 9999;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, background 1s;
   }
   .large-nav.hidden {
     transform: translateY(-100%);
@@ -37,7 +37,7 @@
     border-bottom: 5px solid currentColor;
   }
   #dark-theme .large-nav.scrolled {
-    background-color: #181818;
+    background-color: #161b22;
   }
   #dark-theme .large-nav ul li {
     color: #f8f8f8;
@@ -705,7 +705,6 @@
   margin: 0 auto;
   display: grid;
   place-content: center;
-  transition: all 0.2s;
 }
 .contact .contact-container ul {
   display: flex;
@@ -714,10 +713,12 @@
   align-items: center;
   gap: 30px;
   padding: 0;
-  transition: all 0.2s;
 }
 .contact .contact-container ul li ion-icon {
   font-size: 2rem;
+}
+.contact .contact-container ul li ion-icon:hover {
+  filter: brightness(150%);
 }
 
 @media (min-width: 762px) {
@@ -726,7 +727,6 @@
   }
   .contact .contact-container ul li ion-icon {
     font-size: 2rem;
-    transition: filter 0.2s;
   }
 }
 #light-theme .contact {
@@ -734,9 +734,6 @@
 }
 #light-theme .contact .contact-container ul li ion-icon {
   color: #999999;
-}
-#light-theme .contact .contact-container ul li ion-icon:hover {
-  filter: brightness(115%);
 }
 
 #dark-theme .contact {
@@ -788,18 +785,17 @@
   opacity: 0;
   gap: 10px;
   visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: visibility 0.2s ease;
   transform: translateX(-50%);
   margin: 0 auto;
 }
 .large-certificate-img.visible {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: visibility 0.2s ease;
   transform: translateX(-50%);
 }
 .large-certificate-img ion-icon[name=close-sharp] {
-  transition: 0.2s;
   font-size: 2.5rem;
   position: absolute;
   border-radius: 5px;
@@ -855,7 +851,6 @@
   font-size: 1rem;
   padding: 0.75em;
   border-radius: 50%;
-  transition: 0.2s;
   cursor: pointer;
   margin: 0 1em;
 }

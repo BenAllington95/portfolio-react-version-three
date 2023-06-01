@@ -12,18 +12,17 @@
   opacity: 0;
   gap: 10px;
   visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: visibility 0.2s ease;
   transform: translateX(-50%);
   margin: 0 auto;
 }
 .large-certificate-img.visible {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: visibility 0.2s ease;
   transform: translateX(-50%);
 }
 .large-certificate-img ion-icon[name=close-sharp] {
-  transition: 0.2s;
   font-size: 2.5rem;
   position: absolute;
   border-radius: 5px;
@@ -79,7 +78,6 @@
   font-size: 1rem;
   padding: 0.75em;
   border-radius: 50%;
-  transition: 0.2s;
   cursor: pointer;
   margin: 0 1em;
 }

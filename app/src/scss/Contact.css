@@ -10,7 +10,6 @@
   margin: 0 auto;
   display: grid;
   place-content: center;
-  transition: all 0.2s;
 }
 .contact .contact-container ul {
   display: flex;
@@ -19,10 +18,12 @@
   align-items: center;
   gap: 30px;
   padding: 0;
-  transition: all 0.2s;
 }
 .contact .contact-container ul li ion-icon {
   font-size: 2rem;
+}
+.contact .contact-container ul li ion-icon:hover {
+  filter: brightness(150%);
 }
 
 @media (min-width: 762px) {
@@ -31,7 +32,6 @@
   }
   .contact .contact-container ul li ion-icon {
     font-size: 2rem;
-    transition: filter 0.2s;
   }
 }
 #light-theme .contact {
@@ -39,9 +39,6 @@
 }
 #light-theme .contact .contact-container ul li ion-icon {
   color: #999999;
-}
-#light-theme .contact .contact-container ul li ion-icon:hover {
-  filter: brightness(115%);
 }
 
 #dark-theme .contact {

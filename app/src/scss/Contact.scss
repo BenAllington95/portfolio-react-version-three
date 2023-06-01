@@ -12,7 +12,7 @@
         margin: 0 auto;
         display: grid;
         place-content: center;
-        transition: all 0.2s;
+
     
         ul {
             display: flex;
@@ -20,11 +20,14 @@
             justify-content: center;
             align-items: center;
             gap: 30px;
-            padding: 0;
-            transition: all 0.2s;    
+            padding: 0; 
     
             li ion-icon {
                 font-size: 2rem;
+
+                &:hover {
+                    filter: brightness(150%)
+                }
             }
         }
     }
@@ -36,7 +39,6 @@
 
         .contact-container ul li ion-icon {
             font-size: 2rem;
-            transition: filter 0.2s;
         }
     }   
 }
@@ -51,9 +53,7 @@
             ul li ion-icon {
                 color: #999999;
 
-                &:hover {
-                    filter: brightness(115%)
-                }
+                
             }
         }
     }
@@ -66,6 +66,8 @@
         .contact-container {
             ul li ion-icon {
                 color: #12171d;
+
+        
             }
         }
     }
