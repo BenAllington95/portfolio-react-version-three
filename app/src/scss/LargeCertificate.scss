@@ -127,7 +127,8 @@
             color: #fff;
         
             &:hover {
-                background: #ccc;
+                background: #79c0ff;
+                color: #161b22;
             }    
         }
     }
@@ -135,7 +136,7 @@
 #light-theme {
 
     .large-certificate-img {
-        background: #ccc;
+        background: #f0f0f0;
     }
 
     ion-icon[name="close-sharp"] {

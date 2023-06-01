@@ -106,11 +106,12 @@
   color: #fff;
 }
 #dark-theme .large-certificate-img ion-icon[name=close-sharp]:hover {
-  background: #ccc;
+  background: #79c0ff;
+  color: #161b22;
 }
 
 #light-theme .large-certificate-img {
-  background: #ccc;
+  background: #f0f0f0;
 }
 #light-theme ion-icon[name=close-sharp] {
   color: #000;

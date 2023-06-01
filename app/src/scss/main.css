@@ -855,11 +855,12 @@
   color: #fff;
 }
 #dark-theme .large-certificate-img ion-icon[name=close-sharp]:hover {
-  background: #ccc;
+  background: #79c0ff;
+  color: #161b22;
 }
 
 #light-theme .large-certificate-img {
-  background: #ccc;
+  background: #f0f0f0;
 }
 #light-theme ion-icon[name=close-sharp] {
   color: #000;
@@ -1131,8 +1132,6 @@ nav button:hover {
   .test-img {
     width: 30%;
     min-height: 100vh;
-    /* background: linear-gradient(to right, #161b22 0%, #161b22 25%, rgba(121, 192, 255, 0.5) 100%); */
-    /* background: #161b22; */
   }
   .about {
     width: 70%;

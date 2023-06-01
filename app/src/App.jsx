@@ -101,7 +101,6 @@ function App() {
       <Projects id="projects-section" />
       <h1 onClick={handleClick}className="arrow-down"> <ion-icon name={currentSection < sectionIds.length - 1 ? "chevron-down-outline" : "chevron-up-outline"}></ion-icon></h1>
       <Contact id="contact-section" />
-      {/* <Carousel items={[<About />, <Skills />]} /> */}
       
 
       
