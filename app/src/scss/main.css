@@ -305,7 +305,6 @@
 .projects .projects-container .projects-items .projects-items-box {
   height: 250px;
   max-width: 768px;
-  transition: all 0.2s;
   width: 100%;
   display: flex;
   flex-direction: column;
