@@ -29,7 +29,6 @@
   opacity: 1;
   visibility: visible;
   transition: opacity 0.2s, visibility 0.2s;
-  overflow-y: scroll; /* Enables scrolling within the overlay */
 }
 .modal .modal-box {
   min-height: 250px;
