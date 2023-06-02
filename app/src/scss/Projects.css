@@ -67,7 +67,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid #f1f1f1;
 }
 @media (min-width: 768px) {
   .projects .projects-container .projects-items .projects-items-box {
@@ -188,6 +187,14 @@
 #dark-theme .projects .projects-container .projects-items-box .projects-items-box-details-links-reverse:hover {
   background: #B3D1FF;
   color: #202630;
+}
+
+#dark-theme .projects-items-box {
+  border-bottom: 1px solid #202630;
+}
+
+#light-theme .projects-items-box {
+  border-bottom: 1px solid #f1f1f1;
 }
 
 #light-theme .projects {

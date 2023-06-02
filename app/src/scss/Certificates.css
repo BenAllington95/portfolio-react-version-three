@@ -52,6 +52,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 12px;
+  transition: all 0.5s;
 }
 .certificates .certificates-container .certificate-items .certificate-item-box::before {
   content: "";

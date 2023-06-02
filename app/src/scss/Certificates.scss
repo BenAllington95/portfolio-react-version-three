@@ -58,6 +58,7 @@ $light-theme-icons-color: #999999;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
+ 
 
       .certificate-item-box {
         margin: 0 auto 25px auto;
@@ -66,6 +67,7 @@ $light-theme-icons-color: #999999;
         position: relative;
         overflow: hidden;
         border-radius: 12px;
+        transition: all 0.5s;
         
 
         &::before {
