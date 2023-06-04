@@ -72,7 +72,12 @@ export default function Certificates() {
         return (
             <div key={`certificate-${index}`} className="certificate-item-box">
                 <style>{`.certificate-item-box:nth-child(${index+1})::before { background-image: url('${item.img}'); }`}</style>
-                <ion-icon name="expand-sharp" onClick={() => handleCertificateClick(index)} ></ion-icon>
+                <div className="certificate-item-box-details">
+                    <h2>{item.title}</h2>
+                    <div className='line'></div>
+                    <p>Codecademy</p>
+                    <ion-icon name="expand-sharp" onClick={() => handleCertificateClick(index)} ></ion-icon>
+                    </div>
             </div>
         )
     })
