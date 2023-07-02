@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import images from '../images';
 
+
 import LargeCertificateImg from './LargeCertificateImg'
+import Heading from './Heading'
 
 
 export default function Certificates() {
@@ -137,11 +139,8 @@ export default function Certificates() {
     return (
         <div className="certificates" id="certificates-section">
             <div className={visible ? "certificates-container visible" : "certificates-container"}>
-                <div className="certificates-heading">
-                    <h2>Certificates</h2>
-                    <div className="line"></div>
-                    <p className="skills-para">View my certifications</p>
-                </div>
+                
+                <Heading title={"Certificates"} paragraph={"View my certifications"}/>
                 
                 {!isMobile && <div className="certificates-icons">
                     <ion-icon name="apps-sharp" onClick={() => setLayout("small")}></ion-icon>
