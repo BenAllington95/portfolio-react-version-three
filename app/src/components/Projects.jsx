@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import Project from './Project' 
 import projectsData from '../projectsData'  // projects data stored within another file
 
+import Heading from './Heading'
+
 export default function Projects() {
     const [filter, setFilter] = useState("") // filter button to adjust what projects are requested
     const [visible, setVisible] = useState(false) // animation state for container to fade in 
@@ -53,11 +55,12 @@ export default function Projects() {
     return (
         <div className="projects" id="projects-section">
                 <div className={visible ? "projects-container visible" : "projects-container"}>
-                <div className="projects-header">
-                    <h2>Projects</h2>
-                    <div className="line"></div>
-                    <p className="projects-para">Browse my projects</p>
-                </div>
+
+                <Heading 
+                    title={"Projects"} 
+                    paragraph={"Browse my projects"} 
+                />
+
                 <div className="projects-filter-buttons">
                     {filterElements}
                 </div>

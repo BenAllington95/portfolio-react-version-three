@@ -268,3 +268,16 @@ nav button:hover {
         background: #B3D1FF;
     }
 }
+
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+
+    .heading-para {
+        color: #B3D1FF;
+    }
+  }

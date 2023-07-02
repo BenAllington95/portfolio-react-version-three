@@ -719,7 +719,6 @@
 
 #light-theme .certificates {
   background: #fff;
-  border-bottom: 1px solid #f1f1f1;
 }
 #light-theme .certificates h2 {
   color: #181818;
@@ -1271,4 +1270,15 @@ nav button:hover {
 
 #dark-theme .line {
   background: #B3D1FF;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.heading .heading-para {
+  color: #B3D1FF;
 }/*# sourceMappingURL=main.css.map */
