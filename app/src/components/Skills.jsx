@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import Heading from './Heading'
+
 export default function Skills() {
   //   const [visible, setVisible] = useState(false)
      
@@ -37,10 +39,10 @@ export default function Skills() {
     return (
         <div className="skills">
           <div className="skills-container">
-            <div>
-                <h2>Skills</h2>
-                <p className="skills-para">My current skillset includes</p>
-            </div>
+            <Heading 
+              title={"Skills"}
+              paragraph={"My current skillset includes"}
+            />
             <div className="skills-items">
               {skillElements}
             </div>
