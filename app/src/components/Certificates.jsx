@@ -6,6 +6,20 @@ import LargeCertificateImg from './LargeCertificateImg'
 import Heading from './Heading'
 
 
+function CertificateBoxElement(props) {
+    return (
+        <div key={`certificate-${props.index}`} className="certificate-item-box">
+            <style>{`.certificate-item-box:nth-child(${props.index+1})::before { background-image: url('${props.item.img}'); }`}</style>
+            <div className="certificate-item-box-details">
+                <h2>{props.item.title}</h2>
+                <div className='line'></div>
+                <ion-icon name="expand-sharp" onClick={() => props.onIconClick(props.index)} ></ion-icon>
+            </div>
+        </div>
+    );
+}
+
+
 export default function Certificates() {
     const [layout, setLayout] = useState("small")
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 762) 
@@ -57,30 +71,14 @@ export default function Certificates() {
         setIsFullscreen(false)
     }
     
-    // const certificateBoxElements = certificateData.map((item, index) => {
-    //     return (
-    //         <div key={`certificate-${index}`} className="certificate-item-box" style={{
-    //             background: `url(${item.img})`,
-    //             backgroundRepeat: 'no-repeat',
-    //             backgroundSize: 'cover',
-    //             backgroundPosition: 'center',
-    //           }}>
-    //             <ion-icon name="expand-sharp" onClick={() => handleCertificateClick(index)} ></ion-icon>
-    //         </div>
-    //     )
-    // })
-
     const certificateBoxElements = certificateData.map((item, index) => {
         return (
-            <div key={`certificate-${index}`} className="certificate-item-box">
-                <style>{`.certificate-item-box:nth-child(${index+1})::before { background-image: url('${item.img}'); }`}</style>
-                <div className="certificate-item-box-details">
-                    <h2>{item.title}</h2>
-                    <div className='line'></div>
-                    <p>Codecademy</p>
-                    <ion-icon name="expand-sharp" onClick={() => handleCertificateClick(index)} ></ion-icon>
-                    </div>
-            </div>
+            <CertificateBoxElement 
+                key={index} 
+                index={index} 
+                item={item} 
+                onIconClick={handleCertificateClick}
+            />
         )
     })
     
@@ -140,7 +138,10 @@ export default function Certificates() {
         <div className="certificates" id="certificates-section">
             <div className={visible ? "certificates-container visible" : "certificates-container"}>
                 
-                <Heading title={"Certificates"} paragraph={"View my certifications"}/>
+                <Heading 
+                    title={"Certificates"} 
+                    paragraph={"View my certifications"}
+                />
                 
                 {!isMobile && <div className="certificates-icons">
                     <ion-icon name="apps-sharp" onClick={() => setLayout("small")}></ion-icon>
@@ -150,7 +151,9 @@ export default function Certificates() {
                 <div className="certificate-items">
                     {certificateBoxElements}                  
                 </div>
+
             </div>
+
             <LargeCertificateImg 
                 data={certificateData[fullscreenIndex]} 
                 closeFullscreen={handleFullScreenCloseToggle}
