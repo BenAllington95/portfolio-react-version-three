@@ -86,7 +86,7 @@ const hamburgerNavElements = navItems.map(item => {
     
     return (
         <nav>
-            <button onClick={toggleMenu}><ion-icon name="menu-outline"></ion-icon></button>
+            <button onClick={toggleMenu}><ion-icon className="menu-btn" name="menu-outline"></ion-icon></button>
             <ul className={`menu ${props.navbarActive ? "active" : ""}`}>
                 <button onClick={toggleMenu}><ion-icon name="close-sharp"></ion-icon></button>
                 {hamburgerNavElements}

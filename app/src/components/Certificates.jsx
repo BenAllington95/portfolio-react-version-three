@@ -16,7 +16,7 @@ function CertificateBoxElement(props) {
                 <ion-icon name="expand-sharp" onClick={() => props.onIconClick(props.index)} ></ion-icon>
             </div>
         </div>
-    );
+    )
 }
 
 
@@ -121,23 +121,24 @@ export default function Certificates() {
     const [visible, setVisible] = useState(false)
     
     useEffect(() => {
-    const handleScroll = () => {
-    const element = document.getElementById("certificates-section") // replace "your-id" with the actual ID of the element you want to check
-    if (element && window.pageYOffset > element.offsetTop - 500) {
-      setVisible(true)
-    } else {
-      setVisible(false)
-    }
-  }
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, [])
+        const handleScroll = () => {
+            const element = document.getElementById("certificates-section")
+            if (element && window.pageYOffset > element.offsetTop - 500) {
+                setVisible(true)
+            } else {
+                setVisible(false)
+            }
+        }
+        
+        window.addEventListener("scroll", handleScroll);
+            return () => window.removeEventListener("scroll", handleScroll);
+    }, [])
     
     
     return (
         <div className="certificates" id="certificates-section">
             <div className={visible ? "certificates-container visible" : "certificates-container"}>
-                
+
                 <Heading 
                     title={"Certificates"} 
                     paragraph={"View my certifications"}

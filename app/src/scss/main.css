@@ -1087,7 +1087,6 @@ button {
 }
 
 nav button {
-  background: #79c0ff;
   padding: 0.5em;
   border-radius: 5px;
   border: none;
@@ -1098,6 +1097,11 @@ nav button {
   display: grid;
   place-content: center;
   z-index: 998;
+}
+
+#dark-theme nav button {
+  background: #79c0ff;
+  color: #12171d;
 }
 
 #light-theme nav button {
